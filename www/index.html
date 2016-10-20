@@ -8,6 +8,7 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -17,24 +18,49 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body id="art_body">
 
-<section id="mainmenu">
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<section id="main_top_menu">
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top top_menu" role="navigation">
         <div class="container">
-            <ul class="nav navbar-nav">
-                <li class="active item"><a href="#">Ссылка</a></li>
-                <li class="item"><a href="#">Ссылка</a></li>
+            <ul class="nav navbar-nav topmenu_ul">
+                <li class="active_top_menu"><a href="#">Бренды</a></li>
+                <li class="item dropdown">
+                    <a href="#">Женщины</a>
+                    <!-- Выпадающее меню -->
+
+                    <div class="nav_lvl_1">
+                        <ul class="list-unstyled">
+                            <li>Бюстгальтеры</li>
+                            <li>Майки, футболки, блузки</li>
+                            <li>Пижамы и домашняя одежда</li>
+                            <li>Корректирующее белье</li>
+                            <li>Купальники и пляжная одежда</li>
+                        </ul>
+
+                    </div>
+                </li>
+                <li class="item"><a href="#">Мужчины</a></li>
+                <li class="item"><a href="#">Дети</a></li>
+                <li class="item"><a href="#">Новинки</a></li>
+                <li class="item sale"><a href="#" class="sale">Распродажа</a></li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right basket">
                 <li class = "item">
                     <div class="heart">
                         <i class="fa fa-heart-o" aria-hidden="true"></i>
                     </div>
+                    <div class="number">
+                        <p>7</p>
+                    </div>
                 </li>
                 <li class = "item">
                     <div class="basket">
-
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <div class="number">
+                            <p>25</p>
+                        </div>
                     </div>
                 </li>
                 <li class = "item">
@@ -47,12 +73,183 @@
             </ul>
         </div>
     </nav>
+    </header>
 </section>
 
+<section id="main_header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <a href="#" class="logo">
+                    <img src="/img/logo.png" alt="Логотип">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <input type="search" class="form-control" placeholder="Поиск">
+            </div>
+            <div class="col-md-3 phone">
+                <div>
+                    <p>(066) 773-23-23 (066) 773-23-23</p>
+                    <p>(066) 773-23-23 (066) 773-23-23</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="data_user">
+                    <a href="#" >Войти</a>|
+                    <a href="#">Регистрация</a>
+                    <div class = "img_user">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="main_second_menu">
+    <nav class="navbar navbar-default main_second_menu" role="navigation">
+        <div class="container">
+            <div class="center-block">
+                <ul class="nav navbar-nav">
+                    <li class="item"><a href="#">О магазине</a></li>
+                    <li class="active item"><a href="#">Оплата</a>
+                    <li class="item"><a href="#">Доставка</a></li>
+                    <li class="item"><a href="#">Размерная сетка</a></li>
+                    <li class="item"><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
+
+<section id="advantages">
+
+    <div class="container">
+        <div class="row col-md-3">
+            <P>Бесплатная курьерская доставка</P>
+
+        </div>
+        <div class="row col-md-3">
+            <p>Беспроблемный обмен</p>
+        </div>
+        <div class="row col-md-3">
+            <p>Возврат за наш счет</p>
+        </div>
+    </div>
+
+</section>
+
+<section id="content">
+    <div class="container">
+        <!-- Слайдер -->
+        <div class="row">
+            <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+                <!-- Индикаторы для карусели -->
+                <ol class="carousel-indicators">
+                    <!-- Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" -->
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <!-- Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" -->
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <!-- Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" -->
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- Слайды карусели -->
+                <div class="carousel-inner">
+                    <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
+                    <div class="active item">
+                        <img src="/img/slider/slide-1.jpg" alt="">
+                    </div>
+                    <!-- Слайд №2 -->
+                    <div class="item">
+                        <img src="/img/slider/slide-2.jpg" alt="">
+                    </div>
+                    <!-- Слайд №3 -->
+                    <div class="item">
+                        <img src="/img/slider/slide-3.jpg" alt="">
+                    </div>
+                </div>
+                <!-- Навигация для карусели -->
+                <!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
+                <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+        <!-- Преимущества -->
+        <div class="row">
+            <div class="col-md-4">
+                <img src="/img/goods/1.jpg" alt="">
+            </div>
+            <div class="col-md-4">
+                <img src="/img/goods/2.jpg" alt="">
+            </div>
+            <div class="col-md-4">
+                <img src="/img/goods/3.jpg" alt="">
+            </div>
+        </div>
+        <!-- Текст о магазине -->
+        <div class="row">
+            <p>
+                <br>
+                Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезызвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.
+                <br>
+                По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых клиентов недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
+                <br>
+                Рвным образом реализация намеченных плановых заданий в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки дальнейших направлений развития. Идейные соображения высшего порядка, а также укрепление и развитие структуры позволяет выполнять важные задания по разработке систем массового участия. Повседневная практика показывает, что реализация намеченных плановых заданий требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации систем массового участия. С другой стороны реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.
+                <br>
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="footer">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 contacts">
+                    <p class="contacts_header">Контакты</p>
+                    <p>066) 773-23-23  (077) 949-14-15</p>
+                    <p>050) 823-43-52  (044) 244-15-15</p>
+                    <p>info@chikiss.com.ua</p>
+                    <p>График работы</p>
+                    <p>пн-пт 09:00 - 18:00</p>
+                </div>
+                <div class="col-md-3 info_footer">
+                    <ul class="list-unstyled">Информация
+                        <li class="item"><a href="#">Оплата</a></li>
+                        <li class="item"><a href="#">Доставка</a></li>
+                        <li class="active item"><a href="#">Возврат и обмен</a></li>
+                        <li class="item"><a href="#">Как подобрать товар</a></li>
+                        <li class="item"><a href="#">Как подобрать размер?</a></li>
+                        <li class="item"><a href="#">Сотрудничество</a></li>
+                        <li class="item"><a href="#">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-offset-1 col-md-2 social">
+                    <a href="#" class="vk"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                    <a href="#" class="vk"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    <a href="#" class="vk"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" class="vk"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script>
+    jQuery('ul.nav > li').hover(function() {
+        jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn();
+    }, function() {
+        jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut();
+    })
+</script>
 </body>
 </html>
