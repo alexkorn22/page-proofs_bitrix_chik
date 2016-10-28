@@ -25,20 +25,51 @@
         <nav class="navbar navbar-default navbar-fixed-top top_menu" role="navigation">
         <div class="container">
             <ul class="nav navbar-nav topmenu_ul">
-                <li class="active_top_menu"><a href="#">Бренды</a></li>
+                <li><a href="#">Бренды</a></li> <!-- class="active_top_menu" -->
                 <li class="item dropdown">
                     <a href="#">Женщины</a>
                     <!-- Выпадающее меню -->
-
                     <div class="nav_lvl_1">
-                        <ul class="list-unstyled">
-                            <li>Бюстгальтеры</li>
-                            <li>Майки, футболки, блузки</li>
-                            <li>Пижамы и домашняя одежда</li>
-                            <li>Корректирующее белье</li>
-                            <li>Купальники и пляжная одежда</li>
-                        </ul>
-
+                        <div class="container nav_lvl_1_container">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Бюстгальтеры</a></li>
+                                        <li><a href="#">Майки, футболки, блузки</a></li>
+                                        <li><a href="#">Пижамы и домашняя одежда</a></li>
+                                        <li><a href="#">Корректирующее белье</a></li>
+                                        <li><a href="#">Купальники и пляжная одежда</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Для беременных и кормящих</a></li>
+                                        <li><a href="#">Термобелье</a></li>
+                                        <li><a href="#">Носки, колготы, чулки</a></li>
+                                        <li><a href="#">Аксессуары</a></li>
+                                        <li><a href="#">Трусы</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Тапки домашние</a></li>
+                                        <li><a href="#">Новинки</a></li>
+                                        <li><a href="#">Распродажа</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3  base_top_menu dropdown">
+                                    <a href="#" class = "title dropdown-toggle" data-toggle="dropdown" onclick="OnClickBaseTopMenu()">
+                                        База <span id="title_icon" class = "title_icon glyphicon glyphicon-chevron-right"></span>
+                                    </a>
+                                    <ul id = "dropmenu_base"class="list-unstyled hidden">
+                                        <li><a href="#">Трусы</a></li>
+                                        <li><a href="#">Бюстгальтеры</a></li>
+                                        <li><a href="#">Майки, футболки</a></li>
+                                        <li><a href="#">Носки, колготы, чулки</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </li>
                 <li class="item"><a href="#">Мужчины</a></li>
@@ -66,7 +97,7 @@
                 <li class = "item">
                     <div class = "">
                         <p>
-                           на суммму 24 500 грн.
+                            на суммму 24 500 грн.
                         </p>
                     </div>
                 </li>
@@ -109,14 +140,16 @@
 <section id="main_second_menu">
     <nav class="navbar navbar-default main_second_menu" role="navigation">
         <div class="container">
-            <div class="center-block">
-                <ul class="nav navbar-nav">
-                    <li class="item"><a href="#">О магазине</a></li>
-                    <li class="active item"><a href="#">Оплата</a>
-                    <li class="item"><a href="#">Доставка</a></li>
-                    <li class="item"><a href="#">Размерная сетка</a></li>
-                    <li class="item"><a href="#">Контакты</a></li>
-                </ul>
+            <div class="row">
+                <div class="center-block">
+                    <ul class="nav navbar-nav">
+                        <li class="item"><a href="#">О магазине</a></li>
+                        <li class="active item"><a href="#">Оплата</a>
+                        <li class="item"><a href="#">Доставка</a></li>
+                        <li class="item"><a href="#">Размерная сетка</a></li>
+                        <li class="item"><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
@@ -125,15 +158,16 @@
 <section id="advantages">
 
     <div class="container">
-        <div class="row col-md-3">
-            <P>Бесплатная курьерская доставка</P>
-
-        </div>
-        <div class="row col-md-3">
-            <p>Беспроблемный обмен</p>
-        </div>
-        <div class="row col-md-3">
-            <p>Возврат за наш счет</p>
+        <div class="row">
+            <div class="col-md-3">
+                <P>Бесплатная курьерская доставка</P>
+            </div>
+            <div class="col-md-3">
+                <p>Беспроблемный обмен</p>
+            </div>
+            <div class="col-md-3">
+                <p>Возврат за наш счет</p>
+            </div>
         </div>
     </div>
 
@@ -245,11 +279,19 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 <script>
-    jQuery('ul.nav > li').hover(function() {
-        jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn();
-    }, function() {
-        jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut();
-    })
+    OnClickBaseTopMenu = function () {
+        if ( $("#title_icon").hasClass("glyphicon-chevron-right")) {
+            $("#title_icon").removeClass("glyphicon-chevron-right");
+            $("#title_icon").addClass("glyphicon-chevron-down");
+            $("#dropmenu_base").removeClass("hidden");
+        }
+        else {
+            $("#title_icon").removeClass("glyphicon-chevron-down");
+            $("#title_icon").addClass("glyphicon-chevron-right");
+            $("#dropmenu_base").addClass("hidden");
+        }
+
+    }
 </script>
 </body>
 </html>
