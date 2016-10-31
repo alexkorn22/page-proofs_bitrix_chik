@@ -15,9 +15,9 @@ $color_hover :#555555;
     background-color: $color_3;
     font-family: "SegoeUILight" , Arial, sans-serif;
     border:none;
-    text-transform: uppercase;
     .topmenu_ul {
       font-size: 20px;
+      text-transform: uppercase;
       li {
         a {
           color: $color_1;
@@ -79,6 +79,28 @@ $color_hover :#555555;
             }
           }
         }
+      }
+    }
+    .basket_topmenu {
+      color: $color_1;
+      font-family: "SegoeUIRegular" , Arial, sans-serif;;
+      span {
+        color: #3d3d3d;
+        background-color: $color_4;
+        border-radius: 0.4em;
+        padding: 0em 0.375em;
+        position: absolute;
+        right: -0.2em;
+        top: 0.6em;
+      }
+      .sum {
+        padding-top: 12%;
+        padding-left: 20px;
+        font-size: 12px;
+      }
+      li > a {
+        color: $color_1;
+        padding: 15px 10px 5px;
       }
     }
   }
