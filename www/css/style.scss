@@ -184,3 +184,19 @@ $SegoeUILight : "SegoeUILight" , Arial, sans-serif;
     }
   }
 }
+
+#main_second_menu {
+  .main_second_menu {
+    border-top: none;
+    background-color: #f6f6f6;
+    border-bottom-color: #e3e3e3;
+    font-family: $SegoeUILight;
+    font-size: 28px;
+    .navbar-nav {
+      margin-left:-5%;
+    }
+    a:hover {
+      color: #434343;
+    }
+  }
+}
