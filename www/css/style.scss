@@ -200,3 +200,25 @@ $SegoeUILight : "SegoeUILight" , Arial, sans-serif;
     }
   }
 }
+
+#advantages {
+  .row_advantages {
+    font-family: $SegoeUIRegular;
+    font-size: 15px;
+    a{
+      text-decoration: none;
+      color: $color_2;
+      &:hover {
+        color: $color_3;
+      }
+      .text {
+        line-height: 0.5em;
+        padding-right: 1px;
+        padding-top: 2px;
+      }
+      .adv_img {
+        padding-left:0px;
+      }
+    }
+  }
+}
