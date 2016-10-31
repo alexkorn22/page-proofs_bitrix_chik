@@ -1,5 +1,5 @@
 #art_body {
-  padding-top: 70px;
+  padding-top: 50px;
 }
 //********ПАЛИТРА***************
 $color_1 : #e9e9e9;
@@ -9,11 +9,17 @@ $color_4 : #b1e1e1;
 $color_5 : #ff5757;
 $color_hover :#555555;
 
-   //********* HEADER ***********************
+//********ШРИФТЫ**************************
+
+$SegoeUIRegular : "SegoeUIRegular" , Arial, sans-serif;
+$SegoeUIBold : "SegoeUIBold" , Arial, sans-serif;
+$SegoeUILight : "SegoeUILight" , Arial, sans-serif;
+
+//********* HEADER ***********************
 #main_top_menu {
   .top_menu {
     background-color: $color_3;
-    font-family: "SegoeUILight" , Arial, sans-serif;
+    font-family: $SegoeUILight;
     border:none;
     .topmenu_ul {
       font-size: 20px;
@@ -43,7 +49,7 @@ $color_hover :#555555;
         left: -9999px;
         background-color: $color_hover;
         color: $color_1;
-        font-family: "SegoeUIRegular" , Arial, sans-serif;
+        font-family: $SegoeUIRegular;
         font-size: 18px;
         opacity: 0.9;
         text-transform: none;
@@ -83,7 +89,8 @@ $color_hover :#555555;
     }
     .basket_topmenu {
       color: $color_1;
-      font-family: "SegoeUIRegular" , Arial, sans-serif;;
+      font-family: $SegoeUIRegular;
+      margin-right: 0px;
       span {
         color: #3d3d3d;
         background-color: $color_4;
@@ -102,6 +109,78 @@ $color_hover :#555555;
         color: $color_1;
         padding: 15px 10px 5px;
       }
+    }
+  }
+}
+
+#main_header {
+  .header_logo {
+    margin-top: 28px;
+    margin-bottom: 25px;
+    font-family: $SegoeUIRegular;
+  }
+  .search {
+    padding-top: 8px;
+    .icon {
+      background-color: $color_4;
+      border-radius: 10px;
+      color: white;
+      font-size: 20px;
+      padding: 0px 6px 2px;
+      margin-top: 3px;
+      position: absolute;
+
+      left: 58%;
+    }
+    .field_search {
+      height: 38px;
+      border-radius: 10px;
+      border-color: $color_1;
+      font-size: 14px;
+      width: 190px;
+    }
+  }
+  .phone {
+    padding-top: 8px;
+    font-size: 16px;
+    line-height: 1.2em;
+    .font_bold {
+      font-family: $SegoeUIBold;
+    }
+  }
+  .user_data {
+    padding-top: 8px;
+    height: 38px;
+    .data_user {
+      border: 1px solid;
+      border-radius: 10px;
+      border-color: $color_1;
+      box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+      display: inline-block;
+      float: right;
+      .user_text {
+        display: inline-block;
+        padding: 0px 10px;
+        min-width: 160px;
+        vertical-align: middle;
+        a{
+          margin: 0 auto;
+          color: $color_2;
+          &:hover {
+            color: $color_4;
+          }
+        }
+      }
+    }
+    .icon {
+      background-color: $color_4;
+      border-radius: 10px;
+      color: white;
+      font-size: 20px;
+      padding: 0px 6px 2px;
+      margin-right: 2px;
+      margin-top: 2px;
+      margin-bottom: 2px;
     }
   }
 }

@@ -75,7 +75,7 @@
                 <li class="item"><a href="#">Мужчины</a></li>
                 <li class="item"><a href="#">Дети</a></li>
                 <li class="item"><a href="#">Новинки</a></li>
-                <li class="item sale"><a href="#" class="sale">Распродажа</a></li>
+                <li class="item sale"><a href="#" class="sale">Распродажа%</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right basket_topmenu">
                 <li class = "item" >
@@ -107,28 +107,31 @@
 
 <section id="main_header">
     <div class="container">
-        <div class="row">
+        <div class="row header_logo">
             <div class="col-md-3">
                 <a href="#" class="logo">
                     <img src="img/logo.png" alt="Логотип">
                 </a>
             </div>
-            <div class="col-md-3">
-                <input type="search" class="form-control" placeholder="Поиск">
+            <div class="col-md-3 search">
+                <button class="btn icon" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <input type="search" class="form-control field_search" placeholder="Поиск...">
             </div>
             <div class="col-md-3 phone">
-                <div>
-                    <p>(066) 773-23-23 (066) 773-23-23</p>
-                    <p>(066) 773-23-23 (066) 773-23-23</p>
+                <div class="col_first">
+                    <span>(066) <span class="font_bold">773-23-23</span> (066) <span class="font_bold">773-23-23</span></span>
+                </div>
+                <div class="col_second">
+                    <span>(066) <span class="font_bold">773-23-23</span> (066) <span class="font_bold">773-23-23</span></span>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 user_data">
                 <div class="data_user">
-                    <a href="#" >Войти</a>|
-                    <a href="#">Регистрация</a>
-                    <div class = "img_user">
-
+                    <div class="user_text">
+                        <a href="#" >Вход </a> |
+                        <a href="#"> Регистрация </a>
                     </div>
+                    <a class="btn icon" href="#" ><i class="fa fa-user" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
