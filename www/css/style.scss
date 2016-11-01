@@ -17,6 +17,9 @@ $SegoeUILight : "SegoeUILight" , Arial, sans-serif;
 
 //********* HEADER ***********************
 #main_top_menu {
+  .navbar {
+    min-height: 42px;
+  }
   .top_menu {
     background-color: $color_3;
     font-family: $SegoeUILight;
@@ -27,6 +30,8 @@ $SegoeUILight : "SegoeUILight" , Arial, sans-serif;
       li {
         a {
           color: $color_1;
+          padding-top: 11px;
+          padding-bottom: 11px;
         }
         .sale {
           color: $color_5;
@@ -91,23 +96,32 @@ $SegoeUILight : "SegoeUILight" , Arial, sans-serif;
       color: $color_1;
       font-family: $SegoeUIRegular;
       margin-right: 0px;
-      span {
+      .counter {
         color: #3d3d3d;
         background-color: $color_4;
         border-radius: 0.4em;
         padding: 0em 0.375em;
         position: absolute;
         right: -0.2em;
-        top: 0.6em;
+        top: 0.39em;
+      }
+      .icon-heart_1 {
+        font-size: 26px;
+      }
+      .icon-cart_1 {
+        font-size: 26px;
       }
       .sum {
-        padding-top: 12%;
+        padding-top: 10%;
         padding-left: 20px;
         font-size: 12px;
       }
       li > a {
         color: $color_1;
-        padding: 15px 10px 5px;
+        padding: 10px 4px 1px 15px;
+        &:hover {
+          color: $color_4;
+        }
       }
     }
   }
@@ -204,7 +218,8 @@ $SegoeUILight : "SegoeUILight" , Arial, sans-serif;
 #advantages {
   .row_advantages {
     font-family: $SegoeUIRegular;
-    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 20px;
     a{
       text-decoration: none;
       color: $color_2;
@@ -215,10 +230,31 @@ $SegoeUILight : "SegoeUILight" , Arial, sans-serif;
         line-height: 0.5em;
         padding-right: 1px;
         padding-top: 2px;
-      }
-      .adv_img {
-        padding-left:0px;
+        font-size: 15px;
       }
     }
+    .delivery,.exchange,.return {
+      .adv_img {
+        padding-top: 3px;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+#footer {
+  footer {
+    font-family: $SegoeUIRegular;
+    padding-top: 50px;
+    padding-bottom: 35px;
+    background-color: $color_3;
+    font-size: 14px;
+
+  }
+}
+
+#content {
+  .carousel {
+    margin-top: 10px;
   }
 }

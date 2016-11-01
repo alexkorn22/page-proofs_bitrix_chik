@@ -80,16 +80,14 @@
             <ul class="nav navbar-nav navbar-right basket_topmenu">
                 <li class = "item" >
                     <a href="#" class="liked">
-
-                            <img src="img/heart.png">
-                            <span>7</span>
-
+                            <span class="icon-heart_1"></span>
+                            <span class="counter">7</span>
                     </a>
                 </li>
-                <li class = "item">
+                <li class = "item_cart">
                     <a href="#" class="cart">
-                        <img src="img/cart.png">
-                        <span>25</span>
+                        <span class="icon-cart_1"></span>
+                        <span class="counter" >25</span>
                     </a>
                 </li>
                 <li class = "item">
@@ -165,12 +163,12 @@
                     <div class="col-lg-offset-4 col-md-8">
                         <a href="#">
                             <div class="row">
-                                <div class="col-md-9 text">
+                                <div class="col-md-10 text">
                                     <p>Бесплатная доставка</p>
                                     <p>при заказе от 1000 грн</p>
                                 </div>
-                                <div class="col-md-3 adv_img">
-                                    <img src="img/delivery_car.png" alt="Доставка">
+                                <div class="col-md-2 adv_img">
+                                    <span class="icon-delivery_1"></span>
                                 </div>
                             </div>
                         </a>
@@ -187,7 +185,7 @@
                                     <p>обмен</p>
                                 </div>
                                 <div class="col-md-3 adv_img">
-                                    <img src="img/exchange.png" alt="Доставка">
+                                    <span class="icon-exchange_1"></span>
                                 </div>
                             </div>
                         </a>
@@ -204,7 +202,7 @@
                                     <p>за наш счет</p>
                                 </div>
                                 <div class="col-md-3 adv_img">
-                                    <img src="img/return.png" alt="Доставка">
+                                    <span class="icon-return_1"></span>
                                 </div>
                             </div>
                         </a>
@@ -219,50 +217,48 @@
 <section id="content">
     <div class="container">
         <!-- Слайдер -->
-        <div class="row">
-            <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
-                <!-- Индикаторы для карусели -->
-                <ol class="carousel-indicators">
-                    <!-- Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" -->
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <!-- Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" -->
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <!-- Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" -->
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
-                <!-- Слайды карусели -->
-                <div class="carousel-inner">
-                    <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
-                    <div class="active item">
-                        <img src="img/slider/slide-1.jpg" alt="">
-                    </div>
-                    <!-- Слайд №2 -->
-                    <div class="item">
-                        <img src="img/slider/slide-2.jpg" alt="">
-                    </div>
-                    <!-- Слайд №3 -->
-                    <div class="item">
-                        <img src="img/slider/slide-3.jpg" alt="">
-                    </div>
+        <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+            <!-- Индикаторы для карусели -->
+            <ol class="carousel-indicators">
+                <!-- Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" -->
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <!-- Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" -->
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <!-- Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" -->
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Слайды карусели -->
+            <div class="carousel-inner">
+                <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
+                <div class="active item">
+                    <img src="img/slider/slide-1.jpg" alt="">
                 </div>
-                <!-- Навигация для карусели -->
-                <!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
-                <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                </a>
-                <!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
-                <a class="carousel-control right" href="#myCarousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
+                <!-- Слайд №2 -->
+                <div class="item">
+                    <img src="img/slider/slide-2.jpg" alt="">
+                </div>
+                <!-- Слайд №3 -->
+                <div class="item">
+                    <img src="img/slider/slide-3.jpg" alt="">
+                </div>
             </div>
+            <!-- Навигация для карусели -->
+            <!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
         </div>
         <!-- Преимущества -->
         <div class="row">
             <div class="col-md-4">
-                <img src="img/goods/1.jpg" alt="">
+                <img src="img/goods/2.jpg" alt="">
             </div>
             <div class="col-md-4">
-                <img src="img/goods/2.jpg" alt="">
+                <img src="img/goods/1.jpg" alt="">
             </div>
             <div class="col-md-4">
                 <img src="img/goods/3.jpg" alt="">
@@ -270,15 +266,17 @@
         </div>
         <!-- Текст о магазине -->
         <div class="row">
-            <p>
-                <br>
-                Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезызвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.
-                <br>
-                По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых клиентов недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
-                <br>
-                Рвным образом реализация намеченных плановых заданий в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки дальнейших направлений развития. Идейные соображения высшего порядка, а также укрепление и развитие структуры позволяет выполнять важные задания по разработке систем массового участия. Повседневная практика показывает, что реализация намеченных плановых заданий требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации систем массового участия. С другой стороны реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.
-                <br>
-            </p>
+            <div class="col-md-12">
+                <p>
+                    <br>
+                    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезызвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.
+                    <br>
+                    По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых клиентов недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
+                    <br>
+                    Рвным образом реализация намеченных плановых заданий в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки дальнейших направлений развития. Идейные соображения высшего порядка, а также укрепление и развитие структуры позволяет выполнять важные задания по разработке систем массового участия. Повседневная практика показывает, что реализация намеченных плановых заданий требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации систем массового участия. С другой стороны реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.
+                    <br>
+                </p>
+            </div>
         </div>
     </div>
 </section>
@@ -295,7 +293,7 @@
                     <p>График работы</p>
                     <p>пн-пт 09:00 - 18:00</p>
                 </div>
-                <div class="col-md-3 info_footer">
+                <div class="col-md-offset-1 col-md-3 info_footer">
                     <ul class="list-unstyled">Информация
                         <li class="item"><a href="#">Оплата</a></li>
                         <li class="item"><a href="#">Доставка</a></li>
@@ -306,7 +304,7 @@
                         <li class="item"><a href="#">Политика конфиденциальности</a></li>
                     </ul>
                 </div>
-                <div class="col-md-offset-1 col-md-2 social">
+                <div class="col-md-offset-3 col-md-2 text-right social">
                     <a href="#" class="vk"><i class="fa fa-vk" aria-hidden="true"></i></a>
                     <a href="#" class="vk"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
                     <a href="#" class="vk"><i class="fa fa-instagram" aria-hidden="true"></i></a>
