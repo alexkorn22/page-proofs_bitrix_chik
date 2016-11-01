@@ -249,12 +249,41 @@ $SegoeUILight : "SegoeUILight" , Arial, sans-serif;
     padding-bottom: 35px;
     background-color: $color_3;
     font-size: 14px;
+    color: $color_1;
+    a {
+      color: $color_1;
+      &:hover {
+        color: $color_4;
+      }
+    }
+    .title_footer {
+      text-transform: uppercase;
+      color: $color_2;
+    }
+    .text_with_margin_bottom {
+      margin-bottom: 35px;
+    }
+    .info_footer {
+      ul{
+        margin-top: -4px;
+      }
+      li {
+        padding: 4px 0px;
+      }
 
+    }
+    .social {
+      font-size: 22px;
+      a {
+        padding: 0px 9px;
+      }
+    }
   }
 }
 
 #content {
   .carousel {
     margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
