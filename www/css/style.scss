@@ -62,8 +62,8 @@ $SegoeUISemiBold: "SegoeUISemiBold", Arial, sans-serif;
         padding-top: 18px;
         padding-bottom: 150px;
         li {
-          padding-top: 10px;
-          padding-bottom: 10px;
+          padding-top: 6px;
+          padding-bottom: 6px;
         }
         a {
           &:hover {
@@ -87,7 +87,7 @@ $SegoeUISemiBold: "SegoeUISemiBold", Arial, sans-serif;
             font-size: 24px;
             text-transform: uppercase;
             .title_icon {
-              font-size: 18px;
+              font-size: 24px;
             }
           }
         }
@@ -208,7 +208,11 @@ $SegoeUISemiBold: "SegoeUISemiBold", Arial, sans-serif;
     font-family: $SegoeUILight;
     font-size: 28px;
     .navbar-nav {
-      margin-left: -5%;
+      margin-left: -8%;
+      li > a {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
     }
     a:hover {
       color: #434343;
@@ -219,7 +223,7 @@ $SegoeUISemiBold: "SegoeUISemiBold", Arial, sans-serif;
 #advantages {
   .row_advantages {
     font-family: $SegoeUIRegular;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-top: 20px;
     a {
       text-decoration: none;
@@ -287,9 +291,25 @@ $SegoeUISemiBold: "SegoeUISemiBold", Arial, sans-serif;
 #content {
   font-family: $SegoeUIRegular;
   font-size: 14px;
+  .container{
+    margin-top: 20px;
+  }
   .carousel {
-    margin-top: 10px;
     margin-bottom: 10px;
+    .carousel-control {
+      .fa {
+        position: absolute;
+        top: 50%;
+        font-size: 60px;
+        margin-top: -30px;
+      }
+      .fa-angle-left {
+        left: 5%;
+      }
+      .fa-angle-right {
+        right: 5%;
+      }
+    }
   }
   .goods_main {
     margin-top: 20px;
@@ -308,7 +328,7 @@ $SegoeUISemiBold: "SegoeUISemiBold", Arial, sans-serif;
 #feedback {
   /*Кнопка*/
   #popup_toggle {
-    bottom: 65vh;
+    bottom: 48vh;
     right: 5vw;
     position: fixed;
     .img-circle {
@@ -320,8 +340,8 @@ $SegoeUISemiBold: "SegoeUISemiBold", Arial, sans-serif;
       box-sizing: content-box;
       -webkit-box-sizing: content-box;
       border: 2px solid $color_4;
-      width: 150px;
-      height: 150px;
+      width: 140px;
+      height: 140px;
       bottom: -25px;
       right: 10px;
       position: absolute;
@@ -343,8 +363,8 @@ $SegoeUISemiBold: "SegoeUISemiBold", Arial, sans-serif;
       box-sizing: content-box;
       -webkit-box-sizing: content-box;
       background-color: $color_4;
-      width: 100px;
-      height: 100px;
+      width: 90px;
+      height: 90px;
       bottom: 0px;
       right: 35px;
       position: absolute;
@@ -365,8 +385,8 @@ $SegoeUISemiBold: "SegoeUISemiBold", Arial, sans-serif;
     .img-circle {
       box-sizing: content-box;
       -webkit-box-sizing: content-box;
-      width: 72px;
-      height: 72px;
+      width: 62px;
+      height: 62px;
       bottom: 14px;
       right: 49px;
       position: absolute;
@@ -379,9 +399,9 @@ $SegoeUISemiBold: "SegoeUISemiBold", Arial, sans-serif;
     .img-circleblock {
       box-sizing: content-box;
       -webkit-box-sizing: content-box;
-      width: 72px;
-      height: 72px;
-      background-image: url(../img/phone.png);
+      width: 62px;
+      height: 62px;
+      background-image: url(../img/phone1.png);
       background-position: center center;
       background-repeat: no-repeat;
       animation-name: tossing;

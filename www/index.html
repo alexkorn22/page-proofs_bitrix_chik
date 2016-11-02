@@ -63,8 +63,9 @@
                                     <div class="col-md-3  base_top_menu dropdown">
                                         <a href="#" class="title dropdown-toggle" data-toggle="dropdown"
                                            onclick="OnClickBaseTopMenu()">
-                                            База <span id="title_icon"
-                                                       class="title_icon glyphicon glyphicon-chevron-right"></span>
+                                            База
+                                            <span id="title_icon" class="title_icon fa fa-angle-right">
+                                            </span>
                                         </a>
                                         <ul id="dropmenu_base" class="list-unstyled hidden">
                                             <li><a href="#">Трусы</a></li>
@@ -250,11 +251,11 @@
             <!-- Навигация для карусели -->
             <!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
             <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="fa fa-angle-left"></span>
             </a>
             <!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
             <a class="carousel-control right" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="fa fa-angle-right"></span>
             </a>
         </div>
         <!-- Преимущества -->
@@ -425,14 +426,14 @@
 <script>
     /*Выпадающее меню "БАЗА"*/
     OnClickBaseTopMenu = function () {
-        if ($("#title_icon").hasClass("glyphicon-chevron-right")) {
-            $("#title_icon").removeClass("glyphicon-chevron-right");
-            $("#title_icon").addClass("glyphicon-chevron-down");
+        if ($("#title_icon").hasClass("fa-angle-right")) {
+            $("#title_icon").removeClass("fa-angle-right");
+            $("#title_icon").addClass("fa-angle-down");
             $("#dropmenu_base").removeClass("hidden");
         }
         else {
-            $("#title_icon").removeClass("glyphicon-chevron-down");
-            $("#title_icon").addClass("glyphicon-chevron-right");
+            $("#title_icon").removeClass("fa-angle-down");
+            $("#title_icon").addClass("fa-angle-right");
             $("#dropmenu_base").addClass("hidden");
         }
 

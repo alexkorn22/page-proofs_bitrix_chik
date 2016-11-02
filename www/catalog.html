@@ -30,7 +30,7 @@
                 <ul class="nav navbar-nav topmenu_ul">
                     <li><a href="#">Бренды</a></li> <!-- class="active_top_menu" -->
                     <li class="item dropdown">
-                        <a href="#">Женщины</a>
+                        <a href="catalog.html">Женщины</a>
                         <!-- Выпадающее меню -->
                         <div class="nav_lvl_1">
                             <div class="container nav_lvl_1_container">
@@ -63,8 +63,9 @@
                                     <div class="col-md-3  base_top_menu dropdown">
                                         <a href="#" class="title dropdown-toggle" data-toggle="dropdown"
                                            onclick="OnClickBaseTopMenu()">
-                                            База <span id="title_icon"
-                                                       class="title_icon glyphicon glyphicon-chevron-right"></span>
+                                            База
+                                            <span id="title_icon" class="title_icon fa fa-angle-right">
+                                            </span>
                                         </a>
                                         <ul id="dropmenu_base" class="list-unstyled hidden">
                                             <li><a href="#">Трусы</a></li>
@@ -112,7 +113,7 @@
     <div class="container">
         <div class="row header_logo">
             <div class="col-md-3">
-                <a href="#" class="logo">
+                <a href="index.html" class="logo">
                     <img src="img/logo.png" alt="Логотип">
                 </a>
             </div>
@@ -139,8 +140,6 @@
             </div>
         </div>
     </div>
-
-
 </section>
 
 <section id="main_second_menu">
@@ -460,9 +459,9 @@
                 <div class="modal-body">
                     <div class="container-fluid">
                         <div class="row">
-                           <div class="col-md-2 text-center">
-                               <img src="img/call-back-icon.jpg" alt="Обратный звонок">
-                           </div>
+                            <div class="col-md-2 text-center">
+                                <img src="img/call-back-icon.jpg" alt="Обратный звонок">
+                            </div>
                             <div class="col-md-9">
                                 <p class="title">Обратный звонок</p>
                                 <p>
@@ -526,40 +525,18 @@
 <script>
     /*Выпадающее меню "БАЗА"*/
     OnClickBaseTopMenu = function () {
-        if ($("#title_icon").hasClass("glyphicon-chevron-right")) {
-            $("#title_icon").removeClass("glyphicon-chevron-right");
-            $("#title_icon").addClass("glyphicon-chevron-down");
+        if ($("#title_icon").hasClass("fa-angle-right")) {
+            $("#title_icon").removeClass("fa-angle-right");
+            $("#title_icon").addClass("fa-angle-down");
             $("#dropmenu_base").removeClass("hidden");
         }
         else {
-            $("#title_icon").removeClass("glyphicon-chevron-down");
-            $("#title_icon").addClass("glyphicon-chevron-right");
+            $("#title_icon").removeClass("fa-angle-down");
+            $("#title_icon").addClass("fa-angle-right");
             $("#dropmenu_base").addClass("hidden");
         }
 
     }
-</script>
-<script type="text/javascript">
-    $(document).ready(function(){
-        $("#slider").slider({
-            range: true,
-            values : [ 50, 1124 ],//Значение, которое будет выставлено слайдеру при загрузке
-            min : 50,//Минимально возможное значение на ползунке
-            max : 1124,//Максимально возможное значение на ползунке
-            step : 1,//Шаг, с которым будет двигаться ползунок
-            create: function( event, ui ) {
-                val0 = $( "#slider" ).slider("values", 0 );//При создании слайдера, получаем его значение в перемен. val
-                $( "#contentSlider0" ).html( val0 );//Заполняем этим значением элемент с id contentSlider
-                val1 = $( "#slider" ).slider("values", 1 );//При создании слайдера, получаем его значение в перемен. val
-                $( "#contentSlider1" ).html( val1 );//Заполняем этим значением элемент с id contentSlider
-
-            },
-            slide: function( event, ui ) {
-                $( "#contentSlider0" ).html( ui.values[0] );//При изменении значения ползунка заполняем элемент с id contentSlider
-                $( "#contentSlider1" ).html( ui.values[1] );
-            }
-        });
-    });
 </script>
 </body>
 </html>
