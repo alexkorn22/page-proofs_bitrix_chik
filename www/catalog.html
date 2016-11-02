@@ -30,7 +30,7 @@
                 <ul class="nav navbar-nav topmenu_ul">
                     <li><a href="#">Бренды</a></li> <!-- class="active_top_menu" -->
                     <li class="item dropdown">
-                        <a href="catalog.html">Женщины</a>
+                        <a href="#">Женщины</a>
                         <!-- Выпадающее меню -->
                         <div class="nav_lvl_1">
                             <div class="container nav_lvl_1_container">
@@ -139,6 +139,8 @@
             </div>
         </div>
     </div>
+
+
 </section>
 
 <section id="main_second_menu">
@@ -221,81 +223,180 @@
 
 <section id="content">
     <div class="container">
-        <!-- Слайдер -->
-        <div id="myCarousel" class="carousel slide" data-interval="5000" data-pause="hover" data-ride="carousel">
-            <!-- Индикаторы для карусели -->
-            <ol class="carousel-indicators">
-                <!-- Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" -->
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <!-- Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" -->
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <!-- Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" -->
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <!-- Слайды карусели -->
-            <div class="carousel-inner">
-                <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
-                <div class="active item">
-                    <img src="img/slider/slide-1.jpg" alt="">
+        <div class="row catalog">
+            <!-- ФИЛЬТРА -->
+            <div class="col-md-3">
+                <div class="filter">
+                    <form action="" method="get">
+                        <div class="row">
+                            <!-- ТИП ЧАШКИ -->
+                            <div class="col-md-12">
+                                <a href="#" class="filter_title">
+                                    <span>Тип чашки</span>
+                                    <i class="glyphicon glyphicon-chevron-right"></i>
+                                </a>
+                            </div>
+                            <div class="col-md-12 filter_value">
+                                <div class="checkbox">
+                                    <label><input type="checkbox">Формированная чашка</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox">Пуш-ап</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox">Аплиф (приподнимающий)</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" checked = "checked" >Поддерживающий</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox">Винг-кап (уплотненный</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox">Жэлли пэд</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox">Магический пуш-ап</label>
+                                </div>
+                            </div>
+                            <!-- РАЗМЕР -->
+                            <div class="col-md-12">
+                                <a href="#" class="filter_title">
+                                    <span>Размер</span>
+                                    <i class="glyphicon glyphicon-chevron-right"></i>
+                                </a>
+                            </div>
+                            <div class="col-md-12 filter_value">
+                                <div class="checkbox">
+                                    <label><input type="checkbox">65O</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox">70A</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox">70B</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" checked = "checked" >70C</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox">75A</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox">75B</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox">75C</label>
+                                </div>
+                            </div>
+                            <!-- ЦВЕТ -->
+                            <div class="col-md-12">
+                                <a href="#" class="filter_title">
+                                    <span>Цвет</span>
+                                    <i class="glyphicon glyphicon-chevron-right"></i>
+                                </a>
+                            </div>
+                            <div class="col-md-12 filter_value">
+                                <label>
+                                    <span class="color">
+                                        <span class="color_icon"></span>
+                                    </span>
+                                </label>
+                                <input style="display: none;" type="checkbox">
+                            </div>
+                            <!-- МАТЕРИАЛ -->
+                            <div class="col-md-12">
+                                <a href="#" class="filter_title">
+                                    <span>Материал</span>
+                                    <i class="glyphicon glyphicon-chevron-right"></i>
+                                </a>
+                            </div>
+                            <div class="col-md-12 filter_value">
+                                <div class="checkbox">
+                                    <label><input type="checkbox">Хлопок</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox">Модал</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox">Полиамид</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" checked = "checked" >Полиэстр</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox">Вискоза</label>
+                                </div>
+                            </div>
+                            <!-- ПРОИЗВОДИТЕЛЬ -->
+                            <div class="col-md-12">
+                                <a href="#" class="filter_title">
+                                    <span>Производитель</span>
+                                    <i class="glyphicon glyphicon-chevron-right"></i>
+                                </a>
+                            </div>
+                            <div class="col-md-12 filter_value">
+                                <div class="checkbox">
+                                    <label><input type="checkbox">Atlantic</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox">Cornette</label>
+                                </div>
+                            </div>
+                            <!-- КОЛЛЕКЦИЯ -->
+                            <div class="col-md-12">
+                                <a href="#" class="filter_title">
+                                    <span>Коллекция</span>
+                                    <i class="glyphicon glyphicon-chevron-right"></i>
+                                </a>
+                            </div>
+                            <div class="col-md-12 filter_value">
+                                <div class="checkbox">
+                                    <label><input type="checkbox">Весна-лето</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox">Осень-зима</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox">База</label>
+                                </div>
+                            </div>
+                            <!-- НОВИНКИ/РАСПРОДАЖИ -->
+                            <div class="col-md-12">
+                                <a href="#" class="filter_title">
+                                    <span>Коллекция</span>
+                                    <i class="glyphicon glyphicon-chevron-right"></i>
+                                </a>
+                            </div>
+                            <div class="col-md-12 filter_value">
+                            </div>
+                            <!-- ЦЕНА (нужен скрипт слайдер) -->
+                            <div class="col-md-12">
+                                <a href="#" class="filter_title">
+                                    <span>Цена</span>
+                                    <i class="glyphicon glyphicon-chevron-right"></i>
+                                </a>
+                            </div>
+                            <div class="col-md-12 filter_value">
+                                <span>
+                                    Диапазон: <span id="contentSlider0"></span> грн - <span id="contentSlider1"></span> грн
+                                </span>
+                                <div id="slider"></div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <!-- Слайд №2 -->
-                <div class="item">
-                    <img src="img/slider/slide-2.jpg" alt="">
+            </div>
+            <div class="col-md-9">
+                <div class="list_products">
+                    <div class="row">
+                        <div class="col-md-4">
+
+                        </div>
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4"></div>
+                    </div>
                 </div>
-                <!-- Слайд №3 -->
-                <div class="item">
-                    <img src="img/slider/slide-3.jpg" alt="">
-                </div>
-            </div>
-            <!-- Навигация для карусели -->
-            <!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
-            <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
-            <a class="carousel-control right" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
-        </div>
-        <!-- Преимущества -->
-        <div class="row goods_main">
-            <div class="col-md-4">
-                <img class="img-responsive" src="img/goods/2.jpg" alt="">
-            </div>
-            <div class="col-md-4">
-                <img class="img-responsive" src="img/goods/2.jpg" alt="">
-            </div>
-            <div class="col-md-4">
-                <img class="img-responsive" src="img/goods/3.jpg" alt="">
-            </div>
-        </div>
-        <!-- Текст о магазине -->
-        <div class="row main_text">
-            <div class="col-md-12">
-                <p>
-                    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более
-                    менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных
-                    выступлений в домашних условиях. При создании генератора мы использовали небезызвестный
-                    универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений
-                    в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового
-                    восприятия.
-                    <br><br>
-                    По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у
-                    некторых клиентов недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба
-                    на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских
-                    времен.
-                    <br><br>
-                    Рвным образом реализация намеченных плановых заданий в значительной степени обуславливает создание
-                    системы обучения кадров, соответствует насущным потребностям. Таким образом постоянное
-                    информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный
-                    эксперимент проверки дальнейших направлений развития. Идейные соображения высшего порядка, а также
-                    укрепление и развитие структуры позволяет выполнять важные задания по разработке систем массового
-                    участия. Повседневная практика показывает, что реализация намеченных плановых заданий требуют
-                    определения и уточнения системы обучения кадров, соответствует насущным потребностям. Товарищи!
-                    постоянный количественный рост и сфера нашей активности способствует подготовки и реализации систем
-                    массового участия. С другой стороны реализация намеченных плановых заданий влечет за собой процесс
-                    внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.
-                </p>
             </div>
         </div>
     </div>
@@ -437,6 +538,28 @@
         }
 
     }
+</script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#slider").slider({
+            range: true,
+            values : [ 50, 1124 ],//Значение, которое будет выставлено слайдеру при загрузке
+            min : 50,//Минимально возможное значение на ползунке
+            max : 1124,//Максимально возможное значение на ползунке
+            step : 1,//Шаг, с которым будет двигаться ползунок
+            create: function( event, ui ) {
+                val0 = $( "#slider" ).slider("values", 0 );//При создании слайдера, получаем его значение в перемен. val
+                $( "#contentSlider0" ).html( val0 );//Заполняем этим значением элемент с id contentSlider
+                val1 = $( "#slider" ).slider("values", 1 );//При создании слайдера, получаем его значение в перемен. val
+                $( "#contentSlider1" ).html( val1 );//Заполняем этим значением элемент с id contentSlider
+
+            },
+            slide: function( event, ui ) {
+                $( "#contentSlider0" ).html( ui.values[0] );//При изменении значения ползунка заполняем элемент с id contentSlider
+                $( "#contentSlider1" ).html( ui.values[1] );
+            }
+        });
+    });
 </script>
 </body>
 </html>
