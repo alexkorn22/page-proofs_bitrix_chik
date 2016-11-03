@@ -15,6 +15,7 @@ $SegoeUIRegular: "SegoeUIRegular", Arial, sans-serif;
 $SegoeUIBold: "SegoeUIBold", Arial, sans-serif;
 $SegoeUILight: "SegoeUILight", Arial, sans-serif;
 $SegoeUISemiBold: "SegoeUISemiBold", Arial, sans-serif;
+$SegoeUIItalic: "SegoeUIItalic", Arial, sans-serif;
 
 //********* HEADER ***********************
 #main_top_menu {
@@ -348,6 +349,80 @@ $SegoeUISemiBold: "SegoeUISemiBold", Arial, sans-serif;
   .catalog {
     padding-top: 30px;
     padding-bottom: 65px;
+    a {
+      color: $color_3;
+      &:hover {
+        color: $color_4;
+      }
+      &:hover,&:focus > .fast_view {
+        color: $color_3;
+        text-decoration: none;
+      }
+    }
+    .path {
+      font-size: 14px;
+      i {
+        padding: 0px 2px;
+      }
+    }
+    .category {
+      font-size: 24px;
+      .name_category {
+        content: " ";
+      }
+      .count {
+        font-family: $SegoeUILight;
+      }
+    }
+    .show_all {
+      font-family: $SegoeUIItalic;
+      text-decoration: underline;
+    }
+    .top_line {
+      hr {
+        margin-bottom: 10px;
+      }
+    }
+    .bottom_line {
+      hr {
+        margin-top: 10px;
+      }
+    }
+    .list_products {
+      .row {
+        padding-top: 10px;
+      }
+      .product {
+        background-color: white;
+        .img_catalog {
+          height: 290px;
+          display:flex;
+          justify-content:center;
+          align-items:center;
+        }
+        .fast_view {
+          display: none;
+          padding-top: 15px;
+          padding-bottom: 20px;
+          background-color: $color_1;
+        }
+
+        &:hover {
+          position: absolute;
+          top:0;
+          left:0;
+          z-index: 1;
+          margin: 0px 4px;
+          box-shadow: 0px 3px 10px 5px #cdcdcd;
+          .img_catalog {
+            height: 300px;
+          }
+          .fast_view {
+            display: block;
+          }
+        }
+      }
+    }
   }
 }
 
