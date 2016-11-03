@@ -87,13 +87,13 @@
                     <li class="item">
                         <a href="#" class="liked">
                             <span class="icon-heart_1"></span>
-                            <span class="counter">7</span>
+                            <span class="counter one_digit">7</span>
                         </a>
                     </li>
                     <li class="item_cart">
                         <a href="#" class="cart">
                             <span class="icon-cart_1"></span>
-                            <span class="counter">25</span>
+                            <span class="counter two_digit">25</span>
                         </a>
                     </li>
                     <li class="item">
@@ -423,21 +423,8 @@
 <script src="js/bootstrap.min.js"></script>
 <!--Подключаем библиотеку Jquery UI-->
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-<script>
-    /*Выпадающее меню "БАЗА"*/
-    OnClickBaseTopMenu = function () {
-        if ($("#title_icon").hasClass("fa-angle-right")) {
-            $("#title_icon").removeClass("fa-angle-right");
-            $("#title_icon").addClass("fa-angle-down");
-            $("#dropmenu_base").removeClass("hidden");
-        }
-        else {
-            $("#title_icon").removeClass("fa-angle-down");
-            $("#title_icon").addClass("fa-angle-right");
-            $("#dropmenu_base").addClass("hidden");
-        }
+<!--Подключаем собственные скрипты -->
+<script src="js/script.js"></script>
 
-    }
-</script>
 </body>
 </html>

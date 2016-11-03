@@ -87,13 +87,13 @@
                     <li class="item">
                         <a href="#" class="liked">
                             <span class="icon-heart_1"></span>
-                            <span class="counter">7</span>
+                            <span class="counter one_digit">7</span>
                         </a>
                     </li>
                     <li class="item_cart">
                         <a href="#" class="cart">
                             <span class="icon-cart_1"></span>
-                            <span class="counter">25</span>
+                            <span class="counter two_digit">25</span>
                         </a>
                     </li>
                     <li class="item">
@@ -113,7 +113,7 @@
     <div class="container">
         <div class="row header_logo">
             <div class="col-md-3">
-                <a href="index.html" class="logo">
+                <a href="#" class="logo">
                     <img src="img/logo.png" alt="Логотип">
                 </a>
             </div>
@@ -390,7 +390,9 @@
                 <div class="list_products">
                     <div class="row">
                         <div class="col-md-4">
+                            <div class="product">
 
+                            </div>
                         </div>
                         <div class="col-md-4"></div>
                         <div class="col-md-4"></div>
@@ -522,42 +524,8 @@
 <script src="js/bootstrap.min.js"></script>
 <!--Подключаем библиотеку Jquery UI-->
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-<script>
-    /*Выпадающее меню "БАЗА"*/
-    OnClickBaseTopMenu = function () {
-        if ($("#title_icon").hasClass("fa-angle-right")) {
-            $("#title_icon").removeClass("fa-angle-right");
-            $("#title_icon").addClass("fa-angle-down");
-            $("#dropmenu_base").removeClass("hidden");
-        }
-        else {
-            $("#title_icon").removeClass("fa-angle-down");
-            $("#title_icon").addClass("fa-angle-right");
-            $("#dropmenu_base").addClass("hidden");
-        }
+<!--Подключаем собственные скрипты -->
+<script src="js/script.js"></script>
 
-    }
-</script>
-<script type="text/javascript">
-    $(document).ready(function(){
-        $("#slider").slider({
-            range: true,
-            values : [ 50, 1124 ],//Значение, которое будет выставлено слайдеру при загрузке
-            min : 50,//Минимально возможное значение на ползунке
-            max : 1124,//Максимально возможное значение на ползунке
-            step : 1,//Шаг, с которым будет двигаться ползунок
-            create: function( event, ui ) {
-                val0 = $( "#slider" ).slider("values", 0 );//При создании слайдера, получаем его значение в перемен. val
-                $( "#contentSlider0" ).html( val0 );//Заполняем этим значением элемент с id contentSlider
-                val1 = $( "#slider" ).slider("values", 1 );//При создании слайдера, получаем его значение в перемен. val
-                $( "#contentSlider1" ).html( val1 );//Заполняем этим значением элемент с id contentSlider
-            },
-            slide: function( event, ui ) {
-                $( "#contentSlider0" ).html( ui.values[0] );//При изменении значения ползунка заполняем элемент с id contentSlider
-                $( "#contentSlider1" ).html( ui.values[1] );
-            }
-        });
-    });
-</script>
 </body>
 </html>

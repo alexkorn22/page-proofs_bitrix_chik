@@ -98,13 +98,21 @@ $SegoeUISemiBold: "SegoeUISemiBold", Arial, sans-serif;
       font-family: $SegoeUIRegular;
       margin-right: 0px;
       .counter {
+        width: 18px;
+        height: 18px;
+        line-height: 1;
         color: #3d3d3d;
         background-color: $color_4;
         border-radius: 0.4em;
-        padding: 0em 0.375em;
         position: absolute;
         right: -0.2em;
         top: 0.39em;
+        &.one_digit {
+          padding: 0.13em 0.4em;
+        }
+        &.two_digit {
+          padding: 0.13em 0.1em;
+        }
       }
       .icon-heart_1 {
         font-size: 26px;
@@ -142,10 +150,13 @@ $SegoeUISemiBold: "SegoeUISemiBold", Arial, sans-serif;
       color: white;
       font-size: 20px;
       padding: 0px 6px 2px;
-      margin-top: 3px;
+      margin-top: 1%;
       position: absolute;
-
-      left: 58%;
+      left: 57.6%;
+    }
+    .btn{
+      width: 33px;
+      height: 33px;
     }
     .field_search {
       height: 38px;
@@ -188,6 +199,8 @@ $SegoeUISemiBold: "SegoeUISemiBold", Arial, sans-serif;
       }
     }
     .icon {
+      width: 33px;
+      height: 33px;
       background-color: $color_4;
       border-radius: 10px;
       color: white;
@@ -212,11 +225,20 @@ $SegoeUISemiBold: "SegoeUISemiBold", Arial, sans-serif;
       li > a {
         padding-left: 25px;
         padding-right: 25px;
+        color: $color_2;
+        &:hover {
+          color: #434343;
+        }
+      }
+      .active>a {
+        background-color: transparent;
+        font-weight: 600;
+        &:hover {
+          color: $color_2;
+        }
       }
     }
-    a:hover {
-      color: #434343;
-    }
+
   }
 }
 
@@ -281,7 +303,11 @@ $SegoeUISemiBold: "SegoeUISemiBold", Arial, sans-serif;
     .social {
       font-size: 22px;
       a {
+        color: $color_2;
         padding: 0px 9px;
+        &:hover {
+          color: $color_4;
+        }
       }
     }
   }
@@ -290,7 +316,7 @@ $SegoeUISemiBold: "SegoeUISemiBold", Arial, sans-serif;
 //********* CONTENT ***********************
 #content {
   font-family: $SegoeUIRegular;
-  font-size: 14px;
+  font-size: 16px;
   .container{
     margin-top: 20px;
   }
@@ -315,6 +341,7 @@ $SegoeUISemiBold: "SegoeUISemiBold", Arial, sans-serif;
     margin-top: 20px;
   }
   .main_text {
+    line-height: 24px;
     padding-bottom: 30px;
     padding-top: 20px;
   }
