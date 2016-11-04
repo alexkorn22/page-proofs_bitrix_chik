@@ -423,33 +423,98 @@ $SegoeUIItalic: "SegoeUIItalic", Arial, sans-serif;
       }
     }
     .list_products {
+      margin-bottom: 110px;
+      margin-top: 10px;
+      a:focus {
+        text-decoration: none;
+      }
+      .hover_active {
+        .sale_new {
+          z-index: 1;
+        }
+        .liked {
+          z-index: 1;
+        }
+      }
       .row {
-        padding-top: 10px;
+        margin-bottom: 40px;
+      }
+      .sale_new {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        transform: rotate(-45deg);
+        text-transform: uppercase;
+        font-size: 24px;
+        user-select: none;
+        .sale {
+          color: $color_5;
+        }
+        .new {
+          color: $color_4;
+        }
+      }
+      .liked {
+        position: absolute;
+        top: 15px;
+        right: 30px;
+        font-size: 24px;
       }
       .product {
         background-color: white;
+        color: $color_3;
         .img_catalog {
           height: 290px;
           display:flex;
           justify-content:center;
           align-items:center;
         }
+        .price {
+          padding: 10px 0px;
+          font-size: 20px;
+          .without_discount {
+            text-decoration: line-through;
+          }
+          .with_discount {
+            margin-left: 20px;
+            color: $color_5;
+          }
+        }
+        .name_product {
+          font-size: 16px;
+          .brand {
+            font-family:$SegoeUIBold;
+          }
+          a:focus {
+            text-decoration: none;
+          }
+        }
         .fast_view {
           display: none;
           padding-top: 15px;
           padding-bottom: 20px;
           background-color: $color_1;
+          color: $color_3;
+          &:hover {
+            background-color: $color_3;
+            color: $color_1;
+          }
         }
-
         &:hover {
           position: absolute;
-          top:0;
+          top:-10px;
           left:0;
           z-index: 1;
-          margin: 0px 4px;
+          margin: 0px 1px;
           box-shadow: 0px 3px 10px 5px #cdcdcd;
           .img_catalog {
             height: 300px;
+          }
+          .price {
+            padding: 10px 14px;
+          }
+          .name_product {
+            padding: 0px 14px 10px;
           }
           .fast_view {
             display: block;
