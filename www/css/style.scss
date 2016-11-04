@@ -29,6 +29,7 @@ $SegoeUIItalic: "SegoeUIItalic", Arial, sans-serif;
     .topmenu_ul {
       font-size: 20px;
       text-transform: uppercase;
+      margin-left: -25px;
       li {
         a {
           color: $color_1;
@@ -39,17 +40,22 @@ $SegoeUIItalic: "SegoeUIItalic", Arial, sans-serif;
           color: $color_5;
         }
         &:hover {
-          background-color: $color_hover;
+          a.item_main {
+            color: $color_4;
+          }
           .nav_lvl_1 {
             position: fixed;
             display: block;
             left: 0px;
-            width: 100vw;
+            width: 100%;
           }
+        }
+        a.item_main {
+          padding: 11px 25px;
         }
       }
       .active_top_menu {
-        background-color: $color_hover;
+        color: $color_4;
       }
       .nav_lvl_1 {
         position: absolute;
@@ -87,6 +93,9 @@ $SegoeUIItalic: "SegoeUIItalic", Arial, sans-serif;
           .title {
             font-size: 24px;
             text-transform: uppercase;
+            &:hover,&:focus {
+              text-decoration: none;
+            }
             .title_icon {
               font-size: 24px;
             }
@@ -150,7 +159,7 @@ $SegoeUIItalic: "SegoeUIItalic", Arial, sans-serif;
       border-radius: 10px;
       color: white;
       font-size: 20px;
-      padding: 0px 6px 2px;
+      padding: 3px 5px 0px 3px;
       margin-top: 1%;
       position: absolute;
       left: 57.6%;
@@ -206,7 +215,7 @@ $SegoeUIItalic: "SegoeUIItalic", Arial, sans-serif;
       border-radius: 10px;
       color: white;
       font-size: 20px;
-      padding: 0px 6px 2px;
+      padding: 2px 4px 2px 3px;
       margin-right: 2px;
       margin-top: 2px;
       margin-bottom: 2px;
@@ -233,10 +242,7 @@ $SegoeUIItalic: "SegoeUIItalic", Arial, sans-serif;
       }
       .active>a {
         background-color: transparent;
-        font-weight: 600;
-        &:hover {
-          color: $color_2;
-        }
+
       }
     }
 
@@ -256,15 +262,43 @@ $SegoeUIItalic: "SegoeUIItalic", Arial, sans-serif;
       }
       .text {
         line-height: 0.5em;
-        padding-right: 1px;
+        padding-left: 0px;
         padding-top: 2px;
         font-size: 15px;
       }
+    }
+    .vert_line {
+      width: 100%;
     }
     .delivery, .exchange, .return {
       .adv_img {
         padding-top: 3px;
         font-size: 20px;
+        padding-left: 0px;
+      }
+    }
+    .delivery {
+      .text {
+        padding-right: 20px;
+      }
+      .adv_img {
+        padding-right: 30px;
+      }
+    }
+    .exchange {
+      .text {
+        padding-right: 16px;
+      }
+      .adv_img {
+        padding-right: 25px;
+      }
+    }
+    .return {
+      .text {
+        padding-right: 11px;
+      }
+      .adv_img {
+        padding-right: 10px;
       }
     }
   }
