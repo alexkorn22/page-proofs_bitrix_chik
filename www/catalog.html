@@ -234,162 +234,252 @@
         <div class="row catalog">
             <!-- ФИЛЬТРА -->
             <div class="col-md-3">
-                <div class="filter">
-                    <form action="" method="get">
+                <div class="filters">
+                    <form action="" method="post">
                         <div class="row">
                             <!-- ТИП ЧАШКИ -->
-                            <div class="col-md-12">
-                                <a href="#" class="filter_title">
-                                    <span>Тип чашки</span>
-                                    <i class="glyphicon glyphicon-chevron-right"></i>
-                                </a>
+                            <div class="filter">
+                                <div class="col-md-12 filter_title">
+                                    <a href="javascript:void(0)" class="" onclick="OnClickFilterTitle(this)">
+                                        <span>Тип чашки</span>
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
+                                </div>
+                                <div class="col-md-12 filter_value">
+                                <div class="div_checkbox">
+                                    <input type="checkbox" class="checkbox" id="value_1_1">
+                                    <label for="value_1_1">Формированная чашка</label>
+                                </div>
+                                <div class="div_checkbox">
+                                    <input type="checkbox" class="checkbox" id="value_1_2">
+                                    <label for="value_1_2">Пуш-ап</label>
+                                </div>
+                                <div class="div_checkbox">
+                                    <input type="checkbox" class="checkbox" id="value_1_3">
+                                    <label for="value_1_3">Аплиф (приподнимающий)</label>
+                                </div>
+                                <div class="div_checkbox">
+                                    <input type="checkbox" class="checkbox" id="value_1_4">
+                                    <label for="value_1_4">Поддерживающий</label>
+                                </div>
+                                <div class="div_checkbox">
+                                    <input type="checkbox" class="checkbox" id="value_1_5">
+                                    <label for="value_1_5">Винг-кап (уплотненный)</label>
+                                </div>
+                                <div class="div_checkbox">
+                                    <input type="checkbox" class="checkbox" id="value_1_6">
+                                    <label for="value_1_6">Жэлли пэд</label>
+                                </div>
+                                <div class="div_checkbox">
+                                    <input type="checkbox" class="checkbox" id="value_1_7">
+                                    <label for="value_1_7">Магический пуш-ап</label>
+                                </div>
                             </div>
-                            <div class="col-md-12 filter_value">
-                                <div class="checkbox">
-                                    <label><input type="checkbox">Формированная чашка</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox">Пуш-ап</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox">Аплиф (приподнимающий)</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox" checked = "checked" >Поддерживающий</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox">Винг-кап (уплотненный</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox">Жэлли пэд</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox">Магический пуш-ап</label>
-                                </div>
                             </div>
                             <!-- РАЗМЕР -->
-                            <div class="col-md-12">
-                                <a href="#" class="filter_title">
-                                    <span>Размер</span>
-                                    <i class="fa fa-angle-right"></i>
-                                </a>
-                            </div>
-                            <div class="col-md-12 filter_value">
-                                <div class="checkbox">
-                                    <label><input type="checkbox">65O</label>
+                            <div class="filter">
+                                <div class="col-md-12 filter_title">
+                                    <a href="javascript:void(0)" class="" onclick="OnClickFilterTitle(this)">
+                                        <span>Размер</span>
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
                                 </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox">70A</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox">70B</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox" checked = "checked" >70C</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox">75A</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox">75B</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox">75C</label>
+                                <div class="col-md-12 filter_value">
+                                    <div class="div_checkbox">
+                                        <input type="checkbox" class="checkbox" id="value_2_1">
+                                        <label for="value_2_1">65O</label>
+                                    </div>
+                                    <div class="div_checkbox">
+                                        <input type="checkbox" class="checkbox" id="value_2_2">
+                                        <label for="value_2_2">70A</label>
+                                    </div>
+                                    <div class="div_checkbox">
+                                        <input type="checkbox" class="checkbox" id="value_2_3">
+                                        <label for="value_2_3">70B</label>
+                                    </div>
+                                    <div class="div_checkbox">
+                                        <input type="checkbox" class="checkbox" id="value_2_4">
+                                        <label for="value_2_4">70C</label>
+                                    </div>
+                                    <div class="div_checkbox">
+                                        <input type="checkbox" class="checkbox" id="value_2_5">
+                                        <label for="value_2_5">75A</label>
+                                    </div>
+                                    <div class="div_checkbox">
+                                        <input type="checkbox" class="checkbox" id="value_2_6">
+                                        <label for="value_2_6">75B</label>
+                                    </div>
+                                    <div class="div_checkbox">
+                                        <input type="checkbox" class="checkbox" id="value_2_7">
+                                        <label for="value_2_7">75C</label>
+                                    </div>
                                 </div>
                             </div>
                             <!-- ЦВЕТ -->
-                            <div class="col-md-12">
-                                <a href="#" class="filter_title">
-                                    <span>Цвет</span>
-                                    <i class="fa fa-angle-right"></i>
-                                </a>
-                            </div>
-                            <div class="col-md-12 filter_value">
-                                <label>
-                                    <span class="color">
-                                        <span class="color_icon"></span>
-                                    </span>
-                                </label>
-                                <input style="display: none;" type="checkbox">
+                            <div class="filter">
+                                <div class="col-md-12 filter_title">
+                                    <a href="javascript:void(0)" class="" onclick="OnClickFilterTitle(this)">
+                                        <span>Цвет</span>
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
+                                </div>
+                                <div class="col-md-12 filter_value">
+                                    <div class="div_checkbox_img">
+                                        <input type="checkbox" class="checkbox checkbox_img" id="value_3_1">
+                                        <label for="value_3_1" style="background-image: url('img/colors/1.jpg')"></label>
+                                        <input type="checkbox" class="checkbox checkbox_img" id="value_3_2">
+                                        <label for="value_3_2" style="background-image: url('img/colors/2.jpg')"></label>
+                                        <input type="checkbox" class="checkbox checkbox_img" id="value_3_3">
+                                        <label for="value_3_3" style="background-image: url('img/colors/3.jpg')"></label>
+                                        <input type="checkbox" class="checkbox checkbox_img" id="value_3_4">
+                                        <label for="value_3_4" style="background-image: url('img/colors/4.jpg')"></label>
+                                        <input type="checkbox" class="checkbox checkbox_img" id="value_3_5">
+                                        <label for="value_3_5" style="background-image: url('img/colors/5.jpg')"></label>
+                                    </div>
+                                    <div class="div_checkbox_img">
+                                        <input type="checkbox" class="checkbox checkbox_img" id="value_3_6">
+                                        <label for="value_3_6" style="background-image: url('img/colors/1.jpg')"></label>
+                                        <input type="checkbox" class="checkbox checkbox_img" id="value_3_7">
+                                        <label for="value_3_7" style="background-image: url('img/colors/2.jpg')"></label>
+                                        <input type="checkbox" class="checkbox checkbox_img" id="value_3_8">
+                                        <label for="value_3_8" style="background-image: url('img/colors/3.jpg')"></label>
+                                        <input type="checkbox" class="checkbox checkbox_img" id="value_3_9">
+                                        <label for="value_3_9" style="background-image: url('img/colors/4.jpg')"></label>
+                                        <input type="checkbox" class="checkbox checkbox_img" id="value_3_10">
+                                        <label for="value_3_10" style="background-image: url('img/colors/5.jpg')"></label>
+                                    </div>
+                                    <div class="div_checkbox_img">
+                                        <input type="checkbox" class="checkbox checkbox_img" id="value_3_11">
+                                        <label for="value_3_11" style="background-image: url('img/colors/1.jpg')"></label>
+                                        <input type="checkbox" class="checkbox checkbox_img" id="value_3_12">
+                                        <label for="value_3_12" style="background-image: url('img/colors/2.jpg')"></label>
+                                        <input type="checkbox" class="checkbox checkbox_img" id="value_3_13">
+                                        <label for="value_3_13" style="background-image: url('img/colors/3.jpg')"></label>
+                                        <input type="checkbox" class="checkbox checkbox_img" id="value_3_14">
+                                        <label for="value_3_14" style="background-image: url('img/colors/4.jpg')"></label>
+                                        <input type="checkbox" class="checkbox checkbox_img" id="value_3_15">
+                                        <label for="value_3_15" style="background-image: url('img/colors/5.jpg')"></label>
+                                    </div>
+                                    <div class="div_checkbox_img">
+                                        <input type="checkbox" class="checkbox checkbox_img" id="value_3_16">
+                                        <label for="value_3_16" style="background-image: url('img/colors/1.jpg')"></label>
+                                        <input type="checkbox" class="checkbox checkbox_img" id="value_3_17">
+                                        <label for="value_3_17" style="background-image: url('img/colors/2.jpg')"></label>
+                                        <input type="checkbox" class="checkbox checkbox_img" id="value_3_18">
+                                        <label for="value_3_18" style="background-image: url('img/colors/3.jpg')"></label>
+                                    </div>
+                                </div>
                             </div>
                             <!-- МАТЕРИАЛ -->
-                            <div class="col-md-12">
-                                <a href="#" class="filter_title">
-                                    <span>Материал</span>
-                                    <i class="fa fa-angle-right"></i>
-                                </a>
-                            </div>
-                            <div class="col-md-12 filter_value">
-                                <div class="checkbox">
-                                    <label><input type="checkbox">Хлопок</label>
+                            <div class="filter">
+                                <div class="col-md-12 filter_title">
+                                    <a href="javascript:void(0)" class="" onclick="OnClickFilterTitle(this)">
+                                        <span>Материал</span>
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
                                 </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox">Модал</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox">Полиамид</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox" checked = "checked" >Полиэстр</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox">Вискоза</label>
+                                <div class="col-md-12 filter_value">
+                                    <div class="div_checkbox">
+                                        <input type="checkbox" class="checkbox" id="value_4_1">
+                                        <label for="value_4_1">Хлопок</label>
+                                    </div>
+                                    <div class="div_checkbox">
+                                        <input type="checkbox" class="checkbox" id="value_4_2">
+                                        <label for="value_4_2">Модал</label>
+                                    </div>
+                                    <div class="div_checkbox">
+                                        <input type="checkbox" class="checkbox" id="value_4_3">
+                                        <label for="value_4_3">Полиамид</label>
+                                    </div>
+                                    <div class="div_checkbox">
+                                        <input type="checkbox" class="checkbox" id="value_4_4">
+                                        <label for="value_4_4">Поддерживающий</label>
+                                    </div>
+                                    <div class="div_checkbox">
+                                        <input type="checkbox" class="checkbox" id="value_4_5">
+                                        <label for="value_4_5">Полиэстр</label>
+                                    </div>
+                                    <div class="div_checkbox">
+                                        <input type="checkbox" class="checkbox" id="value_4_6">
+                                        <label for="value_4_6">Вискоза</label>
+                                    </div>
                                 </div>
                             </div>
                             <!-- ПРОИЗВОДИТЕЛЬ -->
-                            <div class="col-md-12">
-                                <a href="#" class="filter_title">
-                                    <span>Производитель</span>
-                                    <i class="fa fa-angle-right"></i>
-                                </a>
-                            </div>
-                            <div class="col-md-12 filter_value">
-                                <div class="checkbox">
-                                    <label><input type="checkbox">Atlantic</label>
+                            <div class="filter">
+                                <div class="col-md-12 filter_title">
+                                    <a href="javascript:void(0)" class="" onclick="OnClickFilterTitle(this)">
+                                        <span>Производитель</span>
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
                                 </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox">Cornette</label>
+                                <div class="col-md-12 filter_value">
+                                    <div class="div_checkbox">
+                                        <input type="checkbox" class="checkbox" id="value_5_1">
+                                        <label for="value_5_1">Atlantic</label>
+                                    </div>
+                                    <div class="div_checkbox">
+                                        <input type="checkbox" class="checkbox" id="value_5_3">
+                                        <label for="value_5_3">Cornette</label>
+                                    </div>
                                 </div>
                             </div>
                             <!-- КОЛЛЕКЦИЯ -->
-                            <div class="col-md-12">
-                                <a href="#" class="filter_title">
-                                    <span>Коллекция</span>
-                                    <i class="fa fa-angle-right"></i>
-                                </a>
-                            </div>
-                            <div class="col-md-12 filter_value">
-                                <div class="checkbox">
-                                    <label><input type="checkbox">Весна-лето</label>
+                            <div class="filter">
+                                <div class="col-md-12 filter_title">
+                                    <a href="javascript:void(0)" class="" onclick="OnClickFilterTitle(this)">
+                                        <span>Коллекция</span>
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
                                 </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox">Осень-зима</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox">База</label>
+                                <div class="col-md-12 filter_value">
+                                    <div class="div_checkbox">
+                                        <input type="checkbox" class="checkbox" id="value_6_1">
+                                        <label for="value_6_1">Весна-лето</label>
+                                    </div>
+                                    <div class="div_checkbox">
+                                        <input type="checkbox" class="checkbox" id="value_6_2">
+                                        <label for="value_6_2">Осень-зима</label>
+                                    </div>
+                                    <div class="div_checkbox">
+                                        <input type="checkbox" class="checkbox" id="value_6_3">
+                                        <label for="value_6_3">База</label>
+                                    </div>
                                 </div>
                             </div>
                             <!-- НОВИНКИ/РАСПРОДАЖИ -->
-                            <div class="col-md-12">
-                                <a href="#" class="filter_title">
-                                    <span>Коллекция</span>
-                                    <i class="fa fa-angle-right"></i>
-                                </a>
-                            </div>
-                            <div class="col-md-12 filter_value">
+                            <div class="filter">
+                                <div class="col-md-12 filter_title">
+                                    <a href="javascript:void(0)" class="" onclick="OnClickFilterTitle(this)">
+                                        <span>Новинка/Распродажи</span>
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
+                                </div>
+                                <div class="col-md-12 filter_value">
+                                    <div class="div_checkbox">
+                                        <input type="checkbox" class="checkbox" id="value_7_1">
+                                        <label for="value_7_1">Новинка</label>
+                                    </div>
+                                    <div class="div_checkbox">
+                                        <input type="checkbox" class="checkbox" id="value_7_2">
+                                        <label for="value_7_2">Распродажа</label>
+                                    </div>
+                                </div>
                             </div>
                             <!-- ЦЕНА (нужен скрипт слайдер) -->
-                            <div class="col-md-12">
-                                <a href="#" class="filter_title">
-                                    <span>Цена</span>
-                                    <i class="fa fa-angle-right"></i>
-                                </a>
-                            </div>
-                            <div class="col-md-12 filter_value">
-                                <span>
-                                    Диапазон: <span id="contentSlider0"></span> грн - <span id="contentSlider1"></span> грн
-                                </span>
-                                <div id="slider"></div>
+                            <div class="filter">
+                                <div class="col-md-12 filter_title">
+                                    <a href="javascript:void(0)" class="" onclick="OnClickFilterTitle(this)">
+                                        <span>Цена</span>
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
+                                </div>
+                                <div class="col-md-12 filter_value">
+                                    <span>
+                                        Диапазон: <span id="contentSlider0"></span> грн - <span id="contentSlider1"></span> грн
+                                    </span>
+                                    <div id="slider"></div>
+                                </div>
                             </div>
                         </div>
                     </form>
@@ -621,6 +711,23 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="row row_show_all show_all_bottom">
+                    <div class="col-md-12 text-center">
+                        <div class="top_line"><hr></div>
+                        <div class="number_pages">
+                            <a href="#"><i class="icon icon-left-arrow"></i></a>
+                            <span><a href="#">1</a></span>
+                            <span class="active"><a href="#">2</a></span>
+                            <span><a href="#">3</a></span>
+                            <span>...</span>
+                            <a href="#"><i class="icon icon-right-arrow"></i></a>
+                        </div>
+                        <div class="show_all text-right">
+                            <a href="#">Показать все</a>
+                        </div>
+                        <div class="bottom_line"><hr></div>
                     </div>
                 </div>
             </div>

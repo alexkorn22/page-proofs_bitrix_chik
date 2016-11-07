@@ -32,4 +32,26 @@ $(document).ready(function(){
             }
     });
 });
-
+$("div.container_product").hover(
+    function () {
+        $(this).addClass("hover_active");
+    },
+    function () {
+        $(this).removeClass("hover_active");
+    }
+);
+OnClickFilterTitle = function (val) {
+    cur_parent = $(val).parent(".filter_title").parent(".filter");
+    mark = $(val).children(".fa");
+    if (cur_parent.hasClass("hide_filter")) {
+        cur_parent.removeClass("hide_filter");
+        mark.removeClass("fa-angle-right");
+        mark.addClass("fa-angle-down");
+    }
+    else {
+        cur_parent.addClass("hide_filter");
+        mark.removeClass("fa-angle-down");
+        mark.addClass("fa-angle-right");
+    }
+    console.log($(val));
+}

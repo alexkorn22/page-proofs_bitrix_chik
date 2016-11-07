@@ -390,9 +390,6 @@ $SegoeUIItalic: "SegoeUIItalic", Arial, sans-serif;
       color: $color_3;
       &:hover {
         color: $color_4;
-      }
-      &:hover,&:focus > .fast_view {
-        color: $color_3;
         text-decoration: none;
       }
     }
@@ -428,8 +425,9 @@ $SegoeUIItalic: "SegoeUIItalic", Arial, sans-serif;
     .list_products {
       margin-bottom: 110px;
       margin-top: 10px;
-      a:focus {
+      a:hover, a:focus {
         text-decoration: none;
+        color: $color_3;
       }
       .hover_active {
         .sale_new {
@@ -468,9 +466,9 @@ $SegoeUIItalic: "SegoeUIItalic", Arial, sans-serif;
         color: $color_3;
         .img_catalog {
           height: 290px;
-          display:flex;
-          justify-content:center;
-          align-items:center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
         .price {
           padding: 10px 0px;
@@ -486,7 +484,7 @@ $SegoeUIItalic: "SegoeUIItalic", Arial, sans-serif;
         .name_product {
           font-size: 16px;
           .brand {
-            font-family:$SegoeUIBold;
+            font-family: $SegoeUIBold;
           }
           a:focus {
             text-decoration: none;
@@ -505,8 +503,8 @@ $SegoeUIItalic: "SegoeUIItalic", Arial, sans-serif;
         }
         &:hover {
           position: absolute;
-          top:-10px;
-          left:0;
+          top: -10px;
+          left: 0;
           z-index: 1;
           margin: 0px 1px;
           box-shadow: 0px 3px 10px 5px #cdcdcd;
@@ -523,6 +521,111 @@ $SegoeUIItalic: "SegoeUIItalic", Arial, sans-serif;
             display: block;
           }
         }
+      }
+    }
+    .show_all_bottom {
+
+      .number_pages {
+        display: inline-block;
+        span {
+          padding: 3px 7px;
+        }
+        i {
+          font-size: 12px;
+          padding: 0px 15px;
+        }
+        .active {
+          text-decoration: underline;
+        }
+      }
+      .show_all {
+        display: inline-block;
+        float: right;
+      }
+    }
+    .filters {
+      a:focus {
+        text-decoration: none;
+      }
+      .filter.hide_filter{
+        .filter_value {
+          display: none;
+        }
+      }
+      .filter_title {
+        font-family: $SegoeUIBold;
+        text-transform: uppercase;
+        padding-bottom: 18px;
+      }
+      .filter_value {
+        padding-bottom: 30px;
+        #slider {
+          margin-top: 30px;
+          height: 5px;
+          width: 230px;
+          border: none;
+          background-color: #e1e1e1;
+          box-shadow: 0px 1px 1px 1px #b7b7b7 inset;
+          .ui-widget-header {
+            background-color: $color_4;
+            background-image: none;
+          }
+          .ui-slider-handle {
+            width: 25px;
+            height: 25px;
+            box-shadow: 0px 1px 1px 1px #b7b7b7 inset;
+            border-radius: 12px;
+            background-color: #f6f6f6;
+            background-image: none;
+            top: -0.5em;
+          }
+        }
+        label {
+          font-weight: normal;
+        }
+        .checkbox + label {
+          cursor: pointer;
+        }
+        .checkbox:not(checked) {
+          position: absolute;
+          opacity: 0;
+        }
+        .checkbox:not(checked) + label {
+          position: relative;
+          padding: 0 0 0 27px;
+          &:before {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 0;
+            width: 16px;
+            height: 16px;
+            border: 1px solid $color_3;
+          }
+        }
+        .checkbox:checked + label:before {
+          border:none;
+          background-image: url("../img/checkbox_checked.jpg");
+        }
+
+        .checkbox_img:not(checked) + label {
+          padding-left: 30px;
+          &:before {
+            width: 24px;
+            height:24px;
+            top: -11px;
+            border: 1px solid $color_3;
+            background-image : inherit;
+
+          }
+        }
+        .checkbox_img:checked + label:before {
+          box-shadow: 0px 2px 10px 1px $color_3;
+          background-image : inherit;
+        }
+      }
+      .div_checkbox_img {
+        margin-bottom: 10px;
       }
     }
   }
