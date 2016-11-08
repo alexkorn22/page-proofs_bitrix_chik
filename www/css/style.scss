@@ -29,7 +29,7 @@ $SegoeUIItalic: "SegoeUIItalic", Arial, sans-serif;
     .topmenu_ul {
       font-size: 20px;
       text-transform: uppercase;
-      margin-left: -25px;
+      margin-left: -22px;
       li {
         a {
           color: $color_1;
@@ -51,7 +51,7 @@ $SegoeUIItalic: "SegoeUIItalic", Arial, sans-serif;
           }
         }
         a.item_main {
-          padding: 11px 25px;
+          padding: 11px 22px;
         }
       }
       .active_top_menu {
@@ -180,6 +180,7 @@ $SegoeUIItalic: "SegoeUIItalic", Arial, sans-serif;
     padding-top: 8px;
     font-size: 16px;
     line-height: 1.2em;
+    color: $color_2;
     .font_bold {
       font-family: $SegoeUIBold;
     }
