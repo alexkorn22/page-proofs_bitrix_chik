@@ -110,3 +110,15 @@
 .icon-cancel:before {
     content: "\e90a";
 }
+.icon-down-arrow_thin:before {
+    content: "\e90b";
+}
+.icon-left-arrow_thin:before {
+    content: "\e90c";
+}
+.icon-right-arrow_thin:before {
+    content: "\e90d";
+}
+.icon-up-arrow_thin:before {
+    content: "\e90e";
+}

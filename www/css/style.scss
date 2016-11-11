@@ -361,18 +361,18 @@ $SegoeUIItalic: "SegoeUIItalic", Arial, sans-serif;
       bottom: 10px;
     }
     .carousel-control {
+      text-shadow: none;
       span {
         position: absolute;
         top: 50%;
         font-size: 40px;
         margin-top: -20px;
       }
-
-      .icon-left-arrow {
-        left: 0%;
+      .icon-left-arrow_thin {
+        left: 2px;
       }
-      .icon-right-arrow {
-        right: 0%;
+      .icon-right-arrow_thin {
+        right: 2px;
       }
     }
   }
