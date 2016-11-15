@@ -1,5 +1,9 @@
+html {
+  overflow-y: scroll;
+}
 #art_body {
   padding-top: 42px;
+  padding-right: 0 !important;
 }
 
 //********ПАЛИТРА***************
@@ -343,6 +347,10 @@ $SegoeUIItalic: "SegoeUIItalic", Arial, sans-serif;
         padding: 0px 9px;
         &:hover {
           color: $color_4;
+          text-decoration: none;
+        }
+        &:focus {
+          text-decoration: none;
         }
       }
     }
@@ -561,6 +569,7 @@ $SegoeUIItalic: "SegoeUIItalic", Arial, sans-serif;
       }
       .filter_value {
         padding-bottom: 30px;
+        font-size: 14px;
         #slider {
           margin-top: 30px;
           height: 5px;
@@ -580,6 +589,9 @@ $SegoeUIItalic: "SegoeUIItalic", Arial, sans-serif;
             background-color: #f6f6f6;
             background-image: none;
             top: -0.5em;
+            &:focus {
+              outline: none;
+            }
           }
         }
         label {
@@ -594,15 +606,15 @@ $SegoeUIItalic: "SegoeUIItalic", Arial, sans-serif;
         }
         .checkbox:not(checked) + label {
           position: relative;
-          padding: 0 0 0 27px;
+          padding: 1px 0 0 27px;
           &:before {
             content: '';
             position: absolute;
-            top: 3px;
+            top: 2px;
             left: 0;
             width: 16px;
             height: 16px;
-            border: 1px solid $color_3;
+            border: 1px solid $color_2;
           }
         }
         .checkbox:checked + label:before {
@@ -612,13 +624,13 @@ $SegoeUIItalic: "SegoeUIItalic", Arial, sans-serif;
 
         .checkbox_img:not(checked) + label {
           padding-left: 30px;
+          padding-top: 0px;
           &:before {
             width: 24px;
             height:24px;
             top: -11px;
-            border: 1px solid $color_3;
+            border: 1px solid $color_2;
             background-image : inherit;
-
           }
         }
         .checkbox_img:checked + label:before {
