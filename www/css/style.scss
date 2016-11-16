@@ -4,6 +4,11 @@ html {
 #art_body {
   padding-top: 42px;
   padding-right: 0 !important;
+  .btn {
+    &:focus {
+      outline: none;
+    }
+  }
 }
 
 //********ПАЛИТРА***************
@@ -12,6 +17,7 @@ $color_2: #8c8c8c;
 $color_3: #434343;
 $color_4: #b1e1e1;
 $color_5: #ff5757;
+$color_6: #c4e8e8;
 $color_hover: #555555;
 
 //********ШРИФТЫ**************************
@@ -226,6 +232,9 @@ $SegoeUIItalic: "SegoeUIItalic", Arial, sans-serif;
       margin-bottom: 2px;
     }
   }
+  .btn:hover {
+    background-color: $color_6;
+  }
 }
 
 #main_second_menu {
@@ -400,6 +409,11 @@ $SegoeUIItalic: "SegoeUIItalic", Arial, sans-serif;
       &:hover {
         color: $color_4;
         text-decoration: none;
+      }
+    }
+    .path, .filter_title, .row_show_all {
+      a:hover {
+        color: $color_2;
       }
     }
     .path {
@@ -919,6 +933,9 @@ $SegoeUIItalic: "SegoeUIItalic", Arial, sans-serif;
     font-family: $SegoeUIRegular;
     font-size: 16px;
     color: $color_3;
+    .modal-dialog {
+      margin-top: 50px;
+    }
     img {
       margin-top: 35px;
     }
@@ -950,6 +967,8 @@ $SegoeUIItalic: "SegoeUIItalic", Arial, sans-serif;
       font-size: 18px;
       color: #3e3e3e;
     }
-
+    .btn_requestcall:hover {
+      background-color: $color_6;
+    }
   }
 }
