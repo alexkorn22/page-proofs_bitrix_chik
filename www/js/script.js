@@ -1,18 +1,20 @@
 
 /*Выпадающее меню "БАЗА"*/
-OnClickBaseTopMenu = function () {
-        if ($("#title_icon").hasClass("fa-angle-right")) {
-            $("#title_icon").removeClass("fa-angle-right");
-            $("#title_icon").addClass("fa-angle-down");
-            $("#dropmenu_base").removeClass("hidden");
-        }
-        else {
-            $("#title_icon").removeClass("fa-angle-down");
-            $("#title_icon").addClass("fa-angle-right");
-            $("#dropmenu_base").addClass("hidden");
-        }
-
+OnClickBaseTopMenu = function (val) {
+    child = $(val).children(".fa");
+    dropmenu = $(val).parent(".base_top_menu").children(".dropmenu_base");
+    if (dropmenu.hasClass("hidden")) {
+        child.removeClass("fa-angle-right");
+        child.addClass("fa-angle-down");
+        dropmenu.removeClass("hidden");
     }
+    else {
+        child.removeClass("fa-angle-down");
+        child.addClass("fa-angle-right");
+        dropmenu.addClass("hidden");
+    }
+    }
+
 $(document).ready(function(){
     $("#slider").slider({
             range: true,
@@ -53,5 +55,4 @@ OnClickFilterTitle = function (val) {
         mark.removeClass("fa-angle-down");
         mark.addClass("fa-angle-right");
     }
-    console.log($(val));
 }
