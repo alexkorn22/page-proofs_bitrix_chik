@@ -460,7 +460,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- ЦЕНА (нужен скрипт слайдер) -->
+                            <!-- ЦЕНА -->
                             <div class="filter">
                                 <div class="col-md-12 filter_title">
                                     <a href="javascript:void(0)" class="" onclick="OnClickFilterTitle(this)">
@@ -533,7 +533,7 @@
                                             <span>Бюстгальтер женский для беременных и кормящих мягкая чашка</span>
                                         </a>
                                     </div>
-                                    <a href="#">
+                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#ModalFastViewProduct">
                                         <div class="fast_view text-center">
                                             <span>Быстрый просмотр </span>
                                             <i class="fa  fa-eye"></i>
@@ -727,6 +727,140 @@
                             <a href="#">Показать все</a>
                         </div>
                         <div class="bottom_line"><hr></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ModalFastViewProduct" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col-md-5">
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="basic_info">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h3 class="brand">Atlantic</h3>
+                                    <h4 class="name_product">Бюстгальтер на косточках</h4>
+                                    <!--ОСНОВНЫЕ СВОЙСТВА -->
+                                    <div class="main_props">
+                                        <div class="props">
+                                            <span class="name_props">артикул:</span>
+                                            <span class="value_props">45Н67</span>
+                                        </div>
+                                        <div class="props">
+                                            <span class="name_props">код товара:</span>
+                                            <span class="value_props">567843</span>
+                                        </div>
+                                    </div>
+                                    <!--СОСТАВ -->
+                                    <div class="props">
+                                        <span class="name_props">состав:</span>
+                                        <span class="value_props">76% нейлон; 16% эластан; 8% вискоза</span>
+
+                                    </div>
+                                    <!--ЦЕНА -->
+                                    <div class="price">
+                                        <span class="without_discount">820 грн</span>
+                                        <span class="with_discount">723,35 грн</span>
+                                    </div>
+                                    <hr>
+                                    <!--ЦВЕТ И РАЗМЕР И КОЛИЧЕСТВО-->
+                                    <form action="" method="post">
+                                        <!--ЦВЕТ-->
+                                        <div class="colors">
+                                            <div class="name_props">
+                                                Цвет
+                                            </div>
+                                            <div class="value_props">
+                                                <input type="checkbox" class="checkbox checkbox_img" id="color_3_1">
+                                                <label for="color_3_1" style="background-image: url('img/colors/1.jpg')"></label>
+                                                <input type="checkbox" class="checkbox checkbox_img" id="color_3_2">
+                                                <label for="color_3_2" style="background-image: url('img/colors/2.jpg')"></label>
+                                                <input type="checkbox" class="checkbox checkbox_img" id="color_3_3">
+                                                <label for="color_3_3" style="background-image: url('img/colors/3.jpg')"></label>
+                                                <input type="checkbox" class="checkbox checkbox_img" id="color_3_4">
+                                                <label for="color_3_4" style="background-image: url('img/colors/4.jpg')"></label>
+                                                <input type="checkbox" class="checkbox checkbox_img" id="color_3_5">
+                                                <label for="color_3_5" style="background-image: url('img/colors/5.jpg')"></label>
+                                            </div>
+                                        </div>
+                                        <!--РАЗМЕР-->
+                                        <div class="size">
+                                            <div class="name_props">
+                                                Размер:
+                                            </div>
+                                            <div class="value_props">
+                                                <select class="form-control">
+                                                    <option>A</option>
+                                                    <option>B</option>
+                                                    <option>C</option>
+                                                    <option>D</option>
+                                                    <option>E</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!--КОЛИЧЕСТВО-->
+                                        <div class="quantity">
+                                            <div class="name_props">
+                                                Количество:
+                                            </div>
+                                            <div class="value_props">
+                                                <div class="input-group">
+                                                  <span class="input-group-btn">
+                                                      <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                                          <span class="glyphicon glyphicon-minus"></span>
+                                                      </button>
+                                                  </span>
+                                                    <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--КНОПКИ-->
+                                        <div class="buttons">
+                                            <button type="button" class="btn btn-default">Добавить в корзину</button>
+                                            <button type="button" class="btn btn-default">Заказать в 1 клик</button>
+                                            <a href="javascript:void(0)" class="liked">
+                                                <span class="fa fa-heart-o"></span><!-- Уже добавлен в избранное fa-heart  -->
+                                            </a>
+                                        </div>
+                                    </form>
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a data-toggle="tab" href="#panel1">Описание</a></li>
+                                        <li><a data-toggle="tab" href="#panel2">Характеристики</a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div id="panel1" class="tab-pane fade in active">
+                                            <p>
+                                                Бюстгальтер Atlantic – это отличный выбор для ценителей качественного и комфортного нижнего белья, изготовленного по передовым технологиям. Если Вам покажется, что это обычный хлопчатобумажный лиф, Вы сильно ошибетесь, поскольку мы предлагаем широкий ассортимент разных коллекций практически на любой случай и для разных типов бюста.
+                                            </p>
+                                        </div>
+                                        <div id="panel2" class="tab-pane fade">
+                                            <p>Содержимое 2 панели...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Наличие -->
+                                <div class="col-md-4">
+                                    <div class="availability "> <!-- Нет в наличие none -->
+                                        <span>Есть в наличии</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                        <a type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            <span class="icon-cancel"></span>
+                        </a>
                     </div>
                 </div>
             </div>

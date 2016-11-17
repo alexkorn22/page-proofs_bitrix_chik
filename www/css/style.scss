@@ -31,6 +31,10 @@ html {
       }
     }
   }
+  .close {
+    font-size: 18px;
+    color: #3e3e3e;
+  }
 }
 #art_body.not_fixed_top {
   padding-top: 0px;
@@ -680,6 +684,14 @@ html {
       }
     }
   }
+  #ModalFastViewProduct{
+    .modal-dialog {
+      width: 1010px;
+    }
+    .modal-content {
+      padding: 20px 22px;
+    }
+  }
 }
 
 //************ ОБРАТНАЯ СВЯЗЬ **************
@@ -981,8 +993,6 @@ html {
     }
     .close {
       margin-top: 32px;
-      font-size: 18px;
-      color: #3e3e3e;
     }
     .btn_requestcall:hover {
       background-color: $color_6;
