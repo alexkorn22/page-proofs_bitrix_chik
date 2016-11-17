@@ -61,6 +61,9 @@ html {
       font-size: 20px;
       text-transform: uppercase;
       margin-left: -22px;
+      .li_nav_lvl_3 {
+        padding-left: 10px;
+      }
       li {
         a {
           color: $color_1;
