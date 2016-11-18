@@ -742,6 +742,7 @@
                     <div class="col-md-6">
                         <div class="basic_info">
                             <div class="row">
+                                <!--ОСНОВНЫЕ СВОЙСТВА -->
                                 <div class="col-md-8">
                                     <h3 class="brand">Atlantic</h3>
                                     <h4 class="name_product">Бюстгальтер на косточках</h4>
@@ -758,34 +759,59 @@
                                     </div>
                                     <!--СОСТАВ -->
                                     <div class="props">
-                                        <span class="name_props">состав:</span>
-                                        <span class="value_props">76% нейлон; 16% эластан; 8% вискоза</span>
-
+                                        <div class="name_props">состав:</div>
+                                        <div class="value_props">76% нейлон; 16% эластан; 8% вискоза</div>
                                     </div>
                                     <!--ЦЕНА -->
                                     <div class="price">
                                         <span class="without_discount">820 грн</span>
                                         <span class="with_discount">723,35 грн</span>
                                     </div>
+                                </div>
+                                <!-- Наличие -->
+                                <div class="col-md-4">
+                                    <div class="availability "> <!-- Нет в наличие none -->
+                                        <span>Есть в наличии</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
                                     <hr>
                                     <!--ЦВЕТ И РАЗМЕР И КОЛИЧЕСТВО-->
                                     <form action="" method="post">
                                         <!--ЦВЕТ-->
                                         <div class="colors">
                                             <div class="name_props">
-                                                Цвет
+                                                Цвет:
                                             </div>
                                             <div class="value_props">
-                                                <input type="checkbox" class="checkbox checkbox_img" id="color_3_1">
+                                                <input type="radio" name = "color" class="checkbox checkbox_img" id="color_3_1">
                                                 <label for="color_3_1" style="background-image: url('img/colors/1.jpg')"></label>
-                                                <input type="checkbox" class="checkbox checkbox_img" id="color_3_2">
+                                                <input type="radio" name = "color" class="checkbox checkbox_img" id="color_3_2">
                                                 <label for="color_3_2" style="background-image: url('img/colors/2.jpg')"></label>
-                                                <input type="checkbox" class="checkbox checkbox_img" id="color_3_3">
+                                                <input type="radio" name = "color" class="checkbox checkbox_img" id="color_3_3">
                                                 <label for="color_3_3" style="background-image: url('img/colors/3.jpg')"></label>
-                                                <input type="checkbox" class="checkbox checkbox_img" id="color_3_4">
+                                                <input type="radio" name = "color" class="checkbox checkbox_img" id="color_3_4">
                                                 <label for="color_3_4" style="background-image: url('img/colors/4.jpg')"></label>
-                                                <input type="checkbox" class="checkbox checkbox_img" id="color_3_5">
+                                                <input type="radio" name = "color" class="checkbox checkbox_img" id="color_3_5">
                                                 <label for="color_3_5" style="background-image: url('img/colors/5.jpg')"></label>
+                                                <input type="radio" name = "color" class="checkbox checkbox_img" id="color_3_6">
+                                                <label for="color_3_6" style="background-image: url('img/colors/5.jpg')"></label>
+                                                <input type="radio" name = "color" class="checkbox checkbox_img" id="color_3_7">
+                                                <label for="color_3_7" style="background-image: url('img/colors/5.jpg')"></label>
+                                                <input type="radio" name = "color" class="checkbox checkbox_img" id="color_3_8">
+                                                <label for="color_3_8" style="background-image: url('img/colors/5.jpg')"></label>
+                                                <input type="radio" name = "color" class="checkbox checkbox_img" id="color_3_9">
+                                                <label for="color_3_9" style="background-image: url('img/colors/5.jpg')"></label>
+                                                <input type="radio" name = "color" class="checkbox checkbox_img" id="color_3_10">
+                                                <label for="color_3_10" style="background-image: url('img/colors/5.jpg')"></label>
+                                                <input type="radio" name = "color" class="checkbox checkbox_img" id="color_3_11">
+                                                <label for="color_3_11" style="background-image: url('img/colors/5.jpg')"></label>
+                                                <input type="radio" name = "color" class="checkbox checkbox_img" id="color_3_12">
+                                                <label for="color_3_12" style="background-image: url('img/colors/5.jpg')"></label>
+                                                <input type="radio" name = "color" class="checkbox checkbox_img" id="color_3_13">
+                                                <label for="color_3_13" style="background-image: url('img/colors/5.jpg')"></label>
                                             </div>
                                         </div>
                                         <!--РАЗМЕР-->
@@ -793,8 +819,8 @@
                                             <div class="name_props">
                                                 Размер:
                                             </div>
-                                            <div class="value_props">
-                                                <select class="form-control">
+                                            <div class="value_size">
+                                                <select class="turnintodropdown">
                                                     <option>A</option>
                                                     <option>B</option>
                                                     <option>C</option>
@@ -802,28 +828,30 @@
                                                     <option>E</option>
                                                 </select>
                                             </div>
+
                                         </div>
                                         <!--КОЛИЧЕСТВО-->
                                         <div class="quantity">
                                             <div class="name_props">
                                                 Количество:
                                             </div>
-                                            <div class="value_props">
+                                            <div class="value_quantity">
                                                 <div class="input-group">
                                                   <span class="input-group-btn">
                                                       <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
-                                                          <span class="glyphicon glyphicon-minus"></span>
+                                                          <span class="">-</span>
                                                       </button>
                                                   </span>
                                                     <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
                                                     <span class="input-group-btn">
                                                         <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
-                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                            <span class="">+</span>
                                                         </button>
                                                     </span>
                                                 </div>
                                             </div>
                                         </div>
+                                        <hr>
                                         <!--КНОПКИ-->
                                         <div class="buttons">
                                             <button type="button" class="btn btn-default">Добавить в корзину</button>
@@ -833,6 +861,7 @@
                                             </a>
                                         </div>
                                     </form>
+                                    <!--ОПИСАНИЕ И ХАРАКТЕРИСТИКИ-->
                                     <ul class="nav nav-tabs">
                                         <li class="active"><a data-toggle="tab" href="#panel1">Описание</a></li>
                                         <li><a data-toggle="tab" href="#panel2">Характеристики</a></li>
@@ -846,12 +875,6 @@
                                         <div id="panel2" class="tab-pane fade">
                                             <p>Содержимое 2 панели...</p>
                                         </div>
-                                    </div>
-                                </div>
-                                <!-- Наличие -->
-                                <div class="col-md-4">
-                                    <div class="availability "> <!-- Нет в наличие none -->
-                                        <span>Есть в наличии</span>
                                     </div>
                                 </div>
                             </div>
@@ -991,6 +1014,7 @@
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <!--Подключаем собственные скрипты -->
 <script src="js/script.js"></script>
+<script src="js/select.js"></script>
 
 </body>
 </html>

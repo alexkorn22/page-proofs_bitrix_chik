@@ -394,6 +394,49 @@ html {
 #content {
   font-family: $SegoeUIRegular;
   font-size: 16px;
+  label {
+    font-weight: normal;
+  }
+  .checkbox + label {
+    cursor: pointer;
+  }
+  .checkbox:not(checked) {
+    position: absolute;
+    opacity: 0;
+  }
+  .checkbox:not(checked) + label {
+    position: relative;
+    padding: 1px 0 0 27px;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      border: 1px solid $color_2;
+    }
+  }
+  .checkbox:checked + label:before {
+    border:none;
+    background-image: url("../img/checkbox_checked.jpg");
+  }
+
+  .checkbox_img:not(checked) + label {
+    padding-left: 30px;
+    padding-top: 0px;
+    &:before {
+      width: 24px;
+      height:24px;
+      top: -11px;
+      border: 1px solid $color_2;
+      background-image : inherit;
+    }
+  }
+  .checkbox_img:checked + label:before {
+    box-shadow: 0px 2px 10px 1px $color_3;
+    background-image : inherit;
+  }
   .container{
     margin-top: 20px;
   }
@@ -428,6 +471,10 @@ html {
   .catalog {
     padding-top: 30px;
     padding-bottom: 65px;
+  }
+  .div_checkbox_img {
+    margin-bottom: 10px;
+  }
     a {
       color: $color_3;
       &:hover {
@@ -632,53 +679,6 @@ html {
             }
           }
         }
-        label {
-          font-weight: normal;
-        }
-        .checkbox + label {
-          cursor: pointer;
-        }
-        .checkbox:not(checked) {
-          position: absolute;
-          opacity: 0;
-        }
-        .checkbox:not(checked) + label {
-          position: relative;
-          padding: 1px 0 0 27px;
-          &:before {
-            content: '';
-            position: absolute;
-            top: 2px;
-            left: 0;
-            width: 16px;
-            height: 16px;
-            border: 1px solid $color_2;
-          }
-        }
-        .checkbox:checked + label:before {
-          border:none;
-          background-image: url("../img/checkbox_checked.jpg");
-        }
-
-        .checkbox_img:not(checked) + label {
-          padding-left: 30px;
-          padding-top: 0px;
-          &:before {
-            width: 24px;
-            height:24px;
-            top: -11px;
-            border: 1px solid $color_2;
-            background-image : inherit;
-          }
-        }
-        .checkbox_img:checked + label:before {
-          box-shadow: 0px 2px 10px 1px $color_3;
-          background-image : inherit;
-        }
-      }
-      .div_checkbox_img {
-        margin-bottom: 10px;
-      }
       .btn_clear_filter {
        margin-left: 38px;
         color: $color_3;
@@ -687,14 +687,192 @@ html {
       }
     }
   }
+
   #ModalFastViewProduct{
+    color: $color_3;
     .modal-dialog {
       width: 1010px;
     }
     .modal-content {
+      min-height: 818px;
       padding: 20px 22px;
     }
+    .brand,.name_product,.value_props {
+      font-family: $SegoeUIBold;
+    }
+    .brand {
+      font-size: 20px;
+      margin-top: 0px;
+    }
+    .name_product {
+      margin-bottom: 0px;
+    }
+    .main_props {
+      margin-bottom: 15px;
+    }
+    .price {
+      margin-top: 15px;
+      font-size: 24px;
+      color: #666666;
+      .without_discount {
+        text-decoration: line-through;
+      }
+      .with_discount {
+        color: $color_5;
+      }
+    }
+    .availability {
+      font-size: $SegoeUIBold;
+      display: inline-block;
+      border: 1px solid $color_1;
+      border-radius: 10px;
+      padding:10px 10px ;
+      color: $color_4;
+    }
+    .none {
+      color: $color_5;
+    }
+    .colors {
+      .checkbox_img:not(checked)+label:before {
+        width:40px;
+        height: 40px;
+      }
+      .checkbox_img:not(checked) + label {
+        padding-left: 45px;
+      }
+      label {
+        margin-bottom: 29px;
+        margin-top: 16px;
+      }
+    }
+    .size{
+      margin-top: 20px;
+      .name_props {
+        margin-bottom: 10px;
+      }
+      a:focus,a:hover {
+        color: inherit;
+        text-decoration: none;
+        cursor: default;
+      }
+      /*Начало ОФОРМЛЕНИЕ SELECT*/
+      .dropcontainer {
+        position: fixed;
+        font-size: 16px;
+        color: #777;
+        width: 80px;
+        z-index: 2;
+        ul {
+          font-size: 16px;
+          border: 1px solid #ccc;
+          border-top: none;
+          background: #fff;
+          list-style-type: none;
+          padding: 0px;
+          margin: 0;
+          width: 50%;
+          z-index: 100;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          li {
+            padding: 5px 10px;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            &:hover {
+              background: #f5f5f5;
+              outline: none;
+            }
+          }
+        }
+      }
+      .trigger {
+        color: #777;
+        padding: 10px;
+        font-size: 16px;
+        width: 80px;
+        background: #fff url(../img/select-arrow-open.jpg) 98% center no-repeat;
+        display: block;
+        border: 1px solid #ccc;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        &:hover {
+          color: #777;
+          background: #f5f5f5 url(../img/select-arrow-open.jpg) 98% center no-repeat;
+        }
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+      .activetrigger {
+        color: #777;
+        padding: 10px;
+        font-size: 16px;
+        width: 80px;
+        background: #f5f5f5 url(../img/select-arrow-close.jpg) 98% center no-repeat;
+        display: block;
+        border: 1px solid #ccc;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        &:hover {
+          background: #f5f5f5 url(../img/select-arrow-close.jpg) 98% center no-repeat;
+          color: #777;
+        }
+        &:active {
+          background: #f5f5f5 url(../img/select-arrow-close.jpg) 98% center no-repeat;
+          color: #777;
+        }
+      }
+      .dropdownhidden {
+        display: none;
+      }
+      .dropdownvisible {
+        height: auto;
+      }
+      /*Конец*/
+    }
+    .quantity {
+      margin-top: 20px;
+      .name_props {
+        margin-bottom: 10px;
+      }
+      .value_quantity {
+        width: 120px;
+        .input-number, button {
+          height: 40px;
+        }
+        .input-number {
+          padding: 6px 6px;
+          height: 40px;
+        }
+        button {
+          padding: 6px 16px;
+          background-color: $color_1;
+          border-radius: 0px;
+          &:focus {
+            outline: none;
+          }
+          &:hover {
+            background-color: $color_4;
+          }
+          &:disabled {
+            &:hover {
+              background-color: inherit;
+            }
+          }
+        }
+      }
+    }
   }
+
 }
 
 //************ ОБРАТНАЯ СВЯЗЬ **************
