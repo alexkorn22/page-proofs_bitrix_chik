@@ -62,7 +62,11 @@ html {
       text-transform: uppercase;
       margin-left: -22px;
       .li_nav_lvl_3 {
-        padding-left: 10px;
+        padding-left: 5px;
+      }
+      .title_child {
+        font-weight:bold;
+        text-transform: uppercase;
       }
       li {
         a {
