@@ -425,7 +425,6 @@ html {
     border:none;
     background-image: url("../img/checkbox_checked.jpg");
   }
-
   .checkbox_img:not(checked) + label {
     padding-left: 30px;
     padding-top: 0px;
@@ -701,6 +700,9 @@ html {
       min-height: 818px;
       padding: 20px 22px;
     }
+    .props_block {
+      line-height: 1.1;
+    }
     .brand,.name_product,.value_props {
       font-family: $SegoeUIBold;
     }
@@ -712,10 +714,10 @@ html {
       margin-bottom: 0px;
     }
     .main_props {
-      margin-bottom: 15px;
+      margin-bottom: 10px;
     }
     .price {
-      margin-top: 15px;
+      margin-top: 10px;
       font-size: 24px;
       color: #666666;
       .without_discount {
@@ -750,9 +752,9 @@ html {
       }
     }
     .size{
-      margin-top: 20px;
+      margin-top: 10px;
       .name_props {
-        margin-bottom: 10px;
+        margin-bottom: 5px;
       }
       a:focus,a:hover {
         color: inherit;
@@ -794,7 +796,7 @@ html {
       }
       .trigger {
         color: #777;
-        padding: 10px;
+        padding: 8px 10px;
         font-size: 16px;
         width: 80px;
         background: #fff url(../img/select-arrow-open.jpg) 98% center no-repeat;
@@ -844,9 +846,9 @@ html {
       /*Конец*/
     }
     .quantity {
-      margin-top: 20px;
+      margin-top: 10px;
       .name_props {
-        margin-bottom: 10px;
+        margin-bottom: 5px;
       }
       .value_quantity {
         width: 120px;
@@ -874,6 +876,69 @@ html {
           }
         }
       }
+    }
+    .buttons {
+      .col-md-5 {
+        padding-right: 0px;
+      }
+      .buy {
+        background-color: $color_4;
+      }
+      .btn {
+        border-radius: 13px;
+        font-size: 16px;
+        border-color: $color_1;
+        color: $color_3;
+        padding: 10px 12px;
+        width: 100%;
+        &:hover {
+          background-color: $color_6;
+        }
+      }
+      .liked {
+        font-size: 24px;
+      }
+      .liked_block {
+        padding-top: 5px;
+      }
+    }
+    .characteristics {
+      margin-top: 20px;
+      ul {
+        border-color: $color_1;
+        li {
+          border-color: $color_1;
+          margin-right: 10px;
+          background-color: $color_1;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          a {
+            margin-right: 0px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            &:hover {
+              color: inherit;
+            }
+          }
+        }
+        li.active {
+          background-color: white;
+        }
+      }
+      .tab-content {
+        padding-top: 10px;
+      }
+    }
+    .images {
+      .preview_img {
+        .slick-list {
+          padding: 0 !important;
+          .slick-slide {
+            padding: 15px !important;
+          }
+        }
+      }
+
     }
   }
 

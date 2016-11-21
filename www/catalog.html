@@ -11,8 +11,11 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+
     <!-- Для слайдера -->
     <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/slick.css"/>
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -736,14 +739,60 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="row">
+                    <!--КАРТИНКИ ТОВАРА-->
                     <div class="col-md-5">
-
+                        <div class="images">
+                            <div class="full_img">
+                                <div class="slider-for">
+                                    <div class="item_full_img" >
+                                        <img src="http://lorempicsum.com/simpsons/370/400/1" alt="1">
+                                    </div>
+                                    <div class="item_full_img" >
+                                        <img src="http://lorempicsum.com/simpsons/370/400/2" alt="1">
+                                    </div>
+                                    <div class="item_full_img" >
+                                        <img src="http://lorempicsum.com/simpsons/370/400/3" alt="1">
+                                    </div>
+                                    <div class="item_full_img" >
+                                        <img src="http://lorempicsum.com/simpsons/370/400/4" alt="1">
+                                    </div>
+                                    <div class="item_full_img" >
+                                        <img src="http://lorempicsum.com/simpsons/370/400/5" alt="1">
+                                    </div>
+                                    <div class="item_full_img" >
+                                        <img src="http://lorempicsum.com/simpsons/370/400/6" alt="1">
+                                    </div>
+                                </div>
+                            </div><!-- /.block-text -->
+                            <div class="preview_img">
+                                <div class="slider-nav">
+                                    <div class="item_preview_img"  >
+                                        <img src="http://lorempicsum.com/simpsons/170/170/1" alt="1">
+                                    </div>
+                                    <div class="item_preview_img">
+                                        <img src="http://lorempicsum.com/simpsons/170/170/2" alt="2">
+                                    </div>
+                                    <div class="item_preview_img">
+                                        <img src="http://lorempicsum.com/simpsons/170/170/3" alt="3">
+                                    </div>
+                                    <div class="item_preview_img">
+                                        <img src="http://lorempicsum.com/simpsons/170/170/4" alt="4">
+                                    </div>
+                                    <div class="item_preview_img">
+                                        <img src="http://lorempicsum.com/simpsons/170/170/5" alt="3">
+                                    </div>
+                                    <div class="item_preview_img">
+                                        <img src="http://lorempicsum.com/simpsons/170/170/6" alt="3">
+                                    </div>
+                                </div>
+                            </div><!-- /.block-media -->
+                        </div>
                     </div>
                     <div class="col-md-6">
                         <div class="basic_info">
                             <div class="row">
                                 <!--ОСНОВНЫЕ СВОЙСТВА -->
-                                <div class="col-md-8">
+                                <div class="col-md-8 props_block">
                                     <h3 class="brand">Atlantic</h3>
                                     <h4 class="name_product">Бюстгальтер на косточках</h4>
                                     <!--ОСНОВНЫЕ СВОЙСТВА -->
@@ -853,27 +902,35 @@
                                         </div>
                                         <hr>
                                         <!--КНОПКИ-->
-                                        <div class="buttons">
-                                            <button type="button" class="btn btn-default">Добавить в корзину</button>
-                                            <button type="button" class="btn btn-default">Заказать в 1 клик</button>
-                                            <a href="javascript:void(0)" class="liked">
-                                                <span class="fa fa-heart-o"></span><!-- Уже добавлен в избранное fa-heart  -->
-                                            </a>
+                                        <div class="row buttons">
+                                                <div class="col-md-5">
+                                                    <button type="button" class="btn btn-default buy">Добавить в корзину</button>
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <button type="button" class="btn btn-default one_click">Заказать в 1 клик</button>
+                                                </div>
+                                                <div class="col-md-2 liked_block">
+                                                    <a href="javascript:void(0)" class="liked">
+                                                        <span class="fa fa-heart-o"></span><!-- Уже добавлен в избранное fa-heart  -->
+                                                    </a>
+                                                </div>
                                         </div>
                                     </form>
                                     <!--ОПИСАНИЕ И ХАРАКТЕРИСТИКИ-->
-                                    <ul class="nav nav-tabs">
-                                        <li class="active"><a data-toggle="tab" href="#panel1">Описание</a></li>
-                                        <li><a data-toggle="tab" href="#panel2">Характеристики</a></li>
-                                    </ul>
-                                    <div class="tab-content">
-                                        <div id="panel1" class="tab-pane fade in active">
-                                            <p>
-                                                Бюстгальтер Atlantic – это отличный выбор для ценителей качественного и комфортного нижнего белья, изготовленного по передовым технологиям. Если Вам покажется, что это обычный хлопчатобумажный лиф, Вы сильно ошибетесь, поскольку мы предлагаем широкий ассортимент разных коллекций практически на любой случай и для разных типов бюста.
-                                            </p>
-                                        </div>
-                                        <div id="panel2" class="tab-pane fade">
-                                            <p>Содержимое 2 панели...</p>
+                                    <div class="characteristics">
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a data-toggle="tab" href="#panel1">Описание</a></li>
+                                            <li><a data-toggle="tab" href="#panel2">Характеристики</a></li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div id="panel1" class="tab-pane fade in active">
+                                                <p>
+                                                    Бюстгальтер Atlantic – это отличный выбор для ценителей качественного и комфортного нижнего белья, изготовленного по передовым технологиям. Если Вам покажется, что это обычный хлопчатобумажный лиф, Вы сильно ошибетесь, поскольку мы предлагаем широкий ассортимент разных коллекций практически на любой случай и для разных типов бюста.
+                                                </p>
+                                            </div>
+                                            <div id="panel2" class="tab-pane fade">
+                                                <p>Содержимое 2 панели...</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1008,13 +1065,39 @@
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.1.1.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 <!--Подключаем библиотеку Jquery UI-->
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="js/select.js"></script>
+
+<script src="js/slick.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: false,
+            centerMode: true,
+            focusOnSelect: true,
+            infinite: true,
+        });
+
+    });
+</script>
+
 <!--Подключаем собственные скрипты -->
 <script src="js/script.js"></script>
-<script src="js/select.js"></script>
 
 </body>
 </html>
