@@ -1,233 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Chikiss</title>
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-
-    <!-- Для слайдера -->
-    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="css/slick.css"/>
-
-    <link rel="stylesheet" href="css/jquery.jqzoom.css" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body id="art_body">
-
-<section id="main_top_menu">
-    <header>
-        <nav class="navbar navbar-default navbar-fixed-top top_menu" role="navigation">
-            <div class="container">
-                <ul class="nav navbar-nav topmenu_ul">
-                    <li class="item"><a href="#" class="item_main">Бренды</a></li> <!-- class="active_top_menu" -->
-                    <li class="item dropdown">
-                        <a href="catalog.html" class="item_main">Женщины</a>
-                        <!-- Выпадающее меню -->
-                        <div class="nav_lvl_1">
-                            <div class="container nav_lvl_1_container">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <ul class="list-unstyled">
-                                            <li><a href="#">Бюстгальтеры</a></li>
-                                            <li><a href="#">Майки, футболки, блузки</a></li>
-                                            <li><a href="#">Пижамы и домашняя одежда</a></li>
-                                            <li><a href="#">Корректирующее белье</a></li>
-                                            <li><a href="#">Купальники и пляжная одежда</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <ul class="list-unstyled">
-                                            <li><a href="#">Для беременных и кормящих</a></li>
-                                            <li><a href="#">Термобелье</a></li>
-                                            <li><a href="#">Носки, колготы, чулки</a></li>
-                                            <li><a href="#">Аксессуары</a></li>
-                                            <li><a href="#">Трусы</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <ul class="list-unstyled">
-                                            <li><a href="#">Тапки домашние</a></li>
-                                            <li><a href="#">Новинки</a></li>
-                                            <li><a href="#">Распродажа</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3  base_top_menu dropdown">
-                                        <a href="#" class="title dropdown-toggle" data-toggle="dropdown"
-                                           onclick="OnClickBaseTopMenu()">
-                                            База
-                                            <span id="title_icon" class="title_icon fa fa-angle-right">
-                                            </span>
-                                        </a>
-                                        <ul id="dropmenu_base" class="list-unstyled hidden">
-                                            <li><a href="#">Трусы</a></li>
-                                            <li><a href="#">Бюстгальтеры</a></li>
-                                            <li><a href="#">Майки, футболки</a></li>
-                                            <li><a href="#">Носки, колготы, чулки</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="item"><a href="#" class="item_main">Мужчины</a></li>
-                    <li class="item"><a href="#" class="item_main">Дети</a></li>
-                    <li class="item"><a href="#" class="item_main">Новинки</a></li>
-                    <li class="item sale"><a href="#" class="item_main sale">Распродажа%</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right basket_topmenu">
-                    <li class="item">
-                        <a href="#" class="liked">
-                            <span class="icon-heart_1"></span>
-                            <span class="counter one_digit">7</span>
-                        </a>
-                    </li>
-                    <li class="item_cart">
-                        <a href="#" class="cart">
-                            <span class="icon-cart_1"></span>
-                            <span class="counter two_digit">25</span>
-                        </a>
-                    </li>
-                    <li class="item">
-                        <div class="sum">
-                            <p>
-                                на сумму 24 500 грн
-                            </p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-</section>
-
-<section id="main_header">
-    <div class="container">
-        <div class="row header_logo">
-            <div class="col-md-3">
-                <a href="#" class="logo">
-                    <img src="img/logo.png" alt="Логотип">
-                </a>
-            </div>
-            <div class="col-md-3 search">
-                <button class="btn icon" type="submit"><i class="icon-search_0411" aria-hidden="true"></i></button>
-                <input type="search" class="form-control field_search" placeholder="Поиск...">
-            </div>
-            <div class="col-md-3 phone">
-                <div class="col_first">
-                    <span>(066) <span class="font_bold">773-23-23</span> (066) <span class="font_bold">773-23-23</span></span>
-                </div>
-                <div class="col_second">
-                    <span>(066) <span class="font_bold">773-23-23</span> (066) <span class="font_bold">773-23-23</span></span>
-                </div>
-            </div>
-            <div class="col-md-3 user_data">
-                <div class="data_user">
-                    <div class="user_text">
-                        <a href="#">Вход </a> |
-                        <a href="#"> Регистрация </a>
-                    </div>
-                    <a class="btn icon" href="#"><i class="icon-user_0411" aria-hidden="true"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="main_second_menu">
-    <nav class="navbar navbar-default main_second_menu" role="navigation">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-offset-2 col-md-10">
-                    <ul class="nav navbar-nav">
-                        <li class="item"><a href="#">О магазине</a></li>
-                        <li class="active item"><a href="#">Оплата</a>
-                        <li class="item"><a href="#">Доставка</a></li>
-                        <li class="item"><a href="#">Размерная сетка</a></li>
-                        <li class="item"><a href="#">Контакты</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-</section>
-
-<section id="advantages">
-
-    <div class="container">
-        <div class="row row_advantages">
-            <div class="col-md-4 delivery text-right">
-                <div class="row">
-                    <div class="col-md-offset-4 col-md-8">
-                        <a href="#">
-                            <div class="row">
-                                <div class="col-md-10 text">
-                                    <p>Бесплатная доставка</p>
-                                    <p>при заказе от 1000 грн</p>
-                                </div>
-                                <div class="col-md-2 adv_img">
-                                    <span class="icon-delivery_1"></span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-1">
-            </div>
-            <div class="col-md-2 exchange text-right">
-                <div class="row">
-                    <div class="col-md-12">
-                        <a href="#">
-                            <div class="row">
-                                <div class="col-md-9 text">
-                                    <p>Беспроблемный</p>
-                                    <p>обмен</p>
-                                </div>
-                                <div class="col-md-3 adv_img">
-                                    <span class="icon-exchange_1"></span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-1">
-            </div>
-            <div class="col-md-2 return text-right">
-                <div class="col-md-12">
-                    <a href="#">
-                        <div class="row">
-                            <div class="col-md-9 text">
-                                <p>Возврат</p>
-                                <p>за наш счет</p>
-                            </div>
-                            <div class="col-md-3 adv_img">
-                                <span class="icon-return_1"></span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-</section>
-
-<section id="content">
+<? include($_SERVER['DOCUMENT_ROOT'] . '/header.php'); ?>
     <div class="container">
         <div class="row catalog">
             <!-- ФИЛЬТРА -->
@@ -324,47 +95,65 @@
                                 <div class="col-md-12 filter_value">
                                     <div class="div_checkbox_img">
                                         <input type="checkbox" class="checkbox checkbox_img" id="value_3_1">
-                                        <label for="value_3_1" style="background-image: url('img/colors/1.jpg')"></label>
+                                        <label for="value_3_1"
+                                               style="background-image: url('img/colors/1.jpg')"></label>
                                         <input type="checkbox" class="checkbox checkbox_img" id="value_3_2">
-                                        <label for="value_3_2" style="background-image: url('img/colors/2.jpg')"></label>
+                                        <label for="value_3_2"
+                                               style="background-image: url('img/colors/2.jpg')"></label>
                                         <input type="checkbox" class="checkbox checkbox_img" id="value_3_3">
-                                        <label for="value_3_3" style="background-image: url('img/colors/3.jpg')"></label>
+                                        <label for="value_3_3"
+                                               style="background-image: url('img/colors/3.jpg')"></label>
                                         <input type="checkbox" class="checkbox checkbox_img" id="value_3_4">
-                                        <label for="value_3_4" style="background-image: url('img/colors/4.jpg')"></label>
+                                        <label for="value_3_4"
+                                               style="background-image: url('img/colors/4.jpg')"></label>
                                         <input type="checkbox" class="checkbox checkbox_img" id="value_3_5">
-                                        <label for="value_3_5" style="background-image: url('img/colors/5.jpg')"></label>
+                                        <label for="value_3_5"
+                                               style="background-image: url('img/colors/5.jpg')"></label>
                                     </div>
                                     <div class="div_checkbox_img">
                                         <input type="checkbox" class="checkbox checkbox_img" id="value_3_6">
-                                        <label for="value_3_6" style="background-image: url('img/colors/1.jpg')"></label>
+                                        <label for="value_3_6"
+                                               style="background-image: url('img/colors/1.jpg')"></label>
                                         <input type="checkbox" class="checkbox checkbox_img" id="value_3_7">
-                                        <label for="value_3_7" style="background-image: url('img/colors/2.jpg')"></label>
+                                        <label for="value_3_7"
+                                               style="background-image: url('img/colors/2.jpg')"></label>
                                         <input type="checkbox" class="checkbox checkbox_img" id="value_3_8">
-                                        <label for="value_3_8" style="background-image: url('img/colors/3.jpg')"></label>
+                                        <label for="value_3_8"
+                                               style="background-image: url('img/colors/3.jpg')"></label>
                                         <input type="checkbox" class="checkbox checkbox_img" id="value_3_9">
-                                        <label for="value_3_9" style="background-image: url('img/colors/4.jpg')"></label>
+                                        <label for="value_3_9"
+                                               style="background-image: url('img/colors/4.jpg')"></label>
                                         <input type="checkbox" class="checkbox checkbox_img" id="value_3_10">
-                                        <label for="value_3_10" style="background-image: url('img/colors/5.jpg')"></label>
+                                        <label for="value_3_10"
+                                               style="background-image: url('img/colors/5.jpg')"></label>
                                     </div>
                                     <div class="div_checkbox_img">
                                         <input type="checkbox" class="checkbox checkbox_img" id="value_3_11">
-                                        <label for="value_3_11" style="background-image: url('img/colors/1.jpg')"></label>
+                                        <label for="value_3_11"
+                                               style="background-image: url('img/colors/1.jpg')"></label>
                                         <input type="checkbox" class="checkbox checkbox_img" id="value_3_12">
-                                        <label for="value_3_12" style="background-image: url('img/colors/2.jpg')"></label>
+                                        <label for="value_3_12"
+                                               style="background-image: url('img/colors/2.jpg')"></label>
                                         <input type="checkbox" class="checkbox checkbox_img" id="value_3_13">
-                                        <label for="value_3_13" style="background-image: url('img/colors/3.jpg')"></label>
+                                        <label for="value_3_13"
+                                               style="background-image: url('img/colors/3.jpg')"></label>
                                         <input type="checkbox" class="checkbox checkbox_img" id="value_3_14">
-                                        <label for="value_3_14" style="background-image: url('img/colors/4.jpg')"></label>
+                                        <label for="value_3_14"
+                                               style="background-image: url('img/colors/4.jpg')"></label>
                                         <input type="checkbox" class="checkbox checkbox_img" id="value_3_15">
-                                        <label for="value_3_15" style="background-image: url('img/colors/5.jpg')"></label>
+                                        <label for="value_3_15"
+                                               style="background-image: url('img/colors/5.jpg')"></label>
                                     </div>
                                     <div class="div_checkbox_img">
                                         <input type="checkbox" class="checkbox checkbox_img" id="value_3_16">
-                                        <label for="value_3_16" style="background-image: url('img/colors/1.jpg')"></label>
+                                        <label for="value_3_16"
+                                               style="background-image: url('img/colors/1.jpg')"></label>
                                         <input type="checkbox" class="checkbox checkbox_img" id="value_3_17">
-                                        <label for="value_3_17" style="background-image: url('img/colors/2.jpg')"></label>
+                                        <label for="value_3_17"
+                                               style="background-image: url('img/colors/2.jpg')"></label>
                                         <input type="checkbox" class="checkbox checkbox_img" id="value_3_18">
-                                        <label for="value_3_18" style="background-image: url('img/colors/3.jpg')"></label>
+                                        <label for="value_3_18"
+                                               style="background-image: url('img/colors/3.jpg')"></label>
                                     </div>
                                 </div>
                             </div>
@@ -474,7 +263,8 @@
                                 </div>
                                 <div class="col-md-12 filter_value">
                                     <span>
-                                        Диапазон: <span id="contentSlider0"></span> грн - <span id="contentSlider1"></span> грн
+                                        Диапазон: <span id="contentSlider0"></span> грн - <span
+                                            id="contentSlider1"></span> грн
                                     </span>
                                     <div id="slider"></div>
                                 </div>
@@ -511,11 +301,15 @@
                 </div>
                 <div class="row row_show_all">
                     <div class="col-md-12">
-                        <div class="top_line"><hr></div>
+                        <div class="top_line">
+                            <hr>
+                        </div>
                         <div class="show_all text-right">
                             <a href="#">Показать все</a>
                         </div>
-                        <div class="bottom_line"><hr></div>
+                        <div class="bottom_line">
+                            <hr>
+                        </div>
                     </div>
                 </div>
                 <div class="list_products">
@@ -524,7 +318,8 @@
                             <div class="container_product">
                                 <div class="product">
                                     <div class="img_catalog">
-                                        <img src="img/products/1.jpg" alt="Картинка" class="img-responsive center-block">
+                                        <img src="img/products/1.jpg" alt="Картинка"
+                                             class="img-responsive center-block">
                                     </div>
                                     <div class="price text-left">
                                         <span>от </span>
@@ -537,7 +332,8 @@
                                             <span>Бюстгальтер женский для беременных и кормящих мягкая чашка</span>
                                         </a>
                                     </div>
-                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#ModalFastViewProduct" onclick="$('.slider-nav').slick('slickGoTo',1);">
+                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#ModalFastViewProduct"
+                                       onclick="$('.slider-nav').slick('slickGoTo',1);">
                                         <div class="fast_view text-center">
                                             <span>Быстрый просмотр </span>
                                             <i class="fa  fa-eye"></i>
@@ -556,7 +352,8 @@
                             <div class="container_product">
                                 <div class="product">
                                     <div class="img_catalog">
-                                        <img src="img/products/2.jpg" alt="Картинка" class="img-responsive center-block">
+                                        <img src="img/products/2.jpg" alt="Картинка"
+                                             class="img-responsive center-block">
                                     </div>
                                     <div class="price text-left">
                                         <span>от </span>
@@ -588,7 +385,8 @@
                             <div class="container_product">
                                 <div class="product">
                                     <div class="img_catalog">
-                                        <img src="img/products/1.jpg" alt="Картинка" class="img-responsive center-block">
+                                        <img src="img/products/1.jpg" alt="Картинка"
+                                             class="img-responsive center-block">
                                     </div>
                                     <div class="price text-left">
                                         <span>от </span>
@@ -622,7 +420,8 @@
                             <div class="container_product">
                                 <div class="product">
                                     <div class="img_catalog">
-                                        <img src="img/products/1.jpg" alt="Картинка" class="img-responsive center-block">
+                                        <img src="img/products/1.jpg" alt="Картинка"
+                                             class="img-responsive center-block">
                                     </div>
                                     <div class="price text-left">
                                         <span>от </span>
@@ -654,7 +453,8 @@
                             <div class="container_product">
                                 <div class="product">
                                     <div class="img_catalog">
-                                        <img src="img/products/1.jpg" alt="Картинка" class="img-responsive center-block">
+                                        <img src="img/products/1.jpg" alt="Картинка"
+                                             class="img-responsive center-block">
                                     </div>
                                     <div class="price text-left">
                                         <span>от </span>
@@ -686,7 +486,8 @@
                             <div class="container_product">
                                 <div class="product">
                                     <div class="img_catalog">
-                                        <img src="img/products/1.jpg" alt="Картинка" class="img-responsive center-block">
+                                        <img src="img/products/1.jpg" alt="Картинка"
+                                             class="img-responsive center-block">
                                     </div>
                                     <div class="price text-left">
                                         <span>от </span>
@@ -718,7 +519,9 @@
                 </div>
                 <div class="row row_show_all show_all_bottom">
                     <div class="col-md-12 text-center">
-                        <div class="top_line"><hr></div>
+                        <div class="top_line">
+                            <hr>
+                        </div>
                         <div class="number_pages">
                             <a href="#"><i class="icon icon-left-arrow"></i></a>
                             <span><a href="#">1</a></span>
@@ -730,7 +533,9 @@
                         <div class="show_all text-right">
                             <a href="#">Показать все</a>
                         </div>
-                        <div class="bottom_line"><hr></div>
+                        <div class="bottom_line">
+                            <hr>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -745,22 +550,22 @@
                         <div class="images">
                             <div class="full_img">
                                 <div class="slider-for">
-                                    <div class="item_full_img" >
+                                    <div class="item_full_img">
                                         <img src="http://lorempicsum.com/simpsons/370/400/1" alt="1">
                                     </div>
-                                    <div class="item_full_img" >
+                                    <div class="item_full_img">
                                         <img src="http://lorempicsum.com/simpsons/370/400/2" alt="1">
                                     </div>
-                                    <div class="item_full_img" >
+                                    <div class="item_full_img">
                                         <img src="http://lorempicsum.com/simpsons/370/400/3" alt="1">
                                     </div>
-                                    <div class="item_full_img" >
+                                    <div class="item_full_img">
                                         <img src="http://lorempicsum.com/simpsons/370/400/4" alt="1">
                                     </div>
-                                    <div class="item_full_img" >
+                                    <div class="item_full_img">
                                         <img src="http://lorempicsum.com/simpsons/370/400/5" alt="1">
                                     </div>
-                                    <div class="item_full_img" >
+                                    <div class="item_full_img">
                                         <img src="http://lorempicsum.com/simpsons/370/400/6" alt="1">
                                     </div>
                                 </div>
@@ -768,7 +573,7 @@
                             <div class="preview_img">
 
                                 <div class="slider-nav">
-                                    <div class="item_preview_img"  >
+                                    <div class="item_preview_img">
                                         <img src="http://lorempicsum.com/simpsons/170/170/1" alt="1">
                                     </div>
                                     <div class="item_preview_img">
@@ -837,32 +642,58 @@
                                                 Цвет:
                                             </div>
                                             <div class="value_props">
-                                                <input type="radio" name = "color" class="checkbox checkbox_img" id="color_3_1">
-                                                <label for="color_3_1" style="background-image: url('img/colors/1.jpg')"></label>
-                                                <input type="radio" name = "color" class="checkbox checkbox_img" id="color_3_2">
-                                                <label for="color_3_2" style="background-image: url('img/colors/2.jpg')"></label>
-                                                <input type="radio" name = "color" class="checkbox checkbox_img" id="color_3_3">
-                                                <label for="color_3_3" style="background-image: url('img/colors/3.jpg')"></label>
-                                                <input type="radio" name = "color" class="checkbox checkbox_img" id="color_3_4">
-                                                <label for="color_3_4" style="background-image: url('img/colors/4.jpg')"></label>
-                                                <input type="radio" name = "color" class="checkbox checkbox_img" id="color_3_5">
-                                                <label for="color_3_5" style="background-image: url('img/colors/5.jpg')"></label>
-                                                <input type="radio" name = "color" class="checkbox checkbox_img" id="color_3_6">
-                                                <label for="color_3_6" style="background-image: url('img/colors/5.jpg')"></label>
-                                                <input type="radio" name = "color" class="checkbox checkbox_img" id="color_3_7">
-                                                <label for="color_3_7" style="background-image: url('img/colors/5.jpg')"></label>
-                                                <input type="radio" name = "color" class="checkbox checkbox_img" id="color_3_8">
-                                                <label for="color_3_8" style="background-image: url('img/colors/5.jpg')"></label>
-                                                <input type="radio" name = "color" class="checkbox checkbox_img" id="color_3_9">
-                                                <label for="color_3_9" style="background-image: url('img/colors/5.jpg')"></label>
-                                                <input type="radio" name = "color" class="checkbox checkbox_img" id="color_3_10">
-                                                <label for="color_3_10" style="background-image: url('img/colors/5.jpg')"></label>
-                                                <input type="radio" name = "color" class="checkbox checkbox_img" id="color_3_11">
-                                                <label for="color_3_11" style="background-image: url('img/colors/5.jpg')"></label>
-                                                <input type="radio" name = "color" class="checkbox checkbox_img" id="color_3_12">
-                                                <label for="color_3_12" style="background-image: url('img/colors/5.jpg')"></label>
-                                                <input type="radio" name = "color" class="checkbox checkbox_img" id="color_3_13">
-                                                <label for="color_3_13" style="background-image: url('img/colors/5.jpg')"></label>
+                                                <input type="radio" name="color" class="checkbox checkbox_img"
+                                                       id="color_3_1">
+                                                <label for="color_3_1"
+                                                       style="background-image: url('img/colors/1.jpg')"></label>
+                                                <input type="radio" name="color" class="checkbox checkbox_img"
+                                                       id="color_3_2">
+                                                <label for="color_3_2"
+                                                       style="background-image: url('img/colors/2.jpg')"></label>
+                                                <input type="radio" name="color" class="checkbox checkbox_img"
+                                                       id="color_3_3">
+                                                <label for="color_3_3"
+                                                       style="background-image: url('img/colors/3.jpg')"></label>
+                                                <input type="radio" name="color" class="checkbox checkbox_img"
+                                                       id="color_3_4">
+                                                <label for="color_3_4"
+                                                       style="background-image: url('img/colors/4.jpg')"></label>
+                                                <input type="radio" name="color" class="checkbox checkbox_img"
+                                                       id="color_3_5">
+                                                <label for="color_3_5"
+                                                       style="background-image: url('img/colors/5.jpg')"></label>
+                                                <input type="radio" name="color" class="checkbox checkbox_img"
+                                                       id="color_3_6">
+                                                <label for="color_3_6"
+                                                       style="background-image: url('img/colors/5.jpg')"></label>
+                                                <input type="radio" name="color" class="checkbox checkbox_img"
+                                                       id="color_3_7">
+                                                <label for="color_3_7"
+                                                       style="background-image: url('img/colors/5.jpg')"></label>
+                                                <input type="radio" name="color" class="checkbox checkbox_img"
+                                                       id="color_3_8">
+                                                <label for="color_3_8"
+                                                       style="background-image: url('img/colors/5.jpg')"></label>
+                                                <input type="radio" name="color" class="checkbox checkbox_img"
+                                                       id="color_3_9">
+                                                <label for="color_3_9"
+                                                       style="background-image: url('img/colors/5.jpg')"></label>
+                                                <input type="radio" name="color" class="checkbox checkbox_img"
+                                                       id="color_3_10">
+                                                <label for="color_3_10"
+                                                       style="background-image: url('img/colors/5.jpg')"></label>
+                                                <input type="radio" name="color" class="checkbox checkbox_img"
+                                                       id="color_3_11">
+                                                <label for="color_3_11"
+                                                       style="background-image: url('img/colors/5.jpg')"></label>
+                                                <input type="radio" name="color" class="checkbox checkbox_img"
+                                                       id="color_3_12">
+                                                <label for="color_3_12"
+                                                       style="background-image: url('img/colors/5.jpg')"></label>
+                                                <input type="radio" name="color" class="checkbox checkbox_img"
+                                                       id="color_3_13">
+                                                <label for="color_3_13"
+                                                       style="background-image: url('img/colors/5.jpg')"></label>
                                             </div>
                                         </div>
                                         <!--РАЗМЕР-->
@@ -889,13 +720,17 @@
                                             <div class="value_quantity">
                                                 <div class="input-group">
                                                   <span class="input-group-btn">
-                                                      <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                                      <button type="button" class="btn btn-default btn-number"
+                                                              disabled="disabled" data-type="minus"
+                                                              data-field="quant[1]">
                                                           <span class="">-</span>
                                                       </button>
                                                   </span>
-                                                    <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                                                    <input type="text" name="quant[1]" class="form-control input-number"
+                                                           value="1" min="1" max="10">
                                                     <span class="input-group-btn">
-                                                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                                        <button type="button" class="btn btn-default btn-number"
+                                                                data-type="plus" data-field="quant[1]">
                                                             <span class="">+</span>
                                                         </button>
                                                     </span>
@@ -905,17 +740,21 @@
                                         <hr>
                                         <!--КНОПКИ-->
                                         <div class="row buttons">
-                                                <div class="col-md-5">
-                                                    <button type="button" class="btn btn-default buy">Добавить в корзину</button>
-                                                </div>
-                                                <div class="col-md-5">
-                                                    <button type="button" class="btn btn-default one_click">Заказать в 1 клик</button>
-                                                </div>
-                                                <div class="col-md-2 liked_block">
-                                                    <a href="javascript:void(0)" class="liked">
-                                                        <span class="fa fa-heart-o"></span><!-- Уже добавлен в избранное fa-heart  -->
-                                                    </a>
-                                                </div>
+                                            <div class="col-md-5">
+                                                <button type="button" class="btn btn-default buy">Добавить в корзину
+                                                </button>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <button type="button" class="btn btn-default one_click">Заказать в 1
+                                                    клик
+                                                </button>
+                                            </div>
+                                            <div class="col-md-2 liked_block">
+                                                <a href="javascript:void(0)" class="liked">
+                                                    <span class="fa fa-heart-o"></span>
+                                                    <!-- Уже добавлен в избранное fa-heart  -->
+                                                </a>
+                                            </div>
                                         </div>
                                     </form>
                                     <!--ОПИСАНИЕ И ХАРАКТЕРИСТИКИ-->
@@ -927,7 +766,12 @@
                                         <div class="tab-content">
                                             <div id="panel1" class="tab-pane fade in active">
                                                 <p>
-                                                    Бюстгальтер Atlantic – это отличный выбор для ценителей качественного и комфортного нижнего белья, изготовленного по передовым технологиям. Если Вам покажется, что это обычный хлопчатобумажный лиф, Вы сильно ошибетесь, поскольку мы предлагаем широкий ассортимент разных коллекций практически на любой случай и для разных типов бюста.
+                                                    Бюстгальтер Atlantic – это отличный выбор для ценителей
+                                                    качественного и комфортного нижнего белья, изготовленного по
+                                                    передовым технологиям. Если Вам покажется, что это обычный
+                                                    хлопчатобумажный лиф, Вы сильно ошибетесь, поскольку мы предлагаем
+                                                    широкий ассортимент разных коллекций практически на любой случай и
+                                                    для разных типов бюста.
                                                 </p>
                                             </div>
                                             <div id="panel2" class="tab-pane fade">
@@ -948,174 +792,4 @@
             </div>
         </div>
     </div>
-</section>
-
-<section id="footer">
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 contacts">
-                    <p class="title_footer text_with_margin_bottom">Контакты</p>
-                    <p>(066) 773-23-23 (077) 949-14-15</p>
-                    <p class="text_with_margin_bottom">(050) 823-43-52 (044) 244-15-15</p>
-                    <p class="text_with_margin_bottom">info@chikiss.com.ua</p>
-                    <p class="title_footer">График работы</p>
-                    <p>пн-пт 09:00 - 18:00</p>
-                </div>
-                <div class="col-md-offset-1 col-md-3 info_footer">
-                    <p class="title_footer text_with_margin_bottom">Информация</p>
-                    <ul class="list-unstyled">
-                        <li class="item_first"><a href="#">Оплата</a></li>
-                        <li class="item"><a href="#">Доставка</a></li>
-                        <li class="item"><a href="#">Возврат и обмен</a></li>
-                        <li class="item"><a href="#">Как подобрать товар</a></li>
-                        <li class="item"><a href="#">Как подобрать размер?</a></li>
-                        <li class="item"><a href="#">Сотрудничество</a></li>
-                        <li class="item"><a href="#">Политика конфиденциальности</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-offset-2 col-md-3 text-right social">
-                    <a href="#" class="vk"><i class="fa fa-vk" aria-hidden="true"></i></a>
-                    <a href="#" class="vk"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                    <a href="#" class="vk"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    <a href="#" class="vk"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-</section>
-
-<section id="feedback">
-    <!--Кнопка обратной связи-->
-    <a href="#feedbackModalBox" id="popup_toggle" onclick="return false;" style="z-index: 1;" data-toggle="modal">
-        <div class="circlephone" style="transform-origin: center;"></div>
-        <div class="circle-fill" style="transform-origin: center;"></div>
-        <div class="img-circle" style="transform-origin: center;">
-            <div class="img-circleblock" style="transform-origin: center;"></div>
-        </div>
-    </a>
-    <!--Всплывающее окно обратная связь -->
-    <div id="feedbackModalBox" class="modal fade">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <!-- Заголовок модального окна
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h4 class="modal-title">Заголовок модального окна</h4>
-                </div>-->
-
-                <!-- Основное содержимое модального окна -->
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-2 text-center">
-                                <img src="img/call-back-icon.jpg" alt="Обратный звонок">
-                            </div>
-                            <div class="col-md-9">
-                                <p class="title">Обратный звонок</p>
-                                <p>
-                                    Дорогие посетители!
-                                    <br>
-                                    Хотите получить консультацию по любому интересующему Вас вопросу или сделать заказ
-                                    <br>
-                                    по телефону? Закажите обратный звонок
-                                    <br>
-                                    Укажите свой номер и мы позвоним вам в указанное время
-                                </p>
-                            </div>
-                            <div class="col-md-1">
-                                <a type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                                    <span class="icon-cancel"></span>
-                                </a>
-                            </div>
-                        </div>
-                        <form action="" class="form-horizontal">
-                            <div class="form_group">
-                                <div class="form-group">
-                                    <div class="col-md-2 label_feedback">Ваше имя:</div>
-                                    <div class="col-md-8">
-                                        <input type="text" class="form-control" id="feedback_name" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-md-2 label_feedback">Телефон:</div>
-                                    <div class="col-md-8">
-                                        <input type="tel" class="form-control" id="feedback_tel" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-md-2 label_feedback">Комментарий:</div>
-                                    <div class="col-md-8">
-                                        <textarea class="form-control" id="feedback_comment"></textarea>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-xs-offset-2 col-md-8">
-                                        <button type="submit" class="btn btn-default btn_requestcall">Заказать звонок</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Тест зумер-->
-
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="http://code.jquery.com/jquery-migrate-1.1.1.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
-<!--Подключаем библиотеку Jquery UI-->
-<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-<script src="js/select.js"></script>
-
-<script src="js/slick.min.js"></script>
-
-<!-- Библиотека зумер -->
-<script src="js/jquery.jqzoom-core.js" type="text/javascript"></script>
-
-<script>
-    $(document).ready(function(){
-        $('.slider-for').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            fade: true,
-            asNavFor: '.slider-nav'
-        });
-        $('.slider-nav').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            asNavFor: '.slider-for',
-            dots: false,
-            centerMode: true,
-            centerPadding: '100px',
-            focusOnSelect: true,
-            infinite: true,
-            variableWidth: true,
-            prevArrow: '<a class="slick_navigation left" href="javascript:void(0)" ><span class="icon-left-arrow_thin"></span></a>',
-            nextArrow: '<a class="slick_navigation right" href="javascript:void(0)" ><span class="icon-right-arrow_thin"></span> </a>',
-        });
-        $('.jqzoom').jqzoom({
-            zoomType: 'standard',
-            lens:true,
-            preloadImages: false,
-            alwaysOn:false
-        });
-
-    });
-</script>
-
-
-<!--Подключаем собственные скрипты -->
-<script src="js/script.js"></script>
-</body>
-</html>
+<? include($_SERVER['DOCUMENT_ROOT'] . '/footer.php'); ?>

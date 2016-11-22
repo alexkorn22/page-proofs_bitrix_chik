@@ -33,7 +33,34 @@ $(document).ready(function(){
                 $( "#contentSlider1" ).html( ui.values[1] );
             }
     });
+    $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav'
+    });
+    $('.slider-nav').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: false,
+        centerMode: true,
+        centerPadding: '100px',
+        focusOnSelect: true,
+        infinite: true,
+        variableWidth: true,
+        prevArrow: '<a class="slick_navigation left" href="javascript:void(0)" ><span class="icon-left-arrow_thin"></span></a>',
+        nextArrow: '<a class="slick_navigation right" href="javascript:void(0)" ><span class="icon-right-arrow_thin"></span> </a>',
+    });
+    $('.jqzoom').jqzoom({
+        zoomType: 'standard',
+        lens:true,
+        preloadImages: false,
+        alwaysOn:false
+    });
 });
+
 $("div.container_product").hover(
     function () {
         $(this).addClass("hover_active");
