@@ -115,7 +115,7 @@
     <div class="container">
         <div class="row header_logo">
             <div class="col-md-3">
-                <a href="#" class="logo">
+                <a href="index.php" class="logo">
                     <img src="img/logo.png" alt="Логотип">
                 </a>
             </div>
