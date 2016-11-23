@@ -479,19 +479,19 @@ html {
   .div_checkbox_img {
     margin-bottom: 10px;
   }
-    a {
+  a {
       color: $color_3;
       &:hover {
         color: $color_4;
         text-decoration: none;
       }
     }
-    .filter_title, .row_show_all {
+  .filter_title, .row_show_all {
       a:hover {
         color: $color_2;
       }
     }
-    .path {
+  .path {
       font-size: 14px;
       i {
         padding: 0px 2px;
@@ -500,7 +500,7 @@ html {
         color: $color_2;
       }
     }
-    .category {
+  .category {
       font-size: 24px;
       .name_category {
         content: " ";
@@ -509,21 +509,21 @@ html {
         font-family: $SegoeUILight;
       }
     }
-    .show_all {
+  .show_all {
       font-family: $SegoeUIItalic;
       text-decoration: underline;
     }
-    .top_line {
+  .top_line {
       hr {
         margin-bottom: 10px;
       }
     }
-    .bottom_line {
+  .bottom_line {
       hr {
         margin-top: 10px;
       }
     }
-    .list_products {
+  .list_products {
       margin-bottom: 110px;
       margin-top: 10px;
       a:hover, a:focus {
@@ -625,7 +625,7 @@ html {
         }
       }
     }
-    .show_all_bottom {
+  .show_all_bottom {
 
       .number_pages {
         display: inline-block;
@@ -645,7 +645,7 @@ html {
         float: right;
       }
     }
-    .filters {
+  .filters {
       a:focus {
         text-decoration: none;
       }
@@ -694,7 +694,6 @@ html {
       }
     }
   }
-
   #ModalFastViewProduct, #ItemProduct {
     color: $color_3;
     .modal-dialog {
@@ -709,6 +708,11 @@ html {
     }
     .brand,.name_product,.value_props {
       font-family: $SegoeUIBold;
+    }
+    .similar_products,.recommend {
+      .name_product {
+        font-family: $SegoeUIRegular;
+      }
     }
     .brand {
       font-size: 20px;
@@ -987,7 +991,6 @@ html {
       }
     }
   }
-
   #ItemProduct {
     .item_product{
       margin-top:15px;
@@ -1002,7 +1005,19 @@ html {
     .tab-content {
       min-height: 180px;
     }
-
+  }
+  .similar_products,.recommend, #ItemProduct .similar_products, #ItemProduct .recommend {
+    .title {
+      font-size: 24px;
+    }
+    .brand {
+      font-size: 14px;
+    }
+  }
+  .similar_products {
+    .list_products {
+       margin-bottom: 40px;
+    }
   }
 }
 

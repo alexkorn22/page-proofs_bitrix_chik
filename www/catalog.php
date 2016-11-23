@@ -794,4 +794,6 @@
             </div>
         </div>
     </div>
-<? include($_SERVER['DOCUMENT_ROOT'] . '/footer.php'); ?>
+<? include($_SERVER['DOCUMENT_ROOT'] . '/footer.php');
+
+?>
