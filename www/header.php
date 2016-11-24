@@ -120,15 +120,15 @@
                 </a>
             </div>
             <div class="col-md-3 search">
-                <button class="btn icon" type="submit"><i class="icon-search_0411" aria-hidden="true"></i></button>
+                <button class="btn btn_main icon" type="submit"><i class="icon-search_0411" aria-hidden="true"></i></button>
                 <input type="search" class="form-control field_search" placeholder="Поиск...">
             </div>
             <div class="col-md-3 phone">
                 <div class="col_first">
-                    <span>(066) <span class="font_bold">773-23-23</span> (066) <span class="font_bold">773-23-23</span></span>
+                    <span>(066)</span> <span class="font_bold">773-23-23</span>&nbsp;&nbsp;&nbsp;<span> (066) </span><span class="font_bold">773-23-23</span></span>
                 </div>
                 <div class="col_second">
-                    <span>(066) <span class="font_bold">773-23-23</span> (066) <span class="font_bold">773-23-23</span></span>
+                    <span>(066)</span> <span class="font_bold">773-23-23</span>&nbsp;&nbsp;&nbsp;<span> (066) </span><span class="font_bold">773-23-23</span></span>
                 </div>
             </div>
             <div class="col-md-3 user_data">
@@ -137,7 +137,7 @@
                         <a href="#">Вход </a> |
                         <a href="#"> Регистрация </a>
                     </div>
-                    <a class="btn icon" href="#"><i class="icon-user_0411" aria-hidden="true"></i></a>
+                    <a class="btn btn_main icon" href="#"><i class="icon-user_0411" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>

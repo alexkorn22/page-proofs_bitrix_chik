@@ -6,8 +6,8 @@
             <div class="row">
                 <div class="col-md-3 contacts">
                     <p class="title_footer text_with_margin_bottom">Контакты</p>
-                    <p>(066) 773-23-23 (077) 949-14-15</p>
-                    <p class="text_with_margin_bottom">(050) 823-43-52 (044) 244-15-15</p>
+                    <p>(066) 773-23-23 &nbsp; (077) 949-14-15</p>
+                    <p class="text_with_margin_bottom">(050) 823-43-52 &nbsp; (044) 244-15-15</p>
                     <p class="text_with_margin_bottom">info@chikiss.com.ua</p>
                     <p class="title_footer">График работы</p>
                     <p>пн-пт 09:00 - 18:00</p>

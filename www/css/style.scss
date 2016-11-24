@@ -5,6 +5,10 @@ $color_3: #434343;
 $color_4: #b1e1e1;
 $color_5: #ff5757;
 $color_6: #c4e8e8;
+$color_7: #d9f1f1;
+$color_8: #edf9f9;
+$color_9: #f4fbfb;
+$color_10: #d2d2d2;
 $color_hover: #555555;
 
 //********ШРИФТЫ**************************
@@ -21,13 +25,32 @@ html {
 #art_body {
   padding-top: 42px;
   padding-right: 0 !important;
-  #content,#main_top_menu,#main_header {
-    .btn {
-      &:focus {
-        outline: none;
-      }
+  /*BUTTONS*/
+  .btn {
+    border-radius: 10px;
+    &:focus {
+      outline: none;
+    }
+    &:active {
+      -webkit-box-shadow: none;
+    }
+    &.btn_main {
+      background-color: $color_4;
       &:hover {
         background-color: $color_6;
+      }
+      &:active {
+        background-color: $color_7;
+      }
+    }
+    &.btn_addit {
+      background-color: #fff;
+      border-color: $color_1;
+      &:hover {
+        background-color: $color_8;
+      }
+      &:active {
+        background-color: $color_9;
       }
     }
   }
@@ -105,7 +128,7 @@ html {
         opacity: 0.9;
         text-transform: none;
         padding-top: 18px;
-        padding-bottom: 150px;
+        padding-bottom: 75px;
         li {
           padding-top: 6px;
           padding-bottom: 6px;
@@ -193,7 +216,6 @@ html {
   .search {
     padding-top: 8px;
     .icon {
-      background-color: $color_4;
       border-radius: 10px;
       color: white;
       font-size: 23px;
@@ -250,7 +272,6 @@ html {
     .icon {
       width: 33px;
       height: 33px;
-      background-color: $color_4;
       border-radius: 10px;
       color: white;
       font-size: 20px;
@@ -259,9 +280,6 @@ html {
       margin-top: 2px;
       margin-bottom: 2px;
     }
-  }
-  .btn:hover {
-    background-color: $color_6;
   }
 }
 
@@ -468,8 +486,12 @@ html {
     margin-top: 30px;
   }
   .main_text {
+    color: $color_3;
+    h1,h2 {
+      font-size: 30px;
+    }
     line-height: 24px;
-    padding-bottom: 30px;
+    padding-bottom: 55px;
     padding-top: 20px;
   }
   .catalog {
@@ -541,21 +563,6 @@ html {
       .row {
         margin-bottom: 40px;
       }
-      .sale_new {
-        position: absolute;
-        top: 5px;
-        left: 10px;
-        transform: rotate(-45deg);
-        text-transform: uppercase;
-        font-size: 24px;
-        user-select: none;
-        .sale {
-          color: $color_5;
-        }
-        .new {
-          color: $color_4;
-        }
-      }
       .liked {
         position: absolute;
         top: 15px;
@@ -625,6 +632,27 @@ html {
         }
       }
     }
+  .sale_new {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    transform: rotate(-45deg);
+    text-transform: uppercase;
+    font-size: 24px;
+    user-select: none;
+    .sale {
+      color: $color_5;
+    }
+    .new {
+      color: $color_4;
+    }
+  }
+  .liked .fa {
+    color: $color_3;
+    &:hover {
+      color: $color_2;
+    }
+  }
   .show_all_bottom {
 
       .number_pages {
@@ -686,12 +714,10 @@ html {
             }
           }
         }
-      .btn_clear_filter {
-       margin-left: 38px;
-        color: $color_3;
-        border-radius: 10px;
-        background-color: $color_4;
-      }
+    }
+    .btn_clear_filter {
+      margin-right: 25px;
+      color: $color_3;
     }
   }
   #ModalFastViewProduct, #ItemProduct {
@@ -767,17 +793,16 @@ html {
       a:focus,a:hover {
         color: inherit;
         text-decoration: none;
-        cursor: default;
       }
       /*Начало ОФОРМЛЕНИЕ SELECT*/
       .dropcontainer {
         position: absolute;
-        font-size: 16px;
+        font-size: 18px;
         color: #777;
         width: 80px;
         z-index: 2;
         ul {
-          font-size: 16px;
+          font-size: 18px;
           border: 1px solid #ccc;
           border-top: none;
           background: #fff;
@@ -790,13 +815,18 @@ html {
           -moz-box-sizing: border-box;
           box-sizing: border-box;
           li {
-            padding: 5px 10px;
+            a {
+              padding: 12px 10px;
+            }
+            padding-bottom: 10px;
+            padding-top: 10px;
+            /*padding: 5px 10px;*/
             -webkit-transition: all 0.5s ease;
             -moz-transition: all 0.5s ease;
             -o-transition: all 0.5s ease;
             transition: all 0.5s ease;
             &:hover {
-              background: #f5f5f5;
+              font-family: $SegoeUIBold;
               outline: none;
             }
           }
@@ -804,12 +834,12 @@ html {
       }
       .trigger {
         color: #777;
-        padding: 8px 10px;
-        font-size: 16px;
+        padding: 7px 10px 6px 12px;
+        font-size: 18px;
         width: 80px;
-        background: #fff url(../img/select-arrow-open.jpg) 98% center no-repeat;
+        background: #fff url(../img/select-arrow-open.jpg) 100% center no-repeat;
         display: block;
-        border: 1px solid #ccc;
+        border: 1px solid $color_1;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
@@ -818,8 +848,6 @@ html {
         -o-transition: all 0.5s ease;
         transition: all 0.5s ease;
         &:hover {
-          color: #777;
-          background: #f5f5f5 url(../img/select-arrow-open.jpg) 98% center no-repeat;
         }
         &:last-child {
           border-bottom: none;
@@ -827,22 +855,19 @@ html {
       }
       .activetrigger {
         color: #777;
-        padding: 8px 10px;
-        font-size: 16px;
+        padding: 7px 10px 6px 12px;
+        font-size: 18px;
         width: 80px;
-        background: #f5f5f5 url(../img/select-arrow-close.jpg) 98% center no-repeat;
+        background: #fff url(../img/select-arrow-close.jpg) 100% center no-repeat;
         display: block;
-        border: 1px solid #ccc;
+        border: 1px solid $color_1;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
         &:hover {
-          background: #f5f5f5 url(../img/select-arrow-close.jpg) 98% center no-repeat;
-          color: #777;
         }
         &:active {
-          background: #f5f5f5 url(../img/select-arrow-close.jpg) 98% center no-repeat;
-          color: #777;
+
         }
       }
       .dropdownhidden {
@@ -860,26 +885,31 @@ html {
       }
       .value_quantity {
         width: 120px;
+        .input-group {
+          border: 1px solid $color_1;
+        }
         .input-number, button {
-          height: 40px;
+          height: 39px;
         }
         .input-number {
           padding: 6px 6px;
-          height: 40px;
+          height: 39px;
+          border: none;
         }
         button {
           padding: 6px 16px;
           background-color: $color_1;
+          border-color: $color_1;
           border-radius: 0px;
           &:focus {
             outline: none;
           }
           &:hover {
-            background-color: $color_4;
+            background-color: $color_10;
           }
           &:disabled {
             &:hover {
-              background-color: inherit;
+              background-color: $color_1;
             }
           }
         }
@@ -889,19 +919,11 @@ html {
       .col-md-5 {
         padding-right: 0px;
       }
-      .buy {
-        background-color: $color_4;
-      }
       .btn {
-        border-radius: 13px;
         font-size: 16px;
-        border-color: $color_1;
         color: $color_3;
         padding: 10px 12px;
         width: 100%;
-        &:hover {
-          background-color: $color_6;
-        }
       }
       .liked {
         font-size: 24px;
@@ -1006,18 +1028,20 @@ html {
       min-height: 180px;
     }
   }
-  .similar_products,.recommend, #ItemProduct .similar_products, #ItemProduct .recommend {
+  .similar_products,.recommend {
     .title {
       font-size: 24px;
-    }
-    .brand {
-      font-size: 14px;
     }
   }
   .similar_products {
     .list_products {
-       margin-bottom: 40px;
+      margin-bottom: 40px;
     }
+  }
+  .sale_new {
+    z-index: 1;
+    top: 10px;
+    left: 15px;
   }
 }
 

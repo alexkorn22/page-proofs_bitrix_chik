@@ -22,6 +22,9 @@
                 <div class="col-md-4">
                     <div class="images">
                         <div class="full_img">
+                            <div class="sale_new">
+                                <span class="sale">Sale</span>
+                            </div>
                             <div class="slider-for">
                                 <div class="item_full_img">
                                     <img src="http://lorempicsum.com/simpsons/370/400/1" alt="1">
@@ -200,9 +203,9 @@
                                                               <span class="">-</span>
                                                           </button>
                                                       </span>
-                                                <input type="text" name="quant[1]" class="form-control input-number"
-                                                       value="1" min="1" max="10">
-                                                <span class="input-group-btn">
+                                                <input type="text" name="quant[1]" class="form-control input-number text-center"
+                                                       value="1" min="1" max ="10">
+                                                <span class="input-group-btn text-right">
                                                             <button type="button" class="btn btn-default btn-number"
                                                                     data-type="plus" data-field="quant[1]">
                                                                 <span class="">+</span>
@@ -215,11 +218,11 @@
                                     <!--КНОПКИ-->
                                     <div class="row buttons">
                                         <div class="col-md-5">
-                                            <button type="button" class="btn btn-default buy">Добавить в корзину
+                                            <button type="button" class="btn btn_main buy">Добавить в корзину
                                             </button>
                                         </div>
                                         <div class="col-md-5">
-                                            <button type="button" class="btn btn-default one_click">Заказать в 1
+                                            <button type="button" class="btn btn_addit one_click">Заказать в 1
                                                 клик
                                             </button>
                                         </div>
@@ -261,313 +264,313 @@
                     <div class="privilege"></div>
                 </div>
             </div>
-            <!--ЧЕРТА -->
+        </div>
+        <!--ЧЕРТА -->
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+            </div>
+        </div>
+        <!--ПОХОЖЫЕ ТОВАРЫ-->
+        <div class="similar_products">
+            <div class="row title">
+                <div class="col-md-12">
+                    Похожие товары
+                </div>
+            </div>
             <div class="row">
                 <div class="col-md-12">
                     <hr>
                 </div>
             </div>
-            <!--ПОХОЖЫЕ ТОВАРЫ-->
-            <div class="similar_products">
-                <div class="row title">
-                    <div class="col-md-12">
-                        Похожые товары
-                    </div>
-                </div>
+            <div class="list_products">
                 <div class="row">
-                    <div class="col-md-12">
-                        <hr>
-                    </div>
-                </div>
-                <div class="list_products">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="container_product">
-                                    <div class="product">
-                                        <div class="img_catalog">
-                                            <img src="img/products/1.jpg" alt="Картинка"
-                                                 class="img-responsive center-block">
-                                        </div>
-                                        <div class="price text-left">
-                                            <span>от </span>
-                                            <span class="without_discount">820 грн</span>
-                                            <span class="with_discount">723,35 грн</span>
-                                        </div>
-                                        <div class="name_product">
-                                            <a href="product.php">
-                                                <span class="brand">Atlantic / </span>
-                                                <span>Бюстгальтер женский для беременных и кормящих мягкая чашка</span>
-                                            </a>
-                                        </div>
-                                        <a href="javascript:void(0)" data-toggle="modal" data-target="#ModalFastViewProduct"
-                                           onclick="$('.slider-nav').slick('slickGoTo',1);">
-                                            <div class="fast_view text-center">
-                                                <span>Быстрый просмотр </span>
-                                                <i class="fa  fa-eye"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="sale_new">
-                                        <span class="sale">Sale</span>
-                                    </div>
-                                    <div class="liked">
-                                        <a href="#"><i class="fa fa-heart-o"></i></a>
-                                    </div>
+                    <div class="col-md-3">
+                        <div class="container_product">
+                            <div class="product">
+                                <div class="img_catalog">
+                                    <img src="img/products/1.jpg" alt="Картинка"
+                                         class="img-responsive center-block">
                                 </div>
+                                <div class="price text-left">
+                                    <span>от </span>
+                                    <span class="without_discount">820 грн</span>
+                                    <span class="with_discount">723,35 грн</span>
+                                </div>
+                                <div class="name_product">
+                                    <a href="product.php">
+                                        <span class="brand">Atlantic / </span>
+                                        <span>Бюстгальтер женский для беременных и кормящих мягкая чашка</span>
+                                    </a>
+                                </div>
+                                <a href="javascript:void(0)" data-toggle="modal" data-target="#ModalFastViewProduct"
+                                   onclick="$('.slider-nav').slick('slickGoTo',1);">
+                                    <div class="fast_view text-center">
+                                        <span>Быстрый просмотр </span>
+                                        <i class="fa  fa-eye"></i>
+                                    </div>
+                                </a>
                             </div>
-                            <div class="col-md-3">
-                                <div class="container_product">
-                                    <div class="product">
-                                        <div class="img_catalog">
-                                            <img src="img/products/2.jpg" alt="Картинка"
-                                                 class="img-responsive center-block">
-                                        </div>
-                                        <div class="price text-left">
-                                            <span>от </span>
-                                            <span class="without_discount">820 грн</span>
-                                            <span class="with_discount">723,35 грн</span>
-                                        </div>
-                                        <div class="name_product">
-                                            <a href="#">
-                                                <span class="brand">Atlantic / </span>
-                                                <span>Бюстгальтер женский для беременных и кормящих мягкая чашка</span>
-                                            </a>
-                                        </div>
-                                        <a href="#">
-                                            <div class="fast_view text-center">
-                                                <span>Быстрый просмотр </span>
-                                                <i class="fa  fa-eye"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="sale_new">
-                                        <span class="new">New</span>
-                                    </div>
-                                    <div class="liked">
-                                        <a href="#"><i class="fa fa-heart"></i></a>
-                                    </div>
-                                </div>
+                            <div class="sale_new">
+                                <span class="sale">Sale</span>
                             </div>
-                            <div class="col-md-3">
-                                <div class="container_product">
-                                    <div class="product">
-                                        <div class="img_catalog">
-                                            <img src="img/products/1.jpg" alt="Картинка"
-                                                 class="img-responsive center-block">
-                                        </div>
-                                        <div class="price text-left">
-                                            <span>от </span>
-                                            <span class="without_discount">820 грн</span>
-                                            <span class="with_discount">723,35 грн</span>
-                                        </div>
-                                        <div class="name_product">
-                                            <a href="#">
-                                                <span class="brand">Atlantic / </span>
-                                                <span>Бюстгальтер женский для беременных и кормящих мягкая чашка</span>
-                                            </a>
-                                        </div>
-                                        <a href="#">
-                                            <div class="fast_view text-center">
-                                                <span>Быстрый просмотр </span>
-                                                <i class="fa  fa-eye"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="sale_new">
-                                        <span class="sale">Sale</span>
-                                    </div>
-                                    <div class="liked">
-                                        <a href="#"><i class="fa fa-heart-o"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="container_product">
-                                    <div class="product">
-                                        <div class="img_catalog">
-                                            <img src="img/products/1.jpg" alt="Картинка"
-                                                 class="img-responsive center-block">
-                                        </div>
-                                        <div class="price text-left">
-                                            <span>от </span>
-                                            <span class="without_discount">820 грн</span>
-                                            <span class="with_discount">723,35 грн</span>
-                                        </div>
-                                        <div class="name_product">
-                                            <a href="#">
-                                                <span class="brand">Atlantic / </span>
-                                                <span>Бюстгальтер женский для беременных и кормящих мягкая чашка</span>
-                                            </a>
-                                        </div>
-                                        <a href="#">
-                                            <div class="fast_view text-center">
-                                                <span>Быстрый просмотр </span>
-                                                <i class="fa  fa-eye"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="sale_new">
-                                        <span class="sale">Sale</span>
-                                    </div>
-                                    <div class="liked">
-                                        <a href="#"><i class="fa fa-heart-o"></i></a>
-                                    </div>
-                                </div>
+                            <div class="liked">
+                                <a href="#"><i class="fa fa-heart-o"></i></a>
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-3">
+                        <div class="container_product">
+                            <div class="product">
+                                <div class="img_catalog">
+                                    <img src="img/products/2.jpg" alt="Картинка"
+                                         class="img-responsive center-block">
+                                </div>
+                                <div class="price text-left">
+                                    <span>от </span>
+                                    <span class="without_discount">820 грн</span>
+                                    <span class="with_discount">723,35 грн</span>
+                                </div>
+                                <div class="name_product">
+                                    <a href="#">
+                                        <span class="brand">Atlantic / </span>
+                                        <span>Бюстгальтер женский для беременных и кормящих мягкая чашка</span>
+                                    </a>
+                                </div>
+                                <a href="#">
+                                    <div class="fast_view text-center">
+                                        <span>Быстрый просмотр </span>
+                                        <i class="fa  fa-eye"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sale_new">
+                                <span class="new">New</span>
+                            </div>
+                            <div class="liked">
+                                <a href="#"><i class="fa fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="container_product">
+                            <div class="product">
+                                <div class="img_catalog">
+                                    <img src="img/products/1.jpg" alt="Картинка"
+                                         class="img-responsive center-block">
+                                </div>
+                                <div class="price text-left">
+                                    <span>от </span>
+                                    <span class="without_discount">820 грн</span>
+                                    <span class="with_discount">723,35 грн</span>
+                                </div>
+                                <div class="name_product">
+                                    <a href="#">
+                                        <span class="brand">Atlantic / </span>
+                                        <span>Бюстгальтер женский для беременных и кормящих мягкая чашка</span>
+                                    </a>
+                                </div>
+                                <a href="#">
+                                    <div class="fast_view text-center">
+                                        <span>Быстрый просмотр </span>
+                                        <i class="fa  fa-eye"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sale_new">
+                                <span class="sale">Sale</span>
+                            </div>
+                            <div class="liked">
+                                <a href="#"><i class="fa fa-heart-o"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="container_product">
+                            <div class="product">
+                                <div class="img_catalog">
+                                    <img src="img/products/1.jpg" alt="Картинка"
+                                         class="img-responsive center-block">
+                                </div>
+                                <div class="price text-left">
+                                    <span>от </span>
+                                    <span class="without_discount">820 грн</span>
+                                    <span class="with_discount">723,35 грн</span>
+                                </div>
+                                <div class="name_product">
+                                    <a href="#">
+                                        <span class="brand">Atlantic / </span>
+                                        <span>Бюстгальтер женский для беременных и кормящих мягкая чашка</span>
+                                    </a>
+                                </div>
+                                <a href="#">
+                                    <div class="fast_view text-center">
+                                        <span>Быстрый просмотр </span>
+                                        <i class="fa  fa-eye"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sale_new">
+                                <span class="sale">Sale</span>
+                            </div>
+                            <div class="liked">
+                                <a href="#"><i class="fa fa-heart-o"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!--ЧЕРТА -->
+        </div>
+        <!--ЧЕРТА -->
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+            </div>
+        </div>
+        <!--МЫ РЕКОМЕНДУЕМ-->
+        <div class="recommend" >
+            <div class="row title">
+                <div class="col-md-12">
+                    Мы рекомендуем
+                </div>
+            </div>
             <div class="row">
                 <div class="col-md-12">
                     <hr>
                 </div>
             </div>
-            <!--МЫ РЕКОМЕНДУЕМ-->
-            <div class="recommend" >
-                <div class="row title">
-                    <div class="col-md-12">
-                       Мы рекомендуем
-                    </div>
-                </div>
+            <div class="list_products">
                 <div class="row">
-                    <div class="col-md-12">
-                        <hr>
+                    <div class="col-md-3">
+                        <div class="container_product">
+                            <div class="product">
+                                <div class="img_catalog">
+                                    <img src="img/products/1.jpg" alt="Картинка"
+                                         class="img-responsive center-block">
+                                </div>
+                                <div class="price text-left">
+                                    <span>от </span>
+                                    <span class="without_discount">820 грн</span>
+                                    <span class="with_discount">723,35 грн</span>
+                                </div>
+                                <div class="name_product">
+                                    <a href="product.php">
+                                        <span class="brand">Atlantic / </span>
+                                        <span>Бюстгальтер женский для беременных и кормящих мягкая чашка</span>
+                                    </a>
+                                </div>
+                                <a href="javascript:void(0)" data-toggle="modal" data-target="#ModalFastViewProduct"
+                                   onclick="$('.slider-nav').slick('slickGoTo',1);">
+                                    <div class="fast_view text-center">
+                                        <span>Быстрый просмотр </span>
+                                        <i class="fa  fa-eye"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sale_new">
+                                <span class="sale">Sale</span>
+                            </div>
+                            <div class="liked">
+                                <a href="#"><i class="fa fa-heart-o"></i></a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="list_products">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="container_product">
-                                <div class="product">
-                                    <div class="img_catalog">
-                                        <img src="img/products/1.jpg" alt="Картинка"
-                                             class="img-responsive center-block">
-                                    </div>
-                                    <div class="price text-left">
-                                        <span>от </span>
-                                        <span class="without_discount">820 грн</span>
-                                        <span class="with_discount">723,35 грн</span>
-                                    </div>
-                                    <div class="name_product">
-                                        <a href="product.php">
-                                            <span class="brand">Atlantic / </span>
-                                            <span>Бюстгальтер женский для беременных и кормящих мягкая чашка</span>
-                                        </a>
-                                    </div>
-                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#ModalFastViewProduct"
-                                       onclick="$('.slider-nav').slick('slickGoTo',1);">
-                                        <div class="fast_view text-center">
-                                            <span>Быстрый просмотр </span>
-                                            <i class="fa  fa-eye"></i>
-                                        </div>
+                    <div class="col-md-3">
+                        <div class="container_product">
+                            <div class="product">
+                                <div class="img_catalog">
+                                    <img src="img/products/2.jpg" alt="Картинка"
+                                         class="img-responsive center-block">
+                                </div>
+                                <div class="price text-left">
+                                    <span>от </span>
+                                    <span class="without_discount">820 грн</span>
+                                    <span class="with_discount">723,35 грн</span>
+                                </div>
+                                <div class="name_product">
+                                    <a href="#">
+                                        <span class="brand">Atlantic / </span>
+                                        <span>Бюстгальтер женский для беременных и кормящих мягкая чашка</span>
                                     </a>
                                 </div>
-                                <div class="sale_new">
-                                    <span class="sale">Sale</span>
-                                </div>
-                                <div class="liked">
-                                    <a href="#"><i class="fa fa-heart-o"></i></a>
-                                </div>
+                                <a href="#">
+                                    <div class="fast_view text-center">
+                                        <span>Быстрый просмотр </span>
+                                        <i class="fa  fa-eye"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sale_new">
+                                <span class="new">New</span>
+                            </div>
+                            <div class="liked">
+                                <a href="#"><i class="fa fa-heart"></i></a>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="container_product">
-                                <div class="product">
-                                    <div class="img_catalog">
-                                        <img src="img/products/2.jpg" alt="Картинка"
-                                             class="img-responsive center-block">
-                                    </div>
-                                    <div class="price text-left">
-                                        <span>от </span>
-                                        <span class="without_discount">820 грн</span>
-                                        <span class="with_discount">723,35 грн</span>
-                                    </div>
-                                    <div class="name_product">
-                                        <a href="#">
-                                            <span class="brand">Atlantic / </span>
-                                            <span>Бюстгальтер женский для беременных и кормящих мягкая чашка</span>
-                                        </a>
-                                    </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="container_product">
+                            <div class="product">
+                                <div class="img_catalog">
+                                    <img src="img/products/1.jpg" alt="Картинка"
+                                         class="img-responsive center-block">
+                                </div>
+                                <div class="price text-left">
+                                    <span>от </span>
+                                    <span class="without_discount">820 грн</span>
+                                    <span class="with_discount">723,35 грн</span>
+                                </div>
+                                <div class="name_product">
                                     <a href="#">
-                                        <div class="fast_view text-center">
-                                            <span>Быстрый просмотр </span>
-                                            <i class="fa  fa-eye"></i>
-                                        </div>
+                                        <span class="brand">Atlantic / </span>
+                                        <span>Бюстгальтер женский для беременных и кормящих мягкая чашка</span>
                                     </a>
                                 </div>
-                                <div class="sale_new">
-                                    <span class="new">New</span>
-                                </div>
-                                <div class="liked">
-                                    <a href="#"><i class="fa fa-heart"></i></a>
-                                </div>
+                                <a href="#">
+                                    <div class="fast_view text-center">
+                                        <span>Быстрый просмотр </span>
+                                        <i class="fa  fa-eye"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sale_new">
+                                <span class="sale">Sale</span>
+                            </div>
+                            <div class="liked">
+                                <a href="#"><i class="fa fa-heart-o"></i></a>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="container_product">
-                                <div class="product">
-                                    <div class="img_catalog">
-                                        <img src="img/products/1.jpg" alt="Картинка"
-                                             class="img-responsive center-block">
-                                    </div>
-                                    <div class="price text-left">
-                                        <span>от </span>
-                                        <span class="without_discount">820 грн</span>
-                                        <span class="with_discount">723,35 грн</span>
-                                    </div>
-                                    <div class="name_product">
-                                        <a href="#">
-                                            <span class="brand">Atlantic / </span>
-                                            <span>Бюстгальтер женский для беременных и кормящих мягкая чашка</span>
-                                        </a>
-                                    </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="container_product">
+                            <div class="product">
+                                <div class="img_catalog">
+                                    <img src="img/products/1.jpg" alt="Картинка"
+                                         class="img-responsive center-block">
+                                </div>
+                                <div class="price text-left">
+                                    <span>от </span>
+                                    <span class="without_discount">820 грн</span>
+                                    <span class="with_discount">723,35 грн</span>
+                                </div>
+                                <div class="name_product">
                                     <a href="#">
-                                        <div class="fast_view text-center">
-                                            <span>Быстрый просмотр </span>
-                                            <i class="fa  fa-eye"></i>
-                                        </div>
+                                        <span class="brand">Atlantic / </span>
+                                        <span>Бюстгальтер женский для беременных и кормящих мягкая чашка</span>
                                     </a>
                                 </div>
-                                <div class="sale_new">
-                                    <span class="sale">Sale</span>
-                                </div>
-                                <div class="liked">
-                                    <a href="#"><i class="fa fa-heart-o"></i></a>
-                                </div>
+                                <a href="#">
+                                    <div class="fast_view text-center">
+                                        <span>Быстрый просмотр </span>
+                                        <i class="fa  fa-eye"></i>
+                                    </div>
+                                </a>
                             </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="container_product">
-                                <div class="product">
-                                    <div class="img_catalog">
-                                        <img src="img/products/1.jpg" alt="Картинка"
-                                             class="img-responsive center-block">
-                                    </div>
-                                    <div class="price text-left">
-                                        <span>от </span>
-                                        <span class="without_discount">820 грн</span>
-                                        <span class="with_discount">723,35 грн</span>
-                                    </div>
-                                    <div class="name_product">
-                                        <a href="#">
-                                            <span class="brand">Atlantic / </span>
-                                            <span>Бюстгальтер женский для беременных и кормящих мягкая чашка</span>
-                                        </a>
-                                    </div>
-                                    <a href="#">
-                                        <div class="fast_view text-center">
-                                            <span>Быстрый просмотр </span>
-                                            <i class="fa  fa-eye"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="sale_new">
-                                    <span class="sale">Sale</span>
-                                </div>
-                                <div class="liked">
-                                    <a href="#"><i class="fa fa-heart-o"></i></a>
-                                </div>
+                            <div class="sale_new">
+                                <span class="sale">Sale</span>
+                            </div>
+                            <div class="liked">
+                                <a href="#"><i class="fa fa-heart-o"></i></a>
                             </div>
                         </div>
                     </div>

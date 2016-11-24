@@ -270,8 +270,8 @@
                                 </div>
                             </div>
                             <div class="buttons">
-                                <div class="col-md-12">
-                                    <button type="submit" class="btn btn_clear_filter">Очистить фильтр</button>
+                                <div class="col-md-12 text-center">
+                                    <button type="submit" class="btn btn_main btn_clear_filter">Очистить фильтр</button>
                                 </div>
                             </div>
                         </div>
@@ -316,6 +316,7 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="container_product">
+                                <a href="product.php">
                                 <div class="product">
                                     <div class="img_catalog">
                                         <img src="img/products/1.jpg" alt="Картинка"
@@ -327,13 +328,16 @@
                                         <span class="with_discount">723,35 грн</span>
                                     </div>
                                     <div class="name_product">
-                                        <a href="product.php">
+
                                             <span class="brand">Atlantic / </span>
                                             <span>Бюстгальтер женский для беременных и кормящих мягкая чашка</span>
-                                        </a>
+
                                     </div>
-                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#ModalFastViewProduct"
-                                       onclick="$('.slider-nav').slick('slickGoTo',1);">
+                                    <a href="product.php">
+                                        <!--
+                                        data-toggle="modal" data-target="#ModalFastViewProduct"
+                                        onclick="$('.slider-nav').slick('slickGoTo',1);"
+                                        -->
                                         <div class="fast_view text-center">
                                             <span>Быстрый просмотр </span>
                                             <i class="fa  fa-eye"></i>
@@ -347,6 +351,7 @@
                                     <a href="#"><i class="fa fa-heart-o"></i></a>
                                 </div>
                             </div>
+                            </a>
                         </div>
                         <div class="col-md-4">
                             <div class="container_product">
@@ -702,7 +707,7 @@
                                             <div class="name_props">
                                                 Размер:
                                             </div>
-                                            <div class="value_size">
+                                            <div class="value_size text-center">
                                                 <select class="turnintodropdown">
                                                     <option>A</option>
                                                     <option>B</option>
@@ -727,7 +732,7 @@
                                                           <span class="">-</span>
                                                       </button>
                                                   </span>
-                                                    <input type="text" name="quant[1]" class="form-control input-number"
+                                                    <input type="text" name="quant[1]" class="form-control input-number text-center"
                                                            value="1" min="1" max="10">
                                                     <span class="input-group-btn">
                                                         <button type="button" class="btn btn-default btn-number"
@@ -742,11 +747,11 @@
                                         <!--КНОПКИ-->
                                         <div class="row buttons">
                                             <div class="col-md-5">
-                                                <button type="button" class="btn btn-default buy">Добавить в корзину
+                                                <button type="button" class="btn btn_main buy">Добавить в корзину
                                                 </button>
                                             </div>
                                             <div class="col-md-5">
-                                                <button type="button" class="btn btn-default one_click">Заказать в 1
+                                                <button type="button" class="btn btn_addit one_click">Заказать в 1
                                                     клик
                                                 </button>
                                             </div>
