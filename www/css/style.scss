@@ -1027,6 +1027,11 @@ html {
     .tab-content {
       min-height: 180px;
     }
+    .sale_new {
+      z-index: 1;
+      top: 10px;
+      left: 15px;
+    }
   }
   .similar_products,.recommend {
     .title {
@@ -1037,11 +1042,6 @@ html {
     .list_products {
       margin-bottom: 40px;
     }
-  }
-  .sale_new {
-    z-index: 1;
-    top: 10px;
-    left: 15px;
   }
 }
 
