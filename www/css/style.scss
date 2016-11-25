@@ -492,7 +492,7 @@ html {
     }
     line-height: 24px;
     padding-bottom: 55px;
-    padding-top: 20px;
+    padding-top: 15px;
   }
   .catalog {
     padding-top: 30px;
@@ -815,6 +815,7 @@ html {
           -moz-box-sizing: border-box;
           box-sizing: border-box;
           li {
+            text-align: center;
             a {
               padding: 12px 10px;
             }
@@ -834,7 +835,7 @@ html {
       }
       .trigger {
         color: #777;
-        padding: 7px 10px 6px 12px;
+        padding: 7px 10px 6px 13px;
         font-size: 18px;
         width: 80px;
         background: #fff url(../img/select-arrow-open.jpg) 100% center no-repeat;
@@ -855,7 +856,7 @@ html {
       }
       .activetrigger {
         color: #777;
-        padding: 7px 10px 6px 12px;
+        padding: 7px 10px 6px 13px;
         font-size: 18px;
         width: 80px;
         background: #fff url(../img/select-arrow-close.jpg) 100% center no-repeat;
@@ -897,7 +898,7 @@ html {
           border: none;
         }
         button {
-          padding: 6px 16px;
+          width: 40px;
           background-color: $color_1;
           border-color: $color_1;
           border-radius: 0px;
