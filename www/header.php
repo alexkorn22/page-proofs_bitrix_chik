@@ -9,19 +9,21 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- Для слайдера -->
     <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="css/slick.css"/>
-
+    <!-- Зумер -->
     <link rel="stylesheet" href="css/jquery.jqzoom.css" type="text/css">
+    <!-- Собственные стили -->
+    <link rel="stylesheet" href="css/style.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 </head>
 <body id="art_body">
 

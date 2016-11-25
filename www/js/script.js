@@ -53,6 +53,7 @@ $(document).ready(function(){
         prevArrow: '<a class="slick_navigation left" href="javascript:void(0)" ><span class="icon-left-arrow_thin"></span></a>',
         nextArrow: '<a class="slick_navigation right" href="javascript:void(0)" ><span class="icon-right-arrow_thin"></span> </a>',
     });
+    /*======ZOOMER============*/
     $('.jqzoom').jqzoom({
         zoomType: 'standard',
         lens:true,
