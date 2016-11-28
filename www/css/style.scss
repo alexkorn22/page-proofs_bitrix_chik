@@ -886,22 +886,23 @@ html {
       }
       .value_quantity {
         width: 120px;
-        .input-group {
-          border: 1px solid $color_1;
-        }
-        .input-number, button {
-          height: 39px;
-        }
         .input-number {
-          padding: 6px 6px;
-          height: 39px;
-          border: none;
+          width: 40px;
+          height: 40px;
+          border: 1px solid $color_1;
+          border-left: none;
+          border-right: none;
+          box-shadow: none;
+          font-size: 18px;
+          padding: 6px 0px;
         }
         button {
           width: 40px;
+          height:40px;
           background-color: $color_1;
           border-color: $color_1;
           border-radius: 0px;
+          margin: 0px 0px;
           &:focus {
             outline: none;
           }
@@ -1050,9 +1051,6 @@ html {
           visibility:hidden;
         }
       }
-      & > .slick-list {
-        overflow: visible;
-      }
     }
     .zoomWindow {
       left: 108% !important;
@@ -1062,14 +1060,36 @@ html {
       height: 55px;
       background-position: 25px 30px;
     }
-    .z_index3 {
+    .z_index_for_zoom {
 
         z-index: 3;
     }
   }
   .similar_products,.recommend {
+    position: relative;
     .title {
       font-size: 24px;
+    }
+    .arrow {
+      .fa {
+        font-size: 48px;
+        color: white;
+        padding: 0px 7px;
+      }
+      background-color: $color_1;
+      opacity: 0.5;
+      position: absolute;
+      z-index: 3;
+      top:50%;
+      &.arrow_left{
+        left:0px;
+      }
+      &.arrow_right{
+        right:0px;
+      }
+      &:hover{
+        opacity: 1;
+      }
     }
   }
   .similar_products {

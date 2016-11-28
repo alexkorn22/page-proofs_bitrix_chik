@@ -53,6 +53,13 @@ $(document).ready(function(){
         prevArrow: '<a class="slick_navigation left" href="javascript:void(0)" ><span class="icon-left-arrow_thin"></span></a>',
         nextArrow: '<a class="slick_navigation right" href="javascript:void(0)" ><span class="icon-right-arrow_thin"></span> </a>',
     });
+
+    $('.slider_similar_products').slick({
+        infinite: true,
+        dots: false,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+    });
     /*======ZOOMER============*/
     $('.jqzoom').jqzoom({
         zoomType: 'standard',
