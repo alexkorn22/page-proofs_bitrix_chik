@@ -914,6 +914,9 @@ html {
             }
           }
         }
+        .btn[disabled] {
+          cursor: default;
+        }
       }
     }
     .buttons {
@@ -1049,7 +1052,6 @@ html {
       }
       & > .slick-list {
         overflow: visible;
-        z-index: 3;
       }
     }
     .zoomWindow {
@@ -1059,6 +1061,10 @@ html {
       width: 65px;
       height: 55px;
       background-position: 25px 30px;
+    }
+    .z_index3 {
+
+        z-index: 3;
     }
   }
   .similar_products,.recommend {

@@ -33,6 +33,7 @@
         });
     };
     jqzoom = function (el, options) {
+
         var api = null;
         api = $(el).data("jqzoom");
         if (api) return api;
@@ -127,6 +128,7 @@
                     });
                 }
                 $(".zoomPad", el).bind('mouseenter mouseover', function (event) {
+
                     img.attr('title', '');
                     $(el).attr('title', '');
                     el.zoom_active = true;
@@ -140,9 +142,12 @@
                 });
                 $(".zoomPad", el).bind('mouseleave', function (event) {
                     obj.deactivate();
+                    $('#slider_for').removeClass("z_index3");
+                });
+                $(".zoomPad", el).bind('mouseenter', function (event) {
+                    $('#slider_for').addClass("z_index3");
                 });
                 $(".zoomPad", el).bind('mousemove', function (e) {
-
                     //prevent fast mouse mevements not to fire the mouseout event
                     if (e.pageX > smallimage.pos.r || e.pageX < smallimage.pos.l || e.pageY < smallimage.pos.t || e.pageY > smallimage.pos.b) {
                         lens.setcenter();
@@ -205,6 +210,7 @@
                 //show lens and zoomWindow
                 lens.show();
                 stage.show();
+
             },
             deactivate: function (e) {
                 switch (settings.zoomType) {

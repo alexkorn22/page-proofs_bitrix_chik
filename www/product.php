@@ -19,13 +19,13 @@
             <!--БЛОК ДАННЫХ ТОВАРА -->
             <div class="row item_product">
                 <!--КАРТИНКИ ТОВАРА-->
-                <div class="col-md-4">
+                <div class="col-md-4 image_product">
                     <div class="images">
                         <div class="full_img">
                             <div class="sale_new">
                                 <span class="sale">Sale</span>
                             </div>
-                            <div class="slider-for slider_full_img">
+                            <div class="slider-for slider_full_img " id="slider_for">
                                 <div class="item_full_img">
                                     <div class="clearfix">
                                         <a href="http://lorempicsum.com/simpsons/1110/1200/1" class="jqzoom" rel='gal1'  title="" >
@@ -96,7 +96,7 @@
                     </div>
                 </div>
                 <!--ДАННЫЕ ТОВАРА-->
-                <div class="col-md-5">
+                <div class="col-md-5 data_product">
                     <div class="basic_info">
                         <div class="row">
                             <!--ОСНОВНЫЕ СВОЙСТВА -->
