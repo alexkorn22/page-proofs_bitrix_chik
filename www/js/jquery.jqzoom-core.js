@@ -545,6 +545,7 @@
                 return this;
             };
             this.append = function () {
+
                 $('.zoomPad', el).append(this.node);
                 this.node.css({
                     position: 'absolute',

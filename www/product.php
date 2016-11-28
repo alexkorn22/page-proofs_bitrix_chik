@@ -21,7 +21,7 @@
                 <!--КАРТИНКИ ТОВАРА-->
                 <div class="col-md-4 image_product">
                     <div class="images">
-                        <div class="full_img">
+                        <div class="full_img" id="full_img">
                             <div class="sale_new">
                                 <span class="sale">Sale</span>
                             </div>

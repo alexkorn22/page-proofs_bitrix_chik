@@ -634,17 +634,22 @@ html {
     }
   .sale_new {
     position: absolute;
-    top: 5px;
+    top: 14px;
     left: 10px;
-    transform: rotate(-45deg);
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 16px;
     user-select: none;
+    span {
+      padding: 15px 8px;
+      border-radius: 100%;
+    }
     .sale {
-      color: $color_5;
+      background-color: $color_3;
+      color: white;
     }
     .new {
-      color: $color_4;
+      background-color: $color_4;
+      color: $color_3;
     }
   }
   .liked .fa {
@@ -654,23 +659,30 @@ html {
     }
   }
   .show_all_bottom {
-
       .number_pages {
         display: inline-block;
-        span {
-          padding: 3px 7px;
-        }
-        i {
-          font-size: 12px;
-          padding: 0px 15px;
-        }
-        .active {
-          text-decoration: underline;
+        text-decoration: none;
+        .number_page {
+          display: inline-block;
+          border: 1px solid $color_1;
+          width: 40px;
+          height:40px;
+          padding-top: 8px;
+          margin: 0px 5px;
+          &:focus {
+            text-decoration: none;
+          }
+          &:hover {
+            border-color: $color_3;
+            background-color: $color_3;
+            color: white;
+          }
         }
       }
       .show_all {
         display: inline-block;
         float: right;
+        padding-top: 10px;
       }
     }
   .filters {
@@ -774,14 +786,14 @@ html {
     }
     .colors {
       .checkbox_img:not(checked)+label:before {
-        width:40px;
-        height: 40px;
+        width:30px;
+        height: 30px;
       }
       .checkbox_img:not(checked) + label {
-        padding-left: 45px;
+        padding-left: 38px;
       }
       label {
-        margin-bottom: 29px;
+        margin-bottom: 22px;
         margin-top: 16px;
       }
     }
@@ -1037,8 +1049,8 @@ html {
     }
     .sale_new {
       z-index: 4;
-      top: 10px;
-      left: 15px;
+      top: 22px;
+      left: 22px;
     }
     .slider_full_img {
       & .clearfix {

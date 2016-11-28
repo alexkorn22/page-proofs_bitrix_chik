@@ -528,12 +528,13 @@
                             <hr>
                         </div>
                         <div class="number_pages">
-                            <a href="#"><i class="icon icon-left-arrow"></i></a>
-                            <span><a href="#">1</a></span>
-                            <span class="active"><a href="#">2</a></span>
-                            <span><a href="#">3</a></span>
-                            <span>...</span>
-                            <a href="#"><i class="icon icon-right-arrow"></i></a>
+
+                            <a href="#"><div class="number_page"><span class="fa fa-angle-left"></span></div></a>
+                            <a href="#"><div class="number_page">1</div></a>
+                            <a href="#"><div class="number_page">2</div></a>
+                            <a href="#"><div class="number_page">3</div></a>
+                            <a href="#"><div class="number_page">...</div></a>
+                            <a href="#"><div class="number_page"><span class="fa fa-angle-right"></span></div></a>
                         </div>
                         <div class="show_all text-right">
                             <a href="#">Показать все</a>
