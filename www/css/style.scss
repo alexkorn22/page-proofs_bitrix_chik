@@ -669,6 +669,11 @@ html {
           height:40px;
           padding-top: 8px;
           margin: 0px 5px;
+          &.active{
+            border-color: $color_3;
+            background-color: $color_3;
+            color: white;
+          }
           &:focus {
             text-decoration: none;
           }
@@ -730,6 +735,28 @@ html {
     .btn_clear_filter {
       margin-right: 25px;
       color: $color_3;
+    }
+  }
+  .slick_navigation {
+    font-size: 35px;
+    position: absolute;
+    top:35%;
+    z-index: 1;
+    background-color: $color_1;
+    opacity: 0.5;
+    color: $color_3;
+    &.right {
+      right:0%;
+    }
+    &.left {
+      left:0%;
+    }
+    &:focus {
+      text-decoration: none;
+    }
+    &:hover {
+      color: $color_3;
+      opacity: 0.8;
     }
   }
   #ModalFastViewProduct, #ItemProduct {
@@ -1004,28 +1031,6 @@ html {
           }
         }
       }
-      .slick_navigation {
-        font-size: 35px;
-        position: absolute;
-        top:35%;
-        z-index: 1;
-        background-color: $color_1;
-        opacity: 0.5;
-        color: $color_3;
-        &.right {
-          right:0%;
-        }
-        &.left {
-          left:0%;
-        }
-        &:focus {
-          text-decoration: none;
-        }
-        &:hover {
-          color: $color_3;
-          opacity: 0.8;
-        }
-      }
       .item_full_img {
         .img_small {
           width: 100%;
@@ -1085,26 +1090,9 @@ html {
     .title {
       font-size: 24px;
     }
-    .arrow {
-      .fa {
-        font-size: 48px;
-        color: white;
-        padding: 0px 7px;
-      }
-      background-color: $color_1;
-      opacity: 0.5;
-      position: absolute;
-      z-index: 3;
+    .slick_navigation {
       top:50%;
-      &.arrow_left{
-        left:0px;
-      }
-      &.arrow_right{
-        right:0px;
-      }
-      &:hover{
-        opacity: 1;
-      }
+      z-index: 2;
     }
   }
   .similar_products {

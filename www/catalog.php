@@ -530,7 +530,7 @@
                         <div class="number_pages">
 
                             <a href="#"><div class="number_page"><span class="fa fa-angle-left"></span></div></a>
-                            <a href="#"><div class="number_page">1</div></a>
+                            <a href="#"><div class="number_page active">1</div></a>
                             <a href="#"><div class="number_page">2</div></a>
                             <a href="#"><div class="number_page">3</div></a>
                             <a href="#"><div class="number_page">...</div></a>

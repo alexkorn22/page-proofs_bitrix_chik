@@ -311,12 +311,8 @@
                 </div>
             </div>
             <div class="list_products">
-                <a href="#" class="arrow arrow_left">
-                    <span class="fa fa-angle-left"></span>
-                </a>
-                <a href="#" class="arrow arrow_right">
-                    <span class="fa fa-angle-right"></span>
-                </a>
+                <a class="slick_navigation left" href="javascript:void(0)" ><span class="icon-left-arrow_thin"></span></a>
+                <a class="slick_navigation right" href="javascript:void(0)" ><span class="icon-right-arrow_thin"></span></a>
                 <div class="row">
                     <div class="col-md-3">
                             <div class="container_product">
@@ -473,12 +469,8 @@
                 </div>
             </div>
             <div class="list_products">
-                <a href="#" class="arrow arrow_left">
-                    <span class="fa fa-angle-left"></span>
-                </a>
-                <a href="#" class="arrow arrow_right">
-                    <span class="fa fa-angle-right"></span>
-                </a>
+                <a class="slick_navigation left" href="javascript:void(0)" ><span class="icon-left-arrow_thin"></span></a>
+                <a class="slick_navigation right" href="javascript:void(0)" ><span class="icon-right-arrow_thin"></span></a>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="container_product">
