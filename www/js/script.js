@@ -45,7 +45,7 @@ $(document).ready(function(){
         slidesToScroll: 1,
         asNavFor: '.slider-for',
         dots: false,
-        centerMode: true,
+        centerMode: false,
         centerPadding: '100px',
         focusOnSelect: true,
         infinite: true,
