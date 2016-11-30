@@ -300,9 +300,18 @@
                     </div>
                 </div>
                 <div class="row row_show_all">
-                    <div class="col-md-12">
+                    <div class="col-md-12 text-center">
                         <div class="top_line">
                             <hr>
+                        </div>
+                        <div class="number_pages">
+
+                            <a href="#"><div class="number_page"><span class="fa fa-angle-left"></span></div></a>
+                            <a href="#"><div class="number_page active">1</div></a>
+                            <a href="#"><div class="number_page">2</div></a>
+                            <a href="#"><div class="number_page">3</div></a>
+                            <a href="#"><div class="number_page">...</div></a>
+                            <a href="#"><div class="number_page"><span class="fa fa-angle-right"></span></div></a>
                         </div>
                         <div class="show_all text-right">
                             <a href="#">Показать все</a>
