@@ -548,6 +548,9 @@ html {
   .list_products {
       margin-bottom: 110px;
       margin-top: 10px;
+      .col-md-4 {
+        min-height: 398px;
+      }
       a:hover, a:focus {
         text-decoration: none;
         color: $color_3;
@@ -577,6 +580,9 @@ html {
           display: flex;
           justify-content: center;
           align-items: center;
+          img {
+            max-height: 100%;
+          }
         }
         .price {
           padding: 10px 0px;
@@ -662,6 +668,17 @@ html {
       .number_pages {
         display: inline-block;
         text-decoration: none;
+        a:hover {
+          .number_page {
+            border-color: $color_3;
+            background-color: $color_3;
+            color: white;
+          }
+        }
+        a:focus {
+          text-decoration: none;
+          outline: none;
+        }
         .number_page {
           display: inline-block;
           border: 1px solid $color_1;
@@ -676,11 +693,7 @@ html {
           }
           &:focus {
             text-decoration: none;
-          }
-          &:hover {
-            border-color: $color_3;
-            background-color: $color_3;
-            color: white;
+            outline: none;
           }
         }
       }
