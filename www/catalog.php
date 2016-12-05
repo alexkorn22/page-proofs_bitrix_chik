@@ -271,7 +271,7 @@
                             </div>
                             <div class="buttons">
                                 <div class="col-md-12 text-center">
-                                    <button type="submit" class="btn btn_main btn_clear_filter">Очистить фильтр</button>
+                                    <button type="submit" class="btn btn_main btn_clear_filter" disabled = 'disabled'>Очистить фильтр</button>
                                 </div>
                             </div>
                         </div>

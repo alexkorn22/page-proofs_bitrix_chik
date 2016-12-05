@@ -34,7 +34,7 @@ html {
     &:active {
       -webkit-box-shadow: none;
     }
-    &.btn_main {
+    &.btn_main:enabled {
       background-color: $color_4;
       &:hover {
         background-color: $color_6;
@@ -43,7 +43,7 @@ html {
         background-color: $color_7;
       }
     }
-    &.btn_addit {
+    &.btn_addit:enabled {
       background-color: #fff;
       border-color: $color_1;
       &:hover {
@@ -52,6 +52,12 @@ html {
       &:active {
         background-color: $color_9;
       }
+    }
+    &:disabled {
+      opacity: 1;
+      cursor: default;
+      color: $color_3;
+      background-color: $color_1;
     }
   }
   .close {
@@ -747,7 +753,6 @@ html {
     }
     .btn_clear_filter {
       margin-right: 25px;
-      color: $color_3;
     }
   }
   .slick_navigation {
