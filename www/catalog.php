@@ -553,6 +553,13 @@
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="description_section">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto consectetur error expedita harum magni maiores pariatur praesentium quibusdam vel. Adipisci alias amet architecto aut autem consectetur cum delectus distinctio dolores ea enim eos esse et ex fuga, illum minima nisi nostrum odit, possimus quae quibusdam repellendus reprehenderit repudiandae sunt temporibus tenetur, totam. A amet assumenda eligendi in itaque, laborum natus, nihil nulla numquam quibusdam sit soluta, voluptatibus. Ab amet atque cum delectus ea exercitationem iure laudantium libero maiores minus neque non, perferendis placeat quam quasi quisquam sed sequi similique soluta tenetur vel vitae voluptate. Accusantium, aliquam animi deleniti, eaque eius enim fuga impedit labore libero magnam modi molestiae pariatur perferendis praesentium quas quibusdam quidem quod quos, ratione repellat totam veniam vitae voluptas voluptatem voluptatum. Autem dolor dolorem, dolores ea, harum impedit, ipsa ipsum itaque iusto molestiae mollitia nihil provident qui repellat temporibus? Consectetur dolores eius, eum facilis incidunt molestiae officiis omnis tenetur? Aspernatur blanditiis deleniti eveniet ex excepturi officiis quaerat reiciendis sunt suscipit tempora. Ab adipisci aut culpa dolorem doloribus est harum hic id iste libero magni mollitia odio omnis placeat possimus quae quaerat quasi qui, quidem quo ratione repellendus reprehenderit rerum sequi soluta sunt velit veritatis voluptatibus voluptatum.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
