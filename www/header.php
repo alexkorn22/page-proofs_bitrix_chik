@@ -178,7 +178,7 @@
                                     <p>при заказе от 1000 грн</p>
                                 </div>
                                 <div class="col-md-2 adv_img">
-                                    <span class="icon-delivery_1"></span>
+                                    <div class="deliv-car"></div>
                                 </div>
                             </div>
                         </a>
@@ -197,7 +197,7 @@
                                     <p>обмен</p>
                                 </div>
                                 <div class="col-md-3 adv_img">
-                                    <span class="icon-exchange_1"></span>
+                                    <div class="deliv-exchange"></div>
                                 </div>
                             </div>
                         </a>
@@ -215,7 +215,7 @@
                                 <p>за наш счет</p>
                             </div>
                             <div class="col-md-3 adv_img">
-                                <span class="icon-return_1"></span>
+                                <div class="deliv-return"></div>
                             </div>
                         </div>
                     </a>

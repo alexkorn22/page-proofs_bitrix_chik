@@ -316,55 +316,83 @@ html {
 }
 
 #advantages {
+
+
+
   .row_advantages {
     font-family: $SegoeUIRegular;
     margin-bottom: 20px;
     margin-top: 20px;
+    .deliv-car {
+      display: inline-block;
+      background: url('../img/advantages/sprite_deliv_car.png') no-repeat;
+      overflow: hidden;
+      text-indent: -9999px;
+      text-align: left;
+      background-position: -0px -0px;
+      width: 40px;
+      height: 32px;
+    }
+    .deliv-exchange {
+      display: inline-block;
+      background: url('../img/advantages/sprite_deliv_exchange.png') no-repeat;
+      overflow: hidden;
+      text-indent: -9999px;
+      text-align: left;
+      background-position: -0px -0px;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: -4px;
+      left: 0px;
+    }
+    .deliv-return {
+      display: inline-block;
+      background: url('../img/advantages/sprite_deliv_return.png') no-repeat;
+      overflow: hidden;
+      text-indent: -9999px;
+      text-align: left;
+      background-position: -0px -0px;
+      width: 40px;
+      height: 39px;
+      position: absolute;
+      top: -4px;
+      left: 0px;
+    }
     a {
       text-decoration: none;
       color: $color_2;
       &:hover {
         color: $color_3;
-      }
-      .text {
-        line-height: 0.5em;
-        padding-left: 0px;
-        padding-top: 2px;
-        font-size: 15px;
+        .deliv-car {
+          background-position: -0px -32px;
+          width: 40px;
+          height: 32px;
+        }
+        .deliv-exchange {
+          background-position: -0px -40px;
+          width: 40px;
+          height: 40px;
+        }
+        .deliv-return {
+          background-position: -0px -39px;
+          width: 40px;
+          height: 39px;
+        }
       }
     }
     .vert_line {
       width: 100%;
     }
     .delivery, .exchange, .return {
-      .adv_img {
-        padding-top: 3px;
-        font-size: 20px;
-        padding-left: 0px;
-      }
-    }
-    .delivery {
       .text {
-        padding-right: 20px;
-      }
-      .adv_img {
-        padding-right: 30px;
-      }
-    }
-    .exchange {
-      .text {
-        padding-right: 16px;
-      }
-      .adv_img {
-        padding-right: 25px;
-      }
-    }
-    .return {
-      .text {
+        line-height: 0.5em;
+        font-size: 15px;
+        padding-top: 2px;
         padding-right: 11px;
       }
       .adv_img {
-        padding-right: 10px;
+        padding-left: 0px;
       }
     }
   }
