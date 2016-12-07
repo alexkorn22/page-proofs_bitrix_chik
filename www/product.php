@@ -261,11 +261,11 @@
                                 <!--ОПИСАНИЕ И ХАРАКТЕРИСТИКИ-->
                                 <div class="characteristics">
                                     <ul class="nav nav-tabs">
-                                        <li class="active"><a data-toggle="tab" href="#panel1">Описание</a></li>
-                                        <li><a data-toggle="tab" href="#panel2">Характеристики</a></li>
+                                        <li class="active"><a data-toggle="tab" href="#panelDescription">Описание</a></li>
+                                        <li><a data-toggle="tab" href="#panelCharacteristics">Характеристики</a></li>
                                     </ul>
                                     <div class="tab-content">
-                                        <div id="panel1" class="tab-pane fade in active">
+                                        <div id="panelDescription" class="tab-pane fade in active">
                                             <p>
                                                 Бюстгальтер Atlantic – это отличный выбор для ценителей
                                                 качественного и комфортного нижнего белья, изготовленного по
@@ -275,8 +275,83 @@
                                                 для разных типов бюста.
                                             </p>
                                         </div>
-                                        <div id="panel2" class="tab-pane fade">
-                                            <p>Содержимое 2 панели...</p>
+                                        <div id="panelCharacteristics" class="tab-pane fade">
+                                            <div class="charakteristic">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <hr>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="title">
+                                                            Свойство 1:
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <div class="text">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, inventore.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="charakteristic">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <hr>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="title">
+                                                            Название свойства:
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <div class="text">
+                                                            Lorem ipsum dolor sit amet.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="charakteristic">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <hr>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="title">
+                                                            Название свойства:
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <div class="text">
+                                                            Lorem ipsum dolor sit amet.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="charakteristic">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <hr>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="title">
+                                                            Свойство:
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <div class="text">
+                                                            Lorem ipsum dolor sit amet.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

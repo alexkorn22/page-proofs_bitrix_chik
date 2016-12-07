@@ -903,9 +903,6 @@ html {
           box-sizing: border-box;
           li {
             text-align: center;
-            a {
-              padding: 12px 10px;
-            }
             padding-bottom: 10px;
             padding-top: 10px;
             /*padding: 5px 10px;*/
@@ -922,7 +919,7 @@ html {
       }
       .trigger {
         color: $color_3;
-        padding: 7px 10px 6px 13px;
+        padding: 7px 10px 6px 5px;
         font-size: 18px;
         width: 80px;
         background: #fff url(../img/select-arrow-open.jpg) 100% center no-repeat;
@@ -943,7 +940,7 @@ html {
       }
       .activetrigger {
         color: $color_3;
-        padding: 7px 10px 6px 13px;
+        padding: 7px 10px 6px 5px;
         font-size: 18px;
         width: 80px;
         background: #fff url(../img/select-arrow-close.jpg) 100% center no-repeat;
@@ -1083,6 +1080,14 @@ html {
         .img_small {
           width: 100%;
         }
+      }
+    }
+    #panelCharacteristics {
+      .title {
+        padding-left: 5px;
+      }
+      .text{
+
       }
     }
   }
