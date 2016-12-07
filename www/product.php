@@ -278,11 +278,6 @@
                                         <div id="panelCharacteristics" class="tab-pane fade">
                                             <div class="charakteristic">
                                                 <div class="row">
-                                                    <div class="col-md-12">
-                                                        <hr>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
                                                     <div class="col-md-4">
                                                         <div class="title">
                                                             Свойство 1:
