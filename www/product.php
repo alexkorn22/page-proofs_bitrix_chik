@@ -205,9 +205,9 @@
                                         <div class="value_size">
                                             <select class="turnintodropdown">
                                                 <option>A</option>
-                                                <option>B</option>
-                                                <option>C</option>
-                                                <option>D</option>
+                                                <option>37-38</option>
+                                                <option>CCC</option>
+                                                <option>15-40</option>
                                                 <option>E</option>
                                             </select>
                                         </div>

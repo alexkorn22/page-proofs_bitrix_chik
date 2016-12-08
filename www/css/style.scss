@@ -886,8 +886,8 @@ html {
         position: absolute;
         font-size: 18px;
         color: $color_3;
-        width: 80px;
-        z-index: 2;
+        width: 120px;
+        z-index: 3;
         ul {
           font-size: 18px;
           border: 1px solid #ccc;
@@ -896,7 +896,7 @@ html {
           list-style-type: none;
           padding: 0px;
           margin: 0;
-          width: 50%;
+          width: 67%;
           z-index: 100;
           -webkit-box-sizing: border-box;
           -moz-box-sizing: border-box;
@@ -919,9 +919,10 @@ html {
       }
       .trigger {
         color: $color_3;
-        padding: 7px 10px 6px 5px;
+        padding: 7px 40px 6px 0px;
+        text-align: center;
         font-size: 18px;
-        width: 80px;
+        width: 120px;
         background: #fff url(../img/select-arrow-open.jpg) 100% center no-repeat;
         display: block;
         border: 1px solid $color_1;
@@ -940,9 +941,10 @@ html {
       }
       .activetrigger {
         color: $color_3;
-        padding: 7px 10px 6px 5px;
+        padding: 7px 40px 6px 0px;
+        text-align: center;
         font-size: 18px;
-        width: 80px;
+        width: 120px;
         background: #fff url(../img/select-arrow-close.jpg) 100% center no-repeat;
         display: block;
         border: 1px solid $color_1;
@@ -1060,9 +1062,9 @@ html {
             /*width:200px !important;*/
             padding: 0px 5px;
             border: 3px solid transparent;
-
             img {
               margin: 0 auto;
+              width: 170px;
               &:focus {
                 outline: none;
               }
