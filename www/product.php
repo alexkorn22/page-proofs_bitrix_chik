@@ -26,45 +26,45 @@
                                 <span class="sale">Sale</span>
                             </div>
                             <div class="slider-for slider_full_img " id="slider_for">
-                                <div class="item_full_img">
+                                <div class="item_full_img" >
                                     <div class="clearfix">
-                                        <a href="http://lorempicsum.com/simpsons/1110/1200/1" class="jqzoom" rel='gal1'  title="" >
-                                            <img class = "img_small" src="http://lorempicsum.com/simpsons/370/400/1"  title="Детальный просмотр"  style="">
+                                        <a href="http://lorempicsum.com/simpsons/600/600/1" class="jqzoom" rel='gal1'  title="" >
+                                            <img class = "img_small" src="http://lorempicsum.com/simpsons/400/400/1"  title="Детальный просмотр"  style="">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="item_full_img">
                                     <div class="clearfix">
                                         <a href="http://lorempicsum.com/simpsons/1110/1200/2" class="jqzoom" rel='gal1'  title="" >
-                                            <img class = "img_small" src="http://lorempicsum.com/simpsons/370/400/2"  title="Детальный просмотр"  style="">
+                                            <img class = "img_small" src="http://lorempicsum.com/simpsons/400/400/2"  title="Детальный просмотр"  style="">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="item_full_img">
                                     <div class="clearfix">
                                         <a href="http://lorempicsum.com/simpsons/1110/1200/7" class="jqzoom" rel='gal1'  title="" >
-                                            <img class = "img_small" src="http://lorempicsum.com/simpsons/370/400/7"  title="Детальный просмотр"  style="">
+                                            <img class = "img_small" src="http://lorempicsum.com/simpsons/400/400/7"  title="Детальный просмотр"  style="">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="item_full_img">
                                     <div class="clearfix">
                                         <a href="http://lorempicsum.com/simpsons/1110/1200/4" class="jqzoom" rel='gal1'  title="" >
-                                            <img class = "img_small" src="http://lorempicsum.com/simpsons/370/400/4"  title="Детальный просмотр"  style="">
+                                            <img class = "img_small" src="http://lorempicsum.com/simpsons/400/400/4"  title="Детальный просмотр"  style="">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="item_full_img">
                                     <div class="clearfix">
                                         <a href="http://lorempicsum.com/simpsons/1110/1200/5" class="jqzoom" rel='gal1'  title="" >
-                                            <img class = "img_small" src="http://lorempicsum.com/simpsons/370/400/5"  title="Детальный просмотр"  style="">
+                                            <img class = "img_small" src="http://lorempicsum.com/simpsons/400/400/5"  title="Детальный просмотр"  style="">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="item_full_img">
                                     <div class="clearfix">
                                         <a href="http://lorempicsum.com/simpsons/1110/1200/6" class="jqzoom" rel='gal1'  title="" >
-                                            <img class = "img_small" src="http://lorempicsum.com/simpsons/370/400/6"  title="Детальный просмотр"  style="">
+                                            <img class = "img_small" src="http://lorempicsum.com/simpsons/400/400/6"  title="Детальный просмотр"  style="">
                                         </a>
                                     </div>
                                 </div>
@@ -208,7 +208,7 @@
                                                 <option>37-38</option>
                                                 <option>CCC</option>
                                                 <option>15-40</option>
-                                                <option>E</option>
+                                                <option selected>E</option>
                                             </select>
                                         </div>
 

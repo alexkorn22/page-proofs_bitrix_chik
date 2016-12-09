@@ -687,11 +687,11 @@
         defaults: {
             zoomType: 'standard',
             //innerzoom/standard/reverse/drag
-            zoomWidth: 460,
+            zoomWidth: 0,
             //zoomWindow  default width
-            zoomHeight: 570,
+            zoomHeight: 0,
             //zoomWindow  default height
-            xOffset: 10,
+            xOffset: 0,
             //zoomWindow x offset, can be negative(more on the left) or positive(more on the right)
             yOffset: 0,
             //zoomWindow y offset, can be negative(more on the left) or positive(more on the right)

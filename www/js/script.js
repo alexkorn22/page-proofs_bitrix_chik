@@ -33,6 +33,7 @@ $(document).ready(function(){
                 $( "#contentSlider1" ).html( ui.values[1] );
             }
     });
+
     $('.slider-for').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -62,7 +63,7 @@ $(document).ready(function(){
     });
     /*======ZOOMER============*/
     $('.jqzoom').jqzoom({
-        zoomType: 'standard',
+        zoomType: 'innerzoom',
         lens:true,
         preloadImages: false,
         alwaysOn:false
