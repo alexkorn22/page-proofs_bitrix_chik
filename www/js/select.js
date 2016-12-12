@@ -17,13 +17,20 @@ function tamingselect()
 	var toreplace=new Array();
 	var sels=document.getElementsByTagName('select');
 	for(var i=0;i<sels.length;i++){
+		var itemOption = 0;
+		/*Find Selected*/
+		for(var j=0;j<sels[i].getElementsByTagName('option').length;j++){
+			if (sels[i].options[j].selected) {
+				itemOption = j;
+			}
+		}
 		if (ts_check(sels[i],ts_selectclass))
 		{
 			var hiddenfield=document.createElement('input');
 			hiddenfield.name=sels[i].name;
 			hiddenfield.type='hidden';
 			hiddenfield.id=sels[i].id;
-			hiddenfield.value=sels[i].options[0].value;
+			hiddenfield.value=sels[i].options[itemOption].value;
 			sels[i].parentNode.insertBefore(hiddenfield,sels[i])
 			var trigger=document.createElement('a');
 			ts_addclass(trigger,ts_triggeroff);
@@ -33,7 +40,7 @@ function tamingselect()
 				ts_swapclass(this.parentNode.getElementsByTagName('ul')[0],ts_dropdownclosed,ts_dropdownopen);
 				return false;
 			}
-			trigger.appendChild(document.createTextNode(sels[i].options[0].text));
+			trigger.appendChild(document.createTextNode(sels[i].options[itemOption].text));
 			sels[i].parentNode.insertBefore(trigger,sels[i]);
 			var replaceUL=document.createElement('ul');
 			for(var j=0;j<sels[i].getElementsByTagName('option').length;j++)
@@ -44,14 +51,23 @@ function tamingselect()
 				newli.elm=hiddenfield;
 				newli.istrigger=trigger;
 				newa.href='#';
+				newa.isdisabled = sels[i].getElementsByTagName('option')[j].disabled;
 				newa.appendChild(document.createTextNode(
 				sels[i].getElementsByTagName('option')[j].text));
-				newli.onclick=function(){ 
-					this.elm.value=this.v;
-					ts_swapclass(this.istrigger,ts_triggeron,ts_triggeroff);
-					ts_swapclass(this.parentNode,ts_dropdownopen,ts_dropdownclosed)
-					this.istrigger.firstChild.nodeValue=this.firstChild.firstChild.nodeValue;
-					return false;
+				if (newa.isdisabled) {
+					$(newli).addClass('disabled');
+					newli.onclick=function(){
+						return false;
+					}
+				} else{
+					$(newli).addClass('enabled');
+					newli.onclick=function(){
+						this.elm.value=this.v;
+						ts_swapclass(this.istrigger,ts_triggeron,ts_triggeroff);
+						ts_swapclass(this.parentNode,ts_dropdownopen,ts_dropdownclosed)
+						this.istrigger.firstChild.nodeValue=this.firstChild.firstChild.nodeValue;
+						return false;
+					}
 				}
 				newli.appendChild(newa);
 				replaceUL.appendChild(newli);

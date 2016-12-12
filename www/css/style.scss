@@ -452,6 +452,10 @@ html {
   font-size: 16px;
   label {
     font-weight: normal;
+    user-select: none;
+  }
+  .checkbox {
+    user-select: none;
   }
   .checkbox + label {
     cursor: pointer;
@@ -822,11 +826,6 @@ html {
     .brand,.name_product,.value_props {
       font-family: $SegoeUIBold;
     }
-    .similar_products,.recommend {
-      .name_product {
-        font-family: $SegoeUIRegular;
-      }
-    }
     .brand {
       font-size: 20px;
       margin-top: 0px;
@@ -865,11 +864,25 @@ html {
         height: 30px;
       }
       .checkbox_img:not(checked) + label {
-        padding-left: 38px;
+        padding-left: 0px;
+        padding-top: 0px;
+        &:before {
+          top: 0px;
+        }
+      }
+      .disabled:not(checked)+label:before {
+        background-image: url("../img/cross.svg");
+      }
+      .disabled + label {
+        cursor: default;
       }
       label {
-        margin-bottom: 22px;
-        margin-top: 16px;
+        margin-top: 5px;
+        margin-right: 7px;
+      }
+      img {
+        width: 30px;
+        height: 30px;
       }
     }
     .size{
@@ -902,6 +915,10 @@ html {
           -moz-box-sizing: border-box;
           box-sizing: border-box;
           li {
+            &.disabled > a {
+              color: $color_1;
+              cursor: default;
+            }
             text-align: center;
             padding-bottom: 10px;
             padding-top: 10px;
@@ -910,7 +927,7 @@ html {
             -moz-transition: all 0.5s ease;
             -o-transition: all 0.5s ease;
             transition: all 0.5s ease;
-            &:hover {
+            &.enabled:hover {
               font-family: $SegoeUIBold;
               outline: none;
             }
@@ -1028,6 +1045,7 @@ html {
     }
     .characteristics {
       margin-top: 20px;
+      margin-bottom: 30px;
       ul {
         border-color: $color_1;
         li {
@@ -1100,9 +1118,19 @@ html {
     .item_product{
       margin-top:15px;
     }
+    .item_product, .item_product > .col-md-3 {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex:1 0 auto;
+
+    }
     .privilege {
       background-color: $color_1;
-      height: 800px;
+      width: 100%;
+      height: 100%;
     }
     .props_block {
       padding-right: 0px;
@@ -1145,8 +1173,14 @@ html {
   }
   .similar_products,.recommend {
     position: relative;
+    hr {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
     .title {
       font-size: 24px;
+      padding-top: 10px;
+      padding-bottom: 10px;
     }
     .slick_navigation {
       top:50%;
