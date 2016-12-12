@@ -469,6 +469,7 @@ html {
     padding: 1px 0 0 27px;
     &:before {
       content: '';
+      user-select: none;
       position: absolute;
       top: 2px;
       left: 0;
@@ -859,6 +860,7 @@ html {
       color: $color_5;
     }
     .colors {
+      user-select: none;
       .checkbox_img:not(checked)+label:before {
         width:30px;
         height: 30px;
