@@ -10,6 +10,7 @@ $color_8: #edf9f9;
 $color_9: #f4fbfb;
 $color_10: #d2d2d2;
 $color_hover: #555555;
+$clrWhite: #f4efef;
 
 //********ШРИФТЫ**************************
 $SegoeUIRegular: "SegoeUIRegular", Arial, sans-serif;
@@ -871,13 +872,13 @@ html {
         }
         &:hover {
           img {
-            border: 2px solid white;
+            border: 2px solid $clrWhite;
           }
         }
       }
       .checkbox_img:checked + label {
         img {
-          border: 2px solid white;
+          border: 3px solid $clrWhite;
         }
         &:before {
           border: 1px solid $color_2;

@@ -165,39 +165,39 @@
                                             </label>
                                             <input type="radio" name="color" class="checkbox checkbox_img" id="color_3_6">
                                             <label for="color_3_6">
-                                                <img src="img/colors/1.jpg" alt="">
+                                                <img src="img/colors/6.jpg" alt="">
                                             </label>
                                             <input type="radio" name="color" class="checkbox checkbox_img" id="color_3_7">
                                             <label for="color_3_7">
-                                                <img src="img/colors/1.jpg" alt="">
+                                                <img src="img/colors/7.jpg" alt="">
                                             </label>
                                             <input type="radio" name="color" class="checkbox checkbox_img" id="color_3_8">
                                             <label for="color_3_8">
-                                                <img src="img/colors/1.jpg" alt="">
+                                                <img src="img/colors/8.jpg" alt="">
                                             </label>
                                             <input type="radio" name="color" class="checkbox checkbox_img" id="color_3_9">
                                             <label for="color_3_9">
-                                                <img src="img/colors/1.jpg" alt="">
+                                                <img src="img/colors/9.jpg" alt="">
                                             </label>
                                             <input type="radio" name="color" class="checkbox checkbox_img" id="color_3_10">
                                             <label for="color_3_10">
-                                                <img src="img/colors/1.jpg" alt="">
+                                                <img src="img/colors/10.jpg" alt="">
                                             </label>
                                             <input type="radio" name="color" class="checkbox checkbox_img" id="color_3_11">
                                             <label for="color_3_11">
-                                                <img src="img/colors/1.jpg" alt="">
+                                                <img src="img/colors/11.jpg" alt="">
                                             </label>
                                             <input type="radio" name="color" class="checkbox checkbox_img" id="color_3_14">
                                             <label for="color_3_14">
-                                                <img src="img/colors/1.jpg" alt="">
+                                                <img src="img/colors/12.jpg" alt="">
                                             </label>
                                             <input type="radio" name="color" class="checkbox checkbox_img" id="color_3_12">
                                             <label for="color_3_12">
-                                                <img src="img/colors/1.jpg" alt="">
+                                                <img src="img/colors/13.jpg" alt="">
                                             </label>
                                             <input type="radio" name="color" class="checkbox checkbox_img" id="color_3_13">
                                             <label for="color_3_13">
-                                                <img src="img/colors/1.jpg" alt="">
+                                                <img src="img/colors/14.jpg" alt="">
                                             </label>
                                         </div>
                                     </div>
