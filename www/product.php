@@ -199,6 +199,10 @@
                                             <label for="color_3_13">
                                                 <img src="img/colors/14.jpg" alt="">
                                             </label>
+                                            <input type="none" name="color" class="checkbox checkbox_img disabled" id="color_3_15">
+                                            <label for="color_3_15">
+                                                <img src="img/colors/11.jpg" alt="">
+                                            </label>
                                         </div>
                                     </div>
                                     <!--РАЗМЕР-->
