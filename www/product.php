@@ -147,7 +147,7 @@
                                             <label for="color_3_1">
                                                 <img src="img/colors/1.jpg" alt="">
                                             </label>
-                                            <input type="hidden" name="color" class="checkbox checkbox_img disabled" id="color_3_2">
+                                            <input type="none" name="color" class="checkbox checkbox_img disabled" id="color_3_2">
                                             <label for="color_3_2">
                                                 <img src="img/colors/2.jpg" alt="">
                                             </label>
