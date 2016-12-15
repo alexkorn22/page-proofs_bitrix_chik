@@ -490,7 +490,6 @@ html {
       width: 24px;
       height:24px;
       top: -11px;
-      border: 1px solid $color_2;
       background-image : inherit;
     }
   }
@@ -874,6 +873,9 @@ html {
           img {
             border: 2px solid $clrWhite;
           }
+          &:before {
+            border: 1px solid #000000;
+          }
         }
       }
       .checkbox_img:checked + label {
@@ -883,14 +885,20 @@ html {
         &:before {
           border: 1px solid $color_2;
           box-shadow: none;
+          border: 1px solid #000000;
           background-image: inherit;
         }
       }
-      .disabled:not(checked)+label:before {
-        border: 3px solid $color_1;
-      }
-      .disabled + label {
+      .disabled:not(checked)+label {
         cursor: default;
+        &:before {
+          border: 3px solid $color_1;
+        }
+        &:hover {
+          &:before {
+            border: 3px solid $color_1;
+          }
+        }
       }
       label {
         margin-top: 5px;
