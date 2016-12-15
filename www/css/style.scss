@@ -449,6 +449,9 @@ html {
 
 //********* CONTENT ***********************
 #content {
+  /*PAGE ORDER*/
+  @import "order";
+
   font-family: $SegoeUIRegular;
   font-size: 16px;
   label {
