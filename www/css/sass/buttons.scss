@@ -36,3 +36,8 @@
   font-size: 18px;
   color: #3e3e3e;
 }
+.btn_small_del, .btn_small_add {
+  &:hover {
+    color: inherit;
+  }
+}

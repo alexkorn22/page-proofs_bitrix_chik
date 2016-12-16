@@ -26,45 +26,57 @@
                                 <span class="sale">Sale</span>
                             </div>
                             <div class="slider-for slider_full_img " id="slider_for">
-                                <div class="item_full_img" >
+                                <div class="item_full_img">
                                     <div class="clearfix">
-                                        <a href="http://lorempicsum.com/simpsons/600/600/1" class="jqzoom" rel='gal1'  title="" >
-                                            <img class = "img_small" src="http://lorempicsum.com/simpsons/400/400/1"  title="Детальный просмотр"  style="">
+                                        <a href="http://lorempicsum.com/simpsons/600/600/1" class="jqzoom" rel='gal1'
+                                           title="">
+                                            <img class="img_small" src="http://lorempicsum.com/simpsons/400/400/1"
+                                                 title="Детальный просмотр" style="">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="item_full_img">
                                     <div class="clearfix">
-                                        <a href="http://lorempicsum.com/simpsons/1110/1200/2" class="jqzoom" rel='gal1'  title="" >
-                                            <img class = "img_small" src="http://lorempicsum.com/simpsons/400/400/2"  title="Детальный просмотр"  style="">
+                                        <a href="http://lorempicsum.com/simpsons/1110/1200/2" class="jqzoom" rel='gal1'
+                                           title="">
+                                            <img class="img_small" src="http://lorempicsum.com/simpsons/400/400/2"
+                                                 title="Детальный просмотр" style="">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="item_full_img">
                                     <div class="clearfix">
-                                        <a href="http://lorempicsum.com/simpsons/1110/1200/7" class="jqzoom" rel='gal1'  title="" >
-                                            <img class = "img_small" src="http://lorempicsum.com/simpsons/400/400/7"  title="Детальный просмотр"  style="">
+                                        <a href="http://lorempicsum.com/simpsons/1110/1200/7" class="jqzoom" rel='gal1'
+                                           title="">
+                                            <img class="img_small" src="http://lorempicsum.com/simpsons/400/400/7"
+                                                 title="Детальный просмотр" style="">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="item_full_img">
                                     <div class="clearfix">
-                                        <a href="http://lorempicsum.com/simpsons/1110/1200/4" class="jqzoom" rel='gal1'  title="" >
-                                            <img class = "img_small" src="http://lorempicsum.com/simpsons/400/400/4"  title="Детальный просмотр"  style="">
+                                        <a href="http://lorempicsum.com/simpsons/1110/1200/4" class="jqzoom" rel='gal1'
+                                           title="">
+                                            <img class="img_small" src="http://lorempicsum.com/simpsons/400/400/4"
+                                                 title="Детальный просмотр" style="">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="item_full_img">
                                     <div class="clearfix">
-                                        <a href="http://lorempicsum.com/simpsons/1110/1200/5" class="jqzoom" rel='gal1'  title="" >
-                                            <img class = "img_small" src="http://lorempicsum.com/simpsons/400/400/5"  title="Детальный просмотр"  style="">
+                                        <a href="http://lorempicsum.com/simpsons/1110/1200/5" class="jqzoom" rel='gal1'
+                                           title="">
+                                            <img class="img_small" src="http://lorempicsum.com/simpsons/400/400/5"
+                                                 title="Детальный просмотр" style="">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="item_full_img">
                                     <div class="clearfix">
-                                        <a href="http://lorempicsum.com/simpsons/1110/1200/6" class="jqzoom" rel='gal1'  title="" >
-                                            <img class = "img_small" src="http://lorempicsum.com/simpsons/400/400/6"  title="Детальный просмотр"  style="">
+                                        <a href="http://lorempicsum.com/simpsons/1110/1200/6" class="jqzoom" rel='gal1'
+                                           title="">
+                                            <img class="img_small" src="http://lorempicsum.com/simpsons/400/400/6"
+                                                 title="Детальный просмотр" style="">
                                         </a>
                                     </div>
                                 </div>
@@ -143,63 +155,78 @@
                                             Цвет:
                                         </div>
                                         <div class="value_props">
-                                            <input type="none" name="color" class="checkbox checkbox_img disabled" id="color_3_1">
+                                            <input type="none" name="color" class="checkbox checkbox_img disabled"
+                                                   id="color_3_1">
                                             <label for="color_3_1">
                                                 <img src="img/colors/1.jpg" alt="">
                                             </label>
-                                            <input type="none" name="color" class="checkbox checkbox_img disabled" id="color_3_2">
+                                            <input type="none" name="color" class="checkbox checkbox_img disabled"
+                                                   id="color_3_2">
                                             <label for="color_3_2">
                                                 <img src="img/colors/2.jpg" alt="">
                                             </label>
-                                            <input type="radio" name="color" class="checkbox checkbox_img" id="color_3_3">
+                                            <input type="radio" name="color" class="checkbox checkbox_img"
+                                                   id="color_3_3">
                                             <label for="color_3_3">
                                                 <img src="img/colors/3.jpg" alt="">
                                             </label>
-                                            <input type="radio" name="color" class="checkbox checkbox_img" id="color_3_4">
+                                            <input type="radio" name="color" class="checkbox checkbox_img"
+                                                   id="color_3_4">
                                             <label for="color_3_4">
                                                 <img src="img/colors/4.jpg" alt="">
                                             </label>
-                                            <input type="radio" name="color" class="checkbox checkbox_img" id="color_3_5">
+                                            <input type="radio" name="color" class="checkbox checkbox_img"
+                                                   id="color_3_5">
                                             <label for="color_3_5">
                                                 <img src="img/colors/5.jpg" alt="">
                                             </label>
-                                            <input type="radio" name="color" class="checkbox checkbox_img" id="color_3_6">
+                                            <input type="radio" name="color" class="checkbox checkbox_img"
+                                                   id="color_3_6">
                                             <label for="color_3_6">
                                                 <img src="img/colors/6.jpg" alt="">
                                             </label>
-                                            <input type="radio" name="color" class="checkbox checkbox_img" id="color_3_7">
+                                            <input type="radio" name="color" class="checkbox checkbox_img"
+                                                   id="color_3_7">
                                             <label for="color_3_7">
                                                 <img src="img/colors/7.jpg" alt="">
                                             </label>
-                                            <input type="radio" name="color" class="checkbox checkbox_img" id="color_3_8">
+                                            <input type="radio" name="color" class="checkbox checkbox_img"
+                                                   id="color_3_8">
                                             <label for="color_3_8">
                                                 <img src="img/colors/8.jpg" alt="">
                                             </label>
-                                            <input type="radio" name="color" class="checkbox checkbox_img" id="color_3_9">
+                                            <input type="radio" name="color" class="checkbox checkbox_img"
+                                                   id="color_3_9">
                                             <label for="color_3_9">
                                                 <img src="img/colors/9.jpg" alt="">
                                             </label>
-                                            <input type="radio" name="color" class="checkbox checkbox_img" id="color_3_10">
+                                            <input type="radio" name="color" class="checkbox checkbox_img"
+                                                   id="color_3_10">
                                             <label for="color_3_10">
                                                 <img src="img/colors/10.jpg" alt="">
                                             </label>
-                                            <input type="radio" name="color" class="checkbox checkbox_img" id="color_3_11">
+                                            <input type="radio" name="color" class="checkbox checkbox_img"
+                                                   id="color_3_11">
                                             <label for="color_3_11">
                                                 <img src="img/colors/11.jpg" alt="">
                                             </label>
-                                            <input type="radio" name="color" class="checkbox checkbox_img" id="color_3_14">
+                                            <input type="radio" name="color" class="checkbox checkbox_img"
+                                                   id="color_3_14">
                                             <label for="color_3_14">
                                                 <img src="img/colors/12.jpg" alt="">
                                             </label>
-                                            <input type="radio" name="color" class="checkbox checkbox_img" id="color_3_12">
+                                            <input type="radio" name="color" class="checkbox checkbox_img"
+                                                   id="color_3_12">
                                             <label for="color_3_12">
                                                 <img src="img/colors/13.jpg" alt="">
                                             </label>
-                                            <input type="radio" name="color" class="checkbox checkbox_img" id="color_3_13">
+                                            <input type="radio" name="color" class="checkbox checkbox_img"
+                                                   id="color_3_13">
                                             <label for="color_3_13">
                                                 <img src="img/colors/14.jpg" alt="">
                                             </label>
-                                            <input type="none" name="color" class="checkbox checkbox_img disabled" id="color_3_15">
+                                            <input type="none" name="color" class="checkbox checkbox_img disabled"
+                                                   id="color_3_15">
                                             <label for="color_3_15">
                                                 <img src="img/colors/11.jpg" alt="">
                                             </label>
@@ -216,7 +243,7 @@
                                                 <option disabled="disabled">37-38</option>
                                                 <option>CCC</option>
                                                 <option>15-40</option>
-                                                <option selected = "selected">E</option>
+                                                <option selected="selected">E</option>
                                             </select>
                                         </div>
 
@@ -228,15 +255,16 @@
                                         </div>
                                         <div class="value_quantity">
                                             <div class="input-group">
-                                                      <span class="input-group-btn">
-                                                          <button type="button" class="btn btn-default btn-number"
-                                                                  disabled="disabled" data-type="minus"
-                                                                  data-field="quant[1]">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-default btn-number"
+                                                            disabled="disabled" data-type="minus"
+                                                            data-field="quant[1]">
                                                               <span class="">-</span>
                                                           </button>
                                                       </span>
-                                                <input type="text" name="quant[1]" class="form-control input-number text-center"
-                                                       value="1" min="1" max ="10">
+                                                <input type="text" name="quant[1]"
+                                                       class="form-control input-number text-center"
+                                                       value="1" min="1" max="10">
                                                 <span class="input-group-btn text-right">
                                                             <button type="button" class="btn btn-default btn-number"
                                                                     data-type="plus" data-field="quant[1]">
@@ -269,7 +297,8 @@
                                 <!--ОПИСАНИЕ И ХАРАКТЕРИСТИКИ-->
                                 <div class="characteristics">
                                     <ul class="nav nav-tabs">
-                                        <li class="active"><a data-toggle="tab" href="#panelDescription">Описание</a></li>
+                                        <li class="active"><a data-toggle="tab" href="#panelDescription">Описание</a>
+                                        </li>
                                         <li><a data-toggle="tab" href="#panelCharacteristics">Характеристики</a></li>
                                     </ul>
                                     <div class="tab-content">
@@ -280,8 +309,10 @@
                                                         Бюстгальтер Atlantic – это отличный выбор для ценителей
                                                         качественного и комфортного нижнего белья, изготовленного по
                                                         передовым технологиям. Если Вам покажется, что это обычный
-                                                        хлопчатобумажный лиф, Вы сильно ошибетесь, поскольку мы предлагаем
-                                                        широкий ассортимент разных коллекций практически на любой случай и
+                                                        хлопчатобумажный лиф, Вы сильно ошибетесь, поскольку мы
+                                                        предлагаем
+                                                        широкий ассортимент разных коллекций практически на любой случай
+                                                        и
                                                         для разных типов бюста.
                                                     </p>
                                                 </div>
@@ -297,7 +328,8 @@
                                                     </div>
                                                     <div class="col-md-8">
                                                         <div class="text">
-                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, inventore.
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                            At, inventore.
                                                         </div>
                                                     </div>
                                                 </div>
@@ -373,13 +405,13 @@
         </div>
 
         <div class="similar_products">
-        <!--ЧЕРТА -->
+            <!--ЧЕРТА -->
             <div class="row">
                 <div class="col-md-12">
                     <hr>
                 </div>
             </div>
-        <!--ПОХОЖЫЕ ТОВАРЫ-->
+            <!--ПОХОЖЫЕ ТОВАРЫ-->
             <div class="row title">
                 <div class="col-md-12">
                     Похожие товары
@@ -391,76 +423,77 @@
                 </div>
             </div>
             <div class="list_products">
-                <a class="slick_navigation left" href="javascript:void(0)" ><span class="icon-left-arrow_thin"></span></a>
-                <a class="slick_navigation right" href="javascript:void(0)" ><span class="icon-right-arrow_thin"></span></a>
+                <a class="slick_navigation left" href="javascript:void(0)"><span
+                        class="icon-left-arrow_thin"></span></a>
+                <a class="slick_navigation right" href="javascript:void(0)"><span class="icon-right-arrow_thin"></span></a>
                 <div class="row">
                     <div class="col-md-3">
-                            <div class="container_product">
-                                <div class="product">
-                                    <div class="img_catalog">
-                                        <img src="img/products/1.jpg" alt="Картинка"
-                                             class="img-responsive center-block">
-                                    </div>
-                                    <div class="price text-left">
-                                        <span>от </span>
-                                        <span class="without_discount">820 грн</span>
-                                        <span class="with_discount">723,35 грн</span>
-                                    </div>
-                                    <div class="name_product">
-                                        <a href="product.php">
-                                            <span class="brand">Atlantic / </span>
-                                            <span>Бюстгальтер женский для беременных и кормящих мягкая чашка</span>
-                                        </a>
-                                    </div>
-                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#ModalFastViewProduct"
-                                       onclick="$('.slider-nav').slick('slickGoTo',1);">
-                                        <div class="fast_view text-center">
-                                            <span>Быстрый просмотр </span>
-                                            <i class="fa  fa-eye"></i>
-                                        </div>
+                        <div class="container_product">
+                            <div class="product">
+                                <div class="img_catalog">
+                                    <img src="img/products/1.jpg" alt="Картинка"
+                                         class="img-responsive center-block">
+                                </div>
+                                <div class="price text-left">
+                                    <span>от </span>
+                                    <span class="without_discount">820 грн</span>
+                                    <span class="with_discount">723,35 грн</span>
+                                </div>
+                                <div class="name_product">
+                                    <a href="product.php">
+                                        <span class="brand">Atlantic / </span>
+                                        <span>Бюстгальтер женский для беременных и кормящих мягкая чашка</span>
                                     </a>
                                 </div>
-                                <div class="sale_new">
-                                    <span class="sale">Sale</span>
-                                </div>
-                                <div class="liked">
-                                    <a href="#"><i class="fa fa-heart-o"></i></a>
-                                </div>
+                                <a href="javascript:void(0)" data-toggle="modal" data-target="#ModalFastViewProduct"
+                                   onclick="$('.slider-nav').slick('slickGoTo',1);">
+                                    <div class="fast_view text-center">
+                                        <span>Быстрый просмотр </span>
+                                        <i class="fa  fa-eye"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sale_new">
+                                <span class="sale">Sale</span>
+                            </div>
+                            <div class="liked">
+                                <a href="#"><i class="fa fa-heart-o"></i></a>
                             </div>
                         </div>
+                    </div>
                     <div class="col-md-3">
-                            <div class="container_product">
-                                <div class="product">
-                                    <div class="img_catalog">
-                                        <img src="img/products/2.jpg" alt="Картинка"
-                                             class="img-responsive center-block">
-                                    </div>
-                                    <div class="price text-left">
-                                        <span>от </span>
-                                        <span class="without_discount">820 грн</span>
-                                        <span class="with_discount">723,35 грн</span>
-                                    </div>
-                                    <div class="name_product">
-                                        <a href="#">
-                                            <span class="brand">Atlantic / </span>
-                                            <span>Бюстгальтер женский для беременных и кормящих мягкая чашка</span>
-                                        </a>
-                                    </div>
+                        <div class="container_product">
+                            <div class="product">
+                                <div class="img_catalog">
+                                    <img src="img/products/2.jpg" alt="Картинка"
+                                         class="img-responsive center-block">
+                                </div>
+                                <div class="price text-left">
+                                    <span>от </span>
+                                    <span class="without_discount">820 грн</span>
+                                    <span class="with_discount">723,35 грн</span>
+                                </div>
+                                <div class="name_product">
                                     <a href="#">
-                                        <div class="fast_view text-center">
-                                            <span>Быстрый просмотр </span>
-                                            <i class="fa  fa-eye"></i>
-                                        </div>
+                                        <span class="brand">Atlantic / </span>
+                                        <span>Бюстгальтер женский для беременных и кормящих мягкая чашка</span>
                                     </a>
                                 </div>
-                                <div class="sale_new">
-                                    <span class="new">New</span>
-                                </div>
-                                <div class="liked">
-                                    <a href="#"><i class="fa fa-heart"></i></a>
-                                </div>
+                                <a href="#">
+                                    <div class="fast_view text-center">
+                                        <span>Быстрый просмотр </span>
+                                        <i class="fa  fa-eye"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sale_new">
+                                <span class="new">New</span>
+                            </div>
+                            <div class="liked">
+                                <a href="#"><i class="fa fa-heart"></i></a>
                             </div>
                         </div>
+                    </div>
                     <div class="col-md-3">
                         <div class="container_product">
                             <div class="product">
@@ -495,50 +528,50 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                            <div class="container_product">
-                                <div class="product">
-                                    <div class="img_catalog">
-                                        <img src="img/products/1.jpg" alt="Картинка"
-                                             class="img-responsive center-block">
-                                    </div>
-                                    <div class="price text-left">
-                                        <span>от </span>
-                                        <span class="without_discount">820 грн</span>
-                                        <span class="with_discount">723,35 грн</span>
-                                    </div>
-                                    <div class="name_product">
-                                        <a href="#">
-                                            <span class="brand">Atlantic / </span>
-                                            <span>Бюстгальтер женский для беременных и кормящих мягкая чашка</span>
-                                        </a>
-                                    </div>
+                        <div class="container_product">
+                            <div class="product">
+                                <div class="img_catalog">
+                                    <img src="img/products/1.jpg" alt="Картинка"
+                                         class="img-responsive center-block">
+                                </div>
+                                <div class="price text-left">
+                                    <span>от </span>
+                                    <span class="without_discount">820 грн</span>
+                                    <span class="with_discount">723,35 грн</span>
+                                </div>
+                                <div class="name_product">
                                     <a href="#">
-                                        <div class="fast_view text-center">
-                                            <span>Быстрый просмотр </span>
-                                            <i class="fa  fa-eye"></i>
-                                        </div>
+                                        <span class="brand">Atlantic / </span>
+                                        <span>Бюстгальтер женский для беременных и кормящих мягкая чашка</span>
                                     </a>
                                 </div>
-                                <div class="sale_new">
-                                    <span class="sale">Sale</span>
-                                </div>
-                                <div class="liked">
-                                    <a href="#"><i class="fa fa-heart-o"></i></a>
-                                </div>
+                                <a href="#">
+                                    <div class="fast_view text-center">
+                                        <span>Быстрый просмотр </span>
+                                        <i class="fa  fa-eye"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sale_new">
+                                <span class="sale">Sale</span>
+                            </div>
+                            <div class="liked">
+                                <a href="#"><i class="fa fa-heart-o"></i></a>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="recommend" >
-        <!--ЧЕРТА -->
+        <div class="recommend">
+            <!--ЧЕРТА -->
 
-        <div class="row">
-            <div class="col-md-12">
-                <hr>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
             </div>
-        </div>
-        <!--МЫ РЕКОМЕНДУЕМ-->
+            <!--МЫ РЕКОМЕНДУЕМ-->
             <div class="row title">
                 <div class="col-md-12">
                     Мы рекомендуем
@@ -550,8 +583,9 @@
                 </div>
             </div>
             <div class="list_products">
-                <a class="slick_navigation left" href="javascript:void(0)" ><span class="icon-left-arrow_thin"></span></a>
-                <a class="slick_navigation right" href="javascript:void(0)" ><span class="icon-right-arrow_thin"></span></a>
+                <a class="slick_navigation left" href="javascript:void(0)"><span
+                        class="icon-left-arrow_thin"></span></a>
+                <a class="slick_navigation right" href="javascript:void(0)"><span class="icon-right-arrow_thin"></span></a>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="container_product">

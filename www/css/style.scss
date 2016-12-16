@@ -37,6 +37,11 @@ html {
 
   font-family: $SegoeUIRegular;
   font-size: 16px;
+  .no_horiz_padding {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .container{
     margin-top: 20px;
   }
@@ -48,6 +53,9 @@ html {
     color: $color_3;
     &:hover {
       color: $color_4;
+      text-decoration: none;
+    }
+    &:focus {
       text-decoration: none;
     }
   }

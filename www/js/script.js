@@ -167,3 +167,25 @@ $(".input-number").keydown(function (e) {
         e.preventDefault();
     }
 });
+
+/*ДЛЯ ЗАКАЗА*/
+$('.btn_small_del').hover(
+    function(){
+        $(this).children('.fa').addClass('fa-minus-square');
+        $(this).children('.fa').removeClass('fa-minus-square-o');
+    },
+    function(){
+        $(this).children('.fa').addClass('fa-minus-square-o');
+        $(this).children('.fa').removeClass('fa-minus-square');
+    }
+);
+$('.btn_small_add').hover(
+    function(){
+        $(this).children('.fa').addClass('fa-plus-square');
+        $(this).children('.fa').removeClass('fa-plus-square-o');
+    },
+    function(){
+        $(this).children('.fa').addClass('fa-plus-square-o');
+        $(this).children('.fa').removeClass('fa-plus-square');
+    }
+);

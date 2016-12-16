@@ -1,3 +1,70 @@
 #order_page {
-
+  .block_order {
+    margin-top: 25px;
+    margin-bottom: 150px;
+  }
+  .title {
+    font-family: $SegoeUIBold;
+    font-size: 18px;
+  }
+  .data_cart {
+    border: 1px solid $color_1;
+    padding: 24px 10px;
+  }
+  .results, .cart_product {
+    font-size: 14px;
+  }
+  .cart_product {
+    padding: 22px 0px;
+    color: $color_3;
+    p{
+      margin-bottom: 0px;
+    }
+    .without_discount {
+      text-decoration: line-through;
+    }
+    .with_discount {
+      color: $color_5;
+    }
+    .img_prod {
+      img{
+        width: 100%;
+      }
+      .liked {
+        position: absolute;
+        top: 0px;
+        left: 72%;
+      }
+    }
+    .name_product {
+      text-transform: uppercase;
+    }
+    .name_article {
+      text-transform: uppercase;
+    }
+    .name_article, .title_prop, .edit_order>a {
+      color: $color_2;
+    }
+    .edit_order{
+      font-size: 12px;
+      text-decoration: underline;
+    }
+  }
+  .results {
+    .discount {
+      color: $color_5;
+    }
+    .sum_with_disc {
+      font-family: $SegoeUIBold;
+    }
+  }
+  .value_quantity {
+    input {
+      border: none;
+      width: 18px;
+    }
+    .fa-plus-square-o {
+        padding-left: 1px;
+    }
+  }
 }
