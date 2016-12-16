@@ -1,0 +1,38 @@
+.btn {
+  border-radius: 10px;
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    -webkit-box-shadow: none;
+  }
+  &.btn_main:enabled {
+    background-color: $color_4;
+    &:hover {
+      background-color: $color_6;
+    }
+    &:active {
+      background-color: $color_7;
+    }
+  }
+  &.btn_addit:enabled {
+    background-color: #fff;
+    border-color: $color_1;
+    &:hover {
+      background-color: $color_8;
+    }
+    &:active {
+      background-color: $color_9;
+    }
+  }
+  &:disabled {
+    opacity: 1;
+    cursor: default;
+    color: $color_3;
+    background-color: $color_1;
+  }
+}
+.close {
+  font-size: 18px;
+  color: #3e3e3e;
+}

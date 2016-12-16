@@ -1,0 +1,433 @@
+.slick_navigation {
+  font-size: 35px;
+  position: absolute;
+  top:35%;
+  z-index: 1;
+  background-color: $color_1;
+  opacity: 0.5;
+  color: $color_3;
+  &.right {
+    right:0%;
+  }
+  &.left {
+    left:0%;
+  }
+  &:focus {
+    text-decoration: none;
+  }
+  &:hover {
+    color: $color_3;
+    opacity: 0.8;
+  }
+}
+#ModalFastViewProduct, #ItemProduct {
+  color: $color_3;
+  .modal-dialog {
+    width: 1010px;
+  }
+  .modal-content {
+    min-height: 850px;
+    padding: 20px 22px;
+  }
+  .props_block {
+    line-height: 1.1;
+    .name_product {
+      font-size: 16px;
+    }
+  }
+  .brand,.name_product,.value_props {
+    font-family: $SegoeUIBold;
+  }
+  .brand {
+    font-size: 20px;
+    margin-top: 0px;
+  }
+  .name_product {
+    margin-bottom: 0px;
+  }
+  .main_props {
+    margin-bottom: 10px;
+  }
+  .price {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #666666;
+    .without_discount {
+      text-decoration: line-through;
+    }
+    .with_discount {
+      color: $color_5;
+    }
+  }
+  .availability {
+    font-size: $SegoeUIBold;
+    display: inline-block;
+    border: 1px solid $color_1;
+    border-radius: 10px;
+    padding:10px 10px ;
+    color: $color_4;
+  }
+  .none {
+    color: $color_5;
+  }
+  .colors {
+    user-select: none;
+    .checkbox_img:not(checked) + label {
+      padding-left: 0px;
+      padding-top: 0px;
+      &:before {
+        top: 0px;
+        width:30px;
+        height: 30px;
+      }
+      &:hover {
+        img {
+          border: 2px solid $clrWhite;
+        }
+        &:before {
+          border: 1px solid #000000;
+        }
+      }
+    }
+    .checkbox_img:checked + label {
+      img {
+        border: 3px solid $clrWhite;
+      }
+      &:before {
+        border: 1px solid $color_2;
+        box-shadow: none;
+        border: 1px solid #000000;
+        background-image: inherit;
+      }
+    }
+    .disabled:not(checked)+label {
+      cursor: default;
+      &:before {
+        border: 3px solid $color_1;
+      }
+      &:hover {
+        &:before {
+          border: 3px solid $color_1;
+        }
+      }
+    }
+    label {
+      margin-top: 5px;
+      margin-right: 7px;
+    }
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .size{
+    margin-top: 10px;
+    .name_props {
+      margin-bottom: 5px;
+    }
+    a:focus,a:hover {
+      color: inherit;
+      text-decoration: none;
+    }
+    /*Начало ОФОРМЛЕНИЕ SELECT*/
+    .dropcontainer {
+      position: absolute;
+      font-size: 18px;
+      color: $color_3;
+      width: 120px;
+      z-index: 3;
+      ul {
+        font-size: 18px;
+        border: 1px solid #ccc;
+        border-top: none;
+        background: #fff;
+        list-style-type: none;
+        padding: 0px;
+        margin: 0;
+        width: 67%;
+        z-index: 100;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        li {
+          &.disabled > a {
+            color: $color_1;
+            cursor: default;
+          }
+          text-align: center;
+          padding-bottom: 10px;
+          padding-top: 10px;
+          /*padding: 5px 10px;*/
+          -webkit-transition: all 0.5s ease;
+          -moz-transition: all 0.5s ease;
+          -o-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+          &.enabled:hover {
+            font-family: $SegoeUIBold;
+            outline: none;
+          }
+        }
+      }
+    }
+    .trigger {
+      color: $color_3;
+      padding: 7px 40px 6px 0px;
+      text-align: center;
+      font-size: 18px;
+      width: 120px;
+      background: #fff url(../img/select-arrow-open.jpg) 100% center no-repeat;
+      display: block;
+      border: 1px solid $color_1;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      &:hover {
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    .activetrigger {
+      color: $color_3;
+      padding: 7px 40px 6px 0px;
+      text-align: center;
+      font-size: 18px;
+      width: 120px;
+      background: #fff url(../img/select-arrow-close.jpg) 100% center no-repeat;
+      display: block;
+      border: 1px solid $color_1;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      &:hover {
+      }
+      &:active {
+
+      }
+    }
+    .dropdownhidden {
+      display: none;
+    }
+    .dropdownvisible {
+      height: auto;
+    }
+    /*Конец*/
+  }
+  .quantity {
+    margin-top: 10px;
+    .name_props {
+      margin-bottom: 5px;
+    }
+    .value_quantity {
+      width: 120px;
+      .input-number {
+        width: 40px;
+        height: 40px;
+        border: 1px solid $color_1;
+        border-left: none;
+        border-right: none;
+        box-shadow: none;
+        font-size: 18px;
+        padding: 6px 0px;
+        color: $color_3;
+      }
+      button {
+        width: 40px;
+        height:40px;
+        background-color: $color_1;
+        border-color: $color_1;
+        border-radius: 0px;
+        margin: 0px 0px;
+        font-size: 18px;
+        color: $color_3;
+        &:focus {
+          outline: none;
+        }
+        &:hover {
+          background-color: $color_10;
+        }
+        &:disabled {
+          &:hover {
+            background-color: $color_1;
+          }
+        }
+      }
+      .btn[disabled] {
+        cursor: default;
+      }
+    }
+  }
+  .buttons {
+    .col-md-5 {
+      padding-right: 0px;
+    }
+    .btn {
+      font-size: 16px;
+      color: $color_3;
+      padding: 10px 12px;
+      width: 100%;
+    }
+    .liked {
+      font-size: 24px;
+    }
+    .liked_block {
+      padding-top: 5px;
+    }
+  }
+  .characteristics {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    ul {
+      border-color: $color_1;
+      li {
+        border-color: $color_1;
+        margin-right: 10px;
+        background-color: $color_1;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        a {
+          margin-right: 0px;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          &:hover {
+            color: inherit;
+          }
+        }
+      }
+      li.active {
+        background-color: white;
+      }
+    }
+    .tab-content {
+      padding-top: 10px;
+    }
+  }
+  .images {
+    .preview_img {
+      margin-top: 10px;
+      .slick-list {
+        /*padding: 0 !important;*/
+        .slick-slide {
+          /*width:200px !important;*/
+          padding: 0px 5px;
+          border: 3px solid transparent;
+          img {
+            margin: 0 auto;
+            width: 170px;
+            &:focus {
+              outline: none;
+            }
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+        .slick-active {
+          border: 3px solid #b1e1e1;
+        }
+      }
+    }
+    .item_full_img {
+      .img_small {
+        width: 100%;
+      }
+    }
+  }
+  #panelCharacteristics {
+    hr {
+      margin: 5px 0px;
+    }
+    .title {
+
+    }
+    .text{
+
+    }
+  }
+}
+#ItemProduct {
+  .item_product{
+    margin-top:15px;
+  }
+  .item_product, .item_product > .col-md-3 {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex:1 0 auto;
+
+  }
+  .privilege {
+    background-color: $color_1;
+    width: 100%;
+    height: 100%;
+  }
+  .props_block {
+    padding-right: 0px;
+  }
+  .tab-content {
+    min-height: 180px;
+  }
+  .sale_new {
+    z-index: 4;
+    top: 22px;
+    left: 22px;
+  }
+  .slider_full_img {
+    & .clearfix {
+      display:block;
+      zoom:1;
+      &:after{
+        clear:both;
+        content:".";
+        display:block;
+        font-size:0;
+        height:0;
+        line-height:0;
+        visibility:hidden;
+      }
+    }
+  }
+  .zoomWindow {
+    left: 0px !important;
+  }
+  .zoomPreload {
+    width: 65px;
+    height: 55px;
+    background-position: 25px 30px;
+  }
+  .z_index_for_zoom {
+
+    z-index: 3;
+  }
+}
+.similar_products,.recommend {
+  position: relative;
+  hr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .title {
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .slick_navigation {
+    top:50%;
+    z-index: 2;
+  }
+}
+.similar_products {
+  .list_products {
+    margin-bottom: 40px;
+  }
+}
+.description_section {
+  font-size: 15px;
+  color: $color_2;
+}

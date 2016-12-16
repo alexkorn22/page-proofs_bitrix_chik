@@ -131,7 +131,7 @@
                         <button type="submit" class="btn btn_main">Оформить как гость</button>
                         <button type="submit" class="btn btn_addit">Войти</button>
                     </div>
-                    <!-- Секция данн ых покупателя -->
+                    <!-- Секция данных покупателя -->
                     <div class="section_checkout">
                         <div class="title_section">
                             <a href="#">1. Данные получателя</a>

@@ -1,0 +1,304 @@
+#feedback {
+  /*Кнопка*/
+  #popup_toggle {
+    bottom: 55vh;
+    right: 5vw;
+    position: fixed;
+    .img-circle {
+      background-color: $color_4;
+      box-sizing: content-box;
+      -webkit-box-sizing: content-box;
+    }
+    .circlephone {
+      box-sizing: content-box;
+      -webkit-box-sizing: content-box;
+      border: 2px solid $color_4;
+      width: 140px;
+      height: 140px;
+      bottom: -25px;
+      right: 10px;
+      position: absolute;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      border-radius: 100%;
+      opacity: .5;
+      -webkit-animation: circle-anim 2.4s infinite ease-in-out !important;
+      -moz-animation: circle-anim 2.4s infinite ease-in-out !important;
+      -ms-animation: circle-anim 2.4s infinite ease-in-out !important;
+      -o-animation: circle-anim 2.4s infinite ease-in-out !important;
+      animation: circle-anim 2.4s infinite ease-in-out !important;
+      -webkit-transition: all .5s;
+      -moz-transition: all .5s;
+      -o-transition: all .5s;
+      transition: all 0.5s;
+    }
+    .circle-fill {
+      box-sizing: content-box;
+      -webkit-box-sizing: content-box;
+      background-color: $color_4;
+      width: 90px;
+      height: 90px;
+      bottom: 0px;
+      right: 35px;
+      position: absolute;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      border-radius: 100%;
+      border: 2px solid transparent;
+      -webkit-animation: circle-fill-anim 2.3s infinite ease-in-out;
+      -moz-animation: circle-fill-anim 2.3s infinite ease-in-out;
+      -ms-animation: circle-fill-anim 2.3s infinite ease-in-out;
+      -o-animation: circle-fill-anim 2.3s infinite ease-in-out;
+      animation: circle-fill-anim 2.3s infinite ease-in-out;
+      -webkit-transition: all .5s;
+      -moz-transition: all .5s;
+      -o-transition: all .5s;
+      transition: all 0.5s;
+    }
+    .img-circle {
+      box-sizing: content-box;
+      -webkit-box-sizing: content-box;
+      width: 62px;
+      height: 62px;
+      bottom: 14px;
+      right: 49px;
+      position: absolute;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      border-radius: 100%;
+      border: 2px solid transparent;
+      opacity: .7;
+    }
+    .img-circleblock {
+      box-sizing: content-box;
+      -webkit-box-sizing: content-box;
+      width: 62px;
+      height: 62px;
+      background-image: url(../img/phone1.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      animation-name: tossing;
+      -webkit-animation-name: tossing;
+      animation-duration: 1.5s;
+      -webkit-animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+      -webkit-animation-iteration-count: infinite;
+    }
+    .img-circle:hover {
+      opacity: 1;
+    }
+    @keyframes pulse {
+      0% {
+        transform: scale(0.9);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(0.9);
+        opacity: 1;
+      }
+    }
+    @-webkit-keyframes pulse {
+      0% {
+        -webkit-transform: scale(0.95);
+        opacity: 1;
+      }
+      50% {
+        -webkit-transform: scale(1);
+        opacity: 1;
+      }
+      100% {
+        -webkit-transform: scale(0.95);
+        opacity: 1;
+      }
+    }
+    @keyframes tossing {
+      0% {
+        transform: rotate(-8deg);
+      }
+      50% {
+        transform: rotate(8deg);
+      }
+      100% {
+        transform: rotate(-8deg);
+      }
+    }
+    @-webkit-keyframes tossing {
+      0% {
+        -webkit-transform: rotate(-8deg);
+      }
+      50% {
+        -webkit-transform: rotate(8deg);
+      }
+      100% {
+        -webkit-transform: rotate(-8deg);
+      }
+    }
+    @-moz-keyframes circle-anim {
+      0% {
+        -moz-transform: rotate(0deg) scale(0.5) skew(1deg);
+        opacity: .1;
+        -moz-opacity: .1;
+        -webkit-opacity: .1;
+        -o-opacity: .1;
+      }
+      30% {
+        -moz-transform: rotate(0deg) scale(0.7) skew(1deg);
+        opacity: .5;
+        -moz-opacity: .5;
+        -webkit-opacity: .5;
+        -o-opacity: .5;
+      }
+      100% {
+        -moz-transform: rotate(0deg) scale(1) skew(1deg);
+        opacity: .6;
+        -moz-opacity: .6;
+        -webkit-opacity: .6;
+        -o-opacity: .1;
+      }
+    }
+    @-webkit-keyframes circle-anim {
+      0% {
+        -webkit-transform: rotate(0deg) scale(0.5) skew(1deg);
+        -webkit-opacity: .1;
+      }
+      30% {
+        -webkit-transform: rotate(0deg) scale(0.7) skew(1deg);
+        -webkit-opacity: .5;
+      }
+      100% {
+        -webkit-transform: rotate(0deg) scale(1) skew(1deg);
+        -webkit-opacity: .1;
+      }
+    }
+    @-o-keyframes circle-anim {
+      0% {
+        -o-transform: rotate(0deg) kscale(0.5) skew(1deg);
+        -o-opacity: .1;
+      }
+      30% {
+        -o-transform: rotate(0deg) scale(0.7) skew(1deg);
+        -o-opacity: .5;
+      }
+      100% {
+        -o-transform: rotate(0deg) scale(1) skew(1deg);
+        -o-opacity: .1;
+      }
+    }
+    @keyframes circle-anim {
+      0% {
+        transform: rotate(0deg) scale(0.5) skew(1deg);
+        opacity: .1;
+      }
+      30% {
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+        opacity: .5;
+      }
+      100% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+        opacity: .1;
+      }
+    }
+    @-moz-keyframes circle-fill-anim {
+      0% {
+        -moz-transform: rotate(0deg) scale(0.7) skew(1deg);
+        opacity: .2;
+      }
+      50% {
+        -moz-transform: rotate(0deg) -moz-scale(1) skew(1deg);
+        opacity: .2;
+      }
+      100% {
+        -moz-transform: rotate(0deg) scale(0.7) skew(1deg);
+        opacity: .2;
+      }
+    }
+    @-webkit-keyframes circle-fill-anim {
+      0% {
+        -webkit-transform: rotate(0deg) scale(0.7) skew(1deg);
+        opacity: .2;
+      }
+      50% {
+        -webkit-transform: rotate(0deg) scale(1) skew(1deg);
+        opacity: .2;
+      }
+      100% {
+        -webkit-transform: rotate(0deg) scale(0.7) skew(1deg);
+        opacity: .2;
+      }
+    }
+    @-o-keyframes circle-fill-anim {
+      0% {
+        -o-transform: rotate(0deg) scale(0.7) skew(1deg);
+        opacity: .2;
+      }
+      50% {
+        -o-transform: rotate(0deg) scale(1) skew(1deg);
+        opacity: .2;
+      }
+      100% {
+        -o-transform: rotate(0deg) scale(0.7) skew(1deg);
+        opacity: .2;
+      }
+    }
+    @keyframes circle-fill-anim {
+      0% {
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+        opacity: .2;
+      }
+      50% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+        opacity: .2;
+      }
+      100% {
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+        opacity: .2;
+      }
+    }
+
+  }
+
+  #feedbackModalBox {
+    font-family: $SegoeUIRegular;
+    font-size: 16px;
+    color: $color_3;
+    .modal-dialog {
+      margin-top: 50px;
+    }
+    img {
+      margin-top: 35px;
+    }
+    form {
+      margin-top: 30px;
+    }
+    textarea {
+      resize: none;
+      height: 80px;
+    }
+    .title {
+      text-transform: uppercase;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      font-family: $SegoeUISemiBold;
+      font-size: 18px;
+    }
+    .btn {
+      font-size: 16px;
+      background-color: $color_4;
+      border-color: $color_4;
+      border-radius: 10px;
+    }
+    .label_feedback {
+      padding-left: 40px;
+    }
+    .close {
+      margin-top: 32px;
+    }
+    .btn_requestcall:hover {
+      background-color: $color_6;
+    }
+  }
+}

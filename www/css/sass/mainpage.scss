@@ -1,0 +1,33 @@
+.carousel {
+  .carousel-indicators {
+    bottom: 10px;
+  }
+  .carousel-control {
+    text-shadow: none;
+    color: white;
+    span {
+      position: absolute;
+      top: 50%;
+      font-size: 40px;
+      margin-top: -20px;
+    }
+    .icon-left-arrow_thin {
+      left: 2px;
+    }
+    .icon-right-arrow_thin {
+      right: 2px;
+    }
+  }
+}
+.goods_main {
+  margin-top: 30px;
+}
+.main_text {
+  color: $color_3;
+  h1,h2 {
+    font-size: 30px;
+  }
+  line-height: 24px;
+  padding-bottom: 55px;
+  padding-top: 15px;
+}

@@ -1,0 +1,319 @@
+#main_top_menu {
+  .navbar {
+    min-height: 42px;
+  }
+  .top_menu {
+    background-color: $color_3;
+    font-family: $SegoeUILight;
+    border: none;
+    .topmenu_ul {
+      font-size: 20px;
+      text-transform: uppercase;
+      margin-left: -22px;
+      .li_nav_lvl_3 {
+        padding-left: 5px;
+      }
+      .title_child {
+        font-weight:bold;
+        text-transform: uppercase;
+      }
+      li {
+        a {
+          color: $color_1;
+          padding-top: 11px;
+          padding-bottom: 11px;
+        }
+        .sale {
+          color: $color_5;
+        }
+        &:hover {
+          a.item_main {
+            color: $color_4;
+          }
+          .nav_lvl_1 {
+            position: fixed;
+            display: block;
+            left: 0px;
+            width: 100%;
+          }
+        }
+        a.item_main {
+          padding: 11px 22px;
+        }
+      }
+      .active_top_menu {
+        color: $color_4;
+      }
+      .nav_lvl_1 {
+        position: absolute;
+        left: -9999px;
+        background-color: $color_hover;
+        color: $color_1;
+        font-family: $SegoeUIRegular;
+        font-size: 18px;
+        opacity: 0.9;
+        text-transform: none;
+        padding-top: 18px;
+        padding-bottom: 75px;
+        li {
+          padding-top: 6px;
+          padding-bottom: 6px;
+        }
+        a {
+          &:hover {
+            color: $color_4;
+          }
+        }
+        .open > a {
+          background-color: transparent;
+        }
+        .dropdown-menu {
+          background-color: transparent;
+          border: none;
+          box-shadow: none;
+          font-size: 18px;
+          li > a:hover {
+            background-color: transparent;
+          }
+        }
+        .base_top_menu {
+          .title {
+            font-size: 24px;
+            text-transform: uppercase;
+            &:hover,&:focus {
+              text-decoration: none;
+            }
+            .title_icon {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+    .basket_topmenu {
+      color: $color_1;
+      font-family: $SegoeUIRegular;
+      margin-right: 0px;
+      .counter {
+        width: 18px;
+        height: 18px;
+        line-height: 1;
+        color: $color_3;
+        background-color: $color_4;
+        border-radius: 0.4em;
+        position: absolute;
+        right: -0.2em;
+        top: 0.39em;
+        &.one_digit {
+          padding: 0.13em 0.4em;
+        }
+        &.two_digit {
+          padding: 0.13em 0.1em;
+        }
+      }
+      .icon-heart_1 {
+        font-size: 26px;
+      }
+      .icon-cart_1 {
+        font-size: 26px;
+      }
+      .sum {
+        padding-top: 10%;
+        padding-left: 20px;
+        font-size: 12px;
+      }
+      li > a {
+        color: $color_1;
+        padding: 10px 4px 1px 15px;
+        &:hover {
+          color: $color_4;
+        }
+      }
+    }
+  }
+}
+
+#main_header {
+  .header_logo {
+    margin-top: 28px;
+    margin-bottom: 25px;
+    font-family: $SegoeUIRegular;
+  }
+  .search {
+    padding-top: 8px;
+    .icon {
+      border-radius: 10px;
+      color: white;
+      font-size: 23px;
+      padding: 1px 1px 0px 3px;
+      margin-top: 1%;
+      position: absolute;
+      left: 57.7%;
+    }
+    .btn{
+      width: 33px;
+      height: 33px;
+    }
+    .field_search {
+      height: 38px;
+      border-radius: 10px;
+      border-color: $color_1;
+      font-size: 14px;
+      width: 190px;
+    }
+  }
+  .phone {
+    padding-top: 8px;
+    font-size: 16px;
+    line-height: 1.2em;
+    color: $color_2;
+    .font_bold {
+      font-family: $SegoeUIBold;
+    }
+  }
+  .user_data {
+    padding-top: 8px;
+    height: 38px;
+    .data_user {
+      border: 1px solid;
+      border-radius: 10px;
+      border-color: $color_1;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+      display: inline-block;
+      float: right;
+      .user_text {
+        display: inline-block;
+        padding: 0px 10px;
+        min-width: 160px;
+        vertical-align: middle;
+        a {
+          margin: 0 auto;
+          color: $color_2;
+          &:hover {
+            color: $color_4;
+          }
+        }
+      }
+    }
+    .icon {
+      width: 33px;
+      height: 33px;
+      border-radius: 10px;
+      color: white;
+      font-size: 20px;
+      padding: 2px 4px 2px 3px;
+      margin-right: 1px;
+      margin-top: 2px;
+      margin-bottom: 2px;
+    }
+  }
+}
+
+#main_second_menu {
+  .main_second_menu {
+    border-top: none;
+    background-color: #f6f6f6;
+    border-bottom-color: #e3e3e3;
+    font-family: $SegoeUILight;
+    font-size: 28px;
+    .navbar-nav {
+      margin-left: -8%;
+      li > a {
+        padding-left: 25px;
+        padding-right: 25px;
+        color: $color_2;
+        &:hover {
+          color: #434343;
+        }
+      }
+      .active>a {
+        background-color: transparent;
+
+      }
+    }
+
+  }
+}
+
+#advantages {
+
+
+
+  .row_advantages {
+    font-family: $SegoeUIRegular;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    .deliv-car {
+      display: inline-block;
+      background: url('../img/advantages/sprite_deliv_car.png') no-repeat;
+      overflow: hidden;
+      text-indent: -9999px;
+      text-align: left;
+      background-position: -0px -0px;
+      width: 40px;
+      height: 32px;
+    }
+    .deliv-exchange {
+      display: inline-block;
+      background: url('../img/advantages/sprite_deliv_exchange.png') no-repeat;
+      overflow: hidden;
+      text-indent: -9999px;
+      text-align: left;
+      background-position: -0px -0px;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: -4px;
+      left: 0px;
+    }
+    .deliv-return {
+      display: inline-block;
+      background: url('../img/advantages/sprite_deliv_return.png') no-repeat;
+      overflow: hidden;
+      text-indent: -9999px;
+      text-align: left;
+      background-position: -0px -0px;
+      width: 40px;
+      height: 39px;
+      position: absolute;
+      top: -4px;
+      left: 0px;
+    }
+    a {
+      text-decoration: none;
+      color: $color_2;
+      &:hover {
+        color: $color_3;
+        .deliv-car {
+          background-position: -0px -32px;
+          width: 40px;
+          height: 32px;
+        }
+        .deliv-exchange {
+          background-position: -0px -40px;
+          width: 40px;
+          height: 40px;
+        }
+        .deliv-return {
+          background-position: -0px -39px;
+          width: 40px;
+          height: 39px;
+        }
+      }
+    }
+    .vert_line {
+      width: 100%;
+    }
+    .delivery, .exchange, .return {
+      .text {
+        line-height: 0.5em;
+        font-size: 15px;
+        padding-top: 2px;
+        padding-right: 11px;
+      }
+      .adv_img {
+        padding-left: 0px;
+      }
+    }
+  }
+}

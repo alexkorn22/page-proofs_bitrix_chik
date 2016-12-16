@@ -1,0 +1,46 @@
+#footer {
+  footer {
+    font-family: $SegoeUIRegular;
+    padding-top: 50px;
+    padding-bottom: 35px;
+    background-color: $color_3;
+    font-size: 14px;
+    color: $color_1;
+    a {
+      color: $color_1;
+      &:hover {
+        color: $color_4;
+      }
+    }
+    .title_footer {
+      text-transform: uppercase;
+      color: $color_2;
+    }
+    .text_with_margin_bottom {
+      margin-bottom: 35px;
+    }
+    .info_footer {
+      ul {
+        margin-top: -4px;
+      }
+      li {
+        padding: 4px 0px;
+      }
+
+    }
+    .social {
+      font-size: 24px;
+      a {
+        color: $color_2;
+        padding: 0px 9px;
+        &:hover {
+          color: $color_4;
+          text-decoration: none;
+        }
+        &:focus {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
