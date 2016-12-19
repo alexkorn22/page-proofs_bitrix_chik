@@ -50,13 +50,11 @@
       text-decoration: underline;
     }
   }
-  .results {
-    .discount {
-      color: $color_5;
-    }
-    .sum_with_disc {
-      font-family: $SegoeUIBold;
-    }
+  .discount {
+    color: $color_5;
+  }
+  .sum_with_disc {
+    font-family: $SegoeUIBold;
   }
   .value_quantity {
     input {
@@ -66,5 +64,112 @@
     .fa-plus-square-o {
         padding-left: 1px;
     }
+  }
+  .main_title {
+    padding: 30px 30px;
+    border: 1px solid $color_1;
+    margin-bottom: 20px;
+    .title_section_main {
+      font-size: 18px;
+      font-family: $SegoeUIBold;
+      &.no_auth {
+        padding-top: 10px;
+      }
+    }
+    .buttons {
+      button{
+        margin-right: 30px;
+      }
+    }
+  }
+  .section_checkout {
+    margin-bottom: 20px;
+    .data_section {
+      display: none;
+    }
+    &.open_section {
+      .title_section {
+        background-color: transparent;
+      }
+      .data_section {
+        display: block;
+      }
+    }
+  }
+  .title_section {
+    padding: 20px 30px;
+    border: 1px solid $color_1;
+    background-color: $color_1;
+  }
+  .data_section {
+    border: 1px solid $color_1;
+    border-top: none;
+    padding: 20px 0px 10px 30px;
+    .input_item {
+      margin-bottom: 10px;
+    }
+    .block_title {
+      padding-right: 0px;
+      padding-top: 5px;
+    }
+    .form-control {
+      height: 40px;
+      border-radius: 0px;
+    }
+    .block_next_step {
+      padding-top: 10px;
+      a:hover {
+        color: $color_2;
+      }
+    }
+    .important_title {
+      color: $color_5;
+    }
+    .small_letter_spacing {
+      letter-spacing: -0.4px;
+    }
+    .block_checkboxes {
+      margin-bottom: 20px;
+    }
+    .block_input {
+      .form-control-feedback {
+        top: 10px;
+        right: 15px;
+      }
+      .fa {
+        font-size: 18px;
+      }
+      .fa-close {
+        color: $clrIconError;
+      }
+      .fa-check {
+        color: $clrIconSucces;
+      }
+    }
+    .has_error>.block_input {
+      input {
+        background-color: $clrHasError;
+      }
+    }
+  }
+  .order_results {
+    margin-bottom: 20px;
+    padding: 20px 30px;
+    border: 1px solid $color_1;
+    .row {
+      margin-bottom: 5px;
+    }
+  }
+  .button_order {
+    border: none;
+    p {
+      margin-bottom: 0px;
+    }
+  }
+  .img_arrow_right {
+    background: #fff url(../../img/select-arrow-open.jpg) 100% center no-repeat;
+  }
+  .img_arrow_bottom {
+    background: #fff url(../../img/select-arrow-close.jpg) 100% center no-repeat;
   }
 }

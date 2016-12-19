@@ -189,3 +189,11 @@ $('.btn_small_add').hover(
         $(this).children('.fa').removeClass('fa-plus-square');
     }
 );
+
+jQuery(function($) {
+
+    $.mask.definitions['~']='[+-]';
+    $('#form_tel_1').mask('+38 (099) 999-99-99');
+    $('#form_tel_2').mask('+38 (099) 999-99-99');
+
+});

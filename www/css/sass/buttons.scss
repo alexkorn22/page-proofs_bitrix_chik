@@ -1,4 +1,8 @@
 .btn {
+  font-size: 16px;
+  color: $color_3;
+  padding: 10px 12px;
+
   border-radius: 10px;
   &:focus {
     outline: none;
@@ -32,6 +36,7 @@
     background-color: $color_1;
   }
 }
+
 .close {
   font-size: 18px;
   color: #3e3e3e;

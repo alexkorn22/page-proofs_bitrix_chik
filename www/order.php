@@ -249,19 +249,27 @@
                 <!-- DATA ORDER -->
                 <div class="col-md-7">
                     <div class="main_title">
-                        <span>Оформление заказа</span>
-                        <button type="submit" class="btn btn_main">Оформить как гость</button>
-                        <button type="submit" class="btn btn_addit">Войти</button>
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="title_section_main no_auth">Оформление заказа</div>
+                                <!-- ИМЯ ПОЛЬЗОВАТЕЛЯ -->
+                                <!-- <div class="name_user">Гость</div> -->
+                            </div>
+                            <div class="col-md-7 buttons">
+                                <button type="submit" class="btn btn_main">Оформить как гость</button>
+                                <button type="submit" class="btn btn_addit">Войти</button>
+                            </div>
+                        </div>
                     </div>
                     <!-- Секция данных покупателя -->
-                    <div class="section_checkout">
+                    <div class="section_checkout open_section" id="data_order_customer">
                         <div class="title_section title">
-                            <a href="#">1. Данные получателя</a>
+                            <span>1. Данные покупателя</span>
                         </div>
-                        <div class="data_section">
+                        <div class="data_section" >
                             <!-- Фамилия -->
-                            <div class="row">
-                                <div class="col-md-2">
+                            <div class="row input_item">
+                                <div class="col-md-2 block_title">
                                      <span class="title_data">
                                             Фамилия
                                         </span>
@@ -272,8 +280,8 @@
                                 </div>
                             </div>
                             <!-- Имя -->
-                            <div class="row">
-                                <div class="col-md-2">
+                            <div class="row input_item">
+                                <div class="col-md-2 block_title">
                                      <span class="title_data">
                                             Имя
                                         </span>
@@ -284,8 +292,8 @@
                                 </div>
                             </div>
                             <!-- Отчество -->
-                            <div class="row">
-                                <div class="col-md-2">
+                            <div class="row input_item">
+                                <div class="col-md-2 block_title">
                                      <span class="title_data">
                                             Отчество
                                         </span>
@@ -296,40 +304,252 @@
                                 </div>
                             </div>
                             <!-- Телефон -->
-                            <div class="row">
-                                <div class="col-md-2">
+                            <div class="row input_item">
+                                <div class="col-md-2 block_title">
                                      <span class="title_data">
                                             Телефон
                                         </span>
                                     <span class="important_title">*</span>
                                 </div>
                                 <div class="col-md-8">
-                                    <input type="tel" class="form-control" name="">
+                                    <input type="tel" class="form-control" name="" id="form_tel_1">
                                 </div>
                             </div>
                             <!-- E-mail -->
-                            <div class="row">
-                                <div class="col-md-2">
+                            <div class="row input_item has_succes">
+                                <div class="col-md-2 block_title">
                                      <span class="title_data">
                                             E-mail
                                         </span>
                                     <span class="important_title">*</span>
                                 </div>
+                                <div class="col-md-8 block_input">
+                                    <input type="email" class="form-control" name="">
+                                    <span class="fa fa-check form-control-feedback"></span>
+                                </div>
+                                <div class="col-md-2 block_next_step">
+                                    <a href="#" class="next_step">
+                                        > Далее
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Секция данных получателя -->
+                    <div class="section_checkout open_section " id="data_order_addressee">
+                        <div class="title_section title">
+                            <span>2. Данные получателя</span>
+                        </div>
+                        <div class="data_section" >
+                            <!-- Фамилия -->
+                            <div class="row input_item">
+                                <div class="col-md-2 block_title">
+                                     <span class="title_data">
+                                            Фамилия
+                                        </span>
+                                    <span class="important_title">*</span>
+                                </div>
+                                <div class="col-md-8 block_input">
+                                    <input type="text" class="form-control" name="">
+                                </div>
+                            </div>
+                            <!-- Имя -->
+                            <div class="row input_item">
+                                <div class="col-md-2 block_title">
+                                     <span class="title_data">
+                                            Имя
+                                        </span>
+                                    <span class="important_title">*</span>
+                                </div>
+                                <div class="col-md-8 block_input">
+                                    <input type="text" class="form-control" name="">
+                                </div>
+                            </div>
+                            <!-- Отчество -->
+                            <div class="row input_item">
+                                <div class="col-md-2 block_title">
+                                     <span class="title_data">
+                                            Отчество
+                                        </span>
+                                    <span class="important_title">*</span>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" name="">
+                                </div>
+                            </div>
+                            <!-- Телефон -->
+                            <div class="row input_item">
+                                <div class="col-md-2 block_title">
+                                     <span class="title_data">
+                                            Телефон
+                                        </span>
+                                    <span class="important_title">*</span>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="tel" class="form-control" name="" id="form_tel_2">
+                                </div>
+                            </div>
+                            <!-- E-mail -->
+                            <div class="row input_item has_error">
+                                <div class="col-md-2 block_title">
+                                     <span class="title_data">
+                                            E-mail
+                                        </span>
+                                    <span class="important_title">*</span>
+                                </div>
+                                <div class="col-md-8 block_input">
+                                    <input type="email" class="form-control" name="">
+                                    <span class="fa fa-close form-control-feedback"></span>
+                                </div>
+                                <div class="col-md-2 block_next_step">
+                                    <a href="#" class="next_step">
+                                        > Далее
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Секция данных доставки -->
+                    <div class="section_checkout open_section " id="data_order_delivery">
+                        <div class="title_section title">
+                            <span>3. Служба доставки</span>
+                        </div>
+                        <div class="data_section" >
+                            <div class="block_checkboxes">
+                                <div class="div_checkbox">
+                                    <input type="radio" class="checkbox" id="value_1_1" name="delivery">
+                                    <label for="value_1_1">Новая почта</label>
+                                </div>
+                                <div class="div_checkbox">
+                                    <input type="radio" class="checkbox" id="value_1_2" name="delivery">
+                                    <label for="value_1_2">Деливери</label>
+                                </div>
+                                <div class="div_checkbox">
+                                    <input type="radio" class="checkbox" id="value_1_3" name="delivery">
+                                    <label for="value_1_3">Интайм</label>
+                                </div>
+                                <div class="div_checkbox">
+                                    <input type="radio" class="checkbox" id="value_1_4" name="delivery">
+                                    <label for="value_1_4">Мист-експресс</label>
+                                </div>
+                            </div>
+                            <!-- Вид доставки -->
+                            <div class="row input_item">
+                                <div class="col-md-2 block_title">
+                                     <span class="title_data small_letter_spacing">
+                                            Вид доставки
+                                        </span>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control img_arrow_right" name=""> <!-- .img_arrow_bottom -->
+                                </div>
+                            </div>
+                            <!-- Город -->
+                            <div class="row input_item">
+                                <div class="col-md-2 block_title">
+                                     <span class="title_data">
+                                            Город
+                                        </span>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control img_arrow_right" name="">
+                                </div>
+                            </div>
+                            <!-- Склад -->
+                            <div class="row input_item">
+                                <div class="col-md-2 block_title">
+                                     <span class="title_data">
+                                            № Склада
+                                        </span>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control img_arrow_right" name="">
+                                </div>
+                            </div>
+                            <!-- Адрес -->
+                            <div class="row input_item">
+                                <div class="col-md-2 block_title">
+                                     <span class="title_data">
+                                            Адрес
+                                        </span>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="tel" class="form-control" name="">
+                                </div>
+                            </div>
+                            <!-- Комментарий -->
+                            <div class="row input_item">
+                                <div class="col-md-2 block_title">
+                                     <span class="title_data">
+                                            Комментарий
+                                        </span>
+                                </div>
                                 <div class="col-md-8">
                                     <input type="email" class="form-control" name="">
+                                </div>
+                                <div class="col-md-2 block_next_step">
+                                    <a href="#" class="next_step">
+                                        > Далее
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Секция метод оплаты -->
+                    <div class="section_checkout open_section " id="data_order_payments">
+                        <div class="title_section title">
+                            <span>4. Метод оплаты</span>
+                        </div>
+                        <div class="data_section" >
+                            <div class="block_checkboxes">
+                                <div class="div_checkbox">
+                                    <input type="radio" class="checkbox" id="value_2_1" name="delivery">
+                                    <label for="value_2_1">Наложеный платеж</label>
+                                </div>
+                                <div class="div_checkbox">
+                                    <input type="radio" class="checkbox" id="value_2_2" name="delivery">
+                                    <label for="value_2_2">На карту приват</label>
+                                </div>
+                                <div class="div_checkbox">
+                                    <input type="radio" class="checkbox" id="value_2_3" name="delivery">
+                                    <label for="value_2_3">Безналичный расчет</label>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- Итоги -->
-                    <div class="section_checkout">
-                        <div class="title_section title">
-                            >5. Итог
+                    <div class="order_results">
+                        <div class="row">
+                            <div class="col-md-12 title">
+                                5. Итог
+                            </div>
                         </div>
-                        <div class="data_section">
-                            <!-- Заказ на сумму -->
-                            <!-- Скикда -->
-                            <!-- Итого к оплате -->
+                        <!-- Заказ на сумму -->
+                        <div class="row">
+                            <div class="col-md-8">Заказ на сумму:</div>
+                            <div class="col-md-4 text-left">1234,00 грн</div>
+                        </div>
+                        <!-- Скидка -->
+                        <div class="row discount">
+                            <div class="col-md-8">Скидка:</div>
+                            <div class="col-md-4 text-left">234,45 грн</div>
+                        </div>
+                        <!-- Итого к оплате -->
+                        <div class="row sum_with_disc">
+                            <div class="col-md-8">Итого к оплате:</div>
+                            <div class="col-md-4 text-left">987,56 грн</div>
+                        </div>
+                    </div>
+                    <!-- Итоги КНОПКИ -->
+                    <div class="button_order">
+                        <div class="row">
+                            <div class="col-md-6 text-left">
+                                <p>*Подтверждая заказ, вы соглашаетесь</p>
+                                <p>с <a href="#">пользовательским соглашением</a></p>
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <button type="button" class="btn btn_main">Оформить заказ</button>
+                            </div>
                         </div>
                     </div>
                 </div>
