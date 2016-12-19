@@ -197,3 +197,10 @@ jQuery(function($) {
     $('#form_tel_2').mask('+38 (099) 999-99-99');
 
 });
+
+OpenBasketList = function () {
+
+    $('#basket_list').modal('show');
+    $('.modal-backdrop').fadeTo(0, 0);
+
+};

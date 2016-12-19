@@ -95,10 +95,11 @@
                         </a>
                     </li>
                     <li class="item_cart">
-                        <a href="#" class="cart">
+                        <a href="#" class="cart" onclick="OpenBasketList()">
                             <span class="icon-cart_1"></span>
                             <span class="counter two_digit">25</span>
                         </a>
+
                     </li>
                     <li class="item">
                         <div class="sum">

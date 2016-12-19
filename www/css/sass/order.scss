@@ -1,4 +1,4 @@
-#order_page {
+#order_page, #basket_list{
   .block_order {
     margin-top: 25px;
     margin-bottom: 150px;
@@ -171,5 +171,12 @@
   }
   .img_arrow_bottom {
     background: #fff url(../../img/select-arrow-close.jpg) 100% center no-repeat;
+  }
+}
+#basket_list {
+  .modal-dialog {
+    width: 530px;
+    margin-top: 40px;
+    margin-right: 40px;
   }
 }
