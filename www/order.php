@@ -589,7 +589,9 @@
                                     <!-- MAIN DATA -->
                                     <div class="row">
                                         <div class="col-md-9 text-left no_horiz_padding">
-                                            <p class="name_product">Бюстгальтер на косточках</p>
+                                            <p class="name_product">
+                                                <a href="#">Бюстгальтер на косточках</a>
+                                            </p>
                                         </div>
                                         <div class="col-md-3 text-right  no_horiz_padding">
                                             <p class="without_discount">820 грн</p>
@@ -882,8 +884,13 @@
                     </div>
                     <hr>
                     <!-- Заказ в 1 клик -->
-                    <div class="row text-center">
-                        <button type="button" class="btn btn_main">Купить в 1 клик</button>
+                    <div class="row ">
+                        <div class="col-md-6 text-right">
+                            <button type="button" class="btn btn_addit">Купить в 1 клик</button>
+                        </div>
+                        <div class="col-md-6 text-left">
+                            <button type="button" class="btn btn_main">Оформить заказ</button>
+                        </div>
                     </div>
                 </div>
             </div>

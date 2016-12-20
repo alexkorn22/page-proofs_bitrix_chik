@@ -189,8 +189,7 @@
   }
   .cart_products_scroll {
     overflow-x: hidden;
-    overflow-y: scroll;
-    height: 244px;
+    max-height: 252px;
   }
   .addit_product {
     font-size: 14px;
