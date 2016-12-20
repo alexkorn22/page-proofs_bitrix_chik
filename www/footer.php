@@ -125,6 +125,8 @@
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <!-- Для маски ввода -->
 <script src="js/jquery.maskedinput.min.js"></script>
+<!-- Для стилизации полосы прокрутки -->
+<script src="js/jquery.nicescroll.min.js"></script>
 <!--Подключаем библиотеку для редактирования SELECT-->
 <script src="js/select.js"></script>
 <!-- Библиотека слайдера -->

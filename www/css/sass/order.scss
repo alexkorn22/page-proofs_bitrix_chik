@@ -173,10 +173,27 @@
     background: #fff url(../../img/select-arrow-close.jpg) 100% center no-repeat;
   }
 }
+
 #basket_list {
   .modal-dialog {
     width: 530px;
     margin-top: 40px;
     margin-right: 40px;
+  }
+  .cart_product {
+    padding: 11px 0px;
+  }
+  hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .cart_products_scroll {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 244px;
+  }
+  .addit_product {
+    font-size: 14px;
+    font-family: $SegoeUIBold;
   }
 }
