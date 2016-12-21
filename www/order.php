@@ -561,7 +561,16 @@
     <div id="basket_list" class="modal fade">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="data_cart">
+                <div class="loader">
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <div class="block_load text-center">
+                                <img src="img/load.gif" alt="Ожидание загрузки">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="data_cart hidden">
                     <div class="title">
                         Корзина
                     </div>
