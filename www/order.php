@@ -564,13 +564,13 @@
                 <div class="loader">
                     <div class="row">
                         <div class="col-md-12 ">
-                            <div class="block_load text-center">
+                            <div class="block_load text-center hidden">
                                 <img src="img/load.gif" alt="Ожидание загрузки">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="data_cart hidden">
+                <div class="data_cart ">
                     <div class="title">
                         Корзина
                     </div>
