@@ -451,8 +451,9 @@
                                             Город
                                         </span>
                                 </div>
-                                <div class="col-md-8">
+                                <div class="col-md-8 block_input">
                                     <input type="text" class="form-control img_arrow_right" name="">
+                                    <span class="fa fa-close form-control-feedback"></span>
                                 </div>
                             </div>
                             <!-- Склад -->
