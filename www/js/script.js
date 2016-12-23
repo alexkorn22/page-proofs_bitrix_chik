@@ -204,3 +204,10 @@ OpenBasketList = function () {
     $('.modal-backdrop').fadeTo(0, 0);
 
 };
+
+window.onload=function()
+{
+    tamingselect('type_delivery_ord');
+    tamingselect('product_size');
+    // add more functions if necessary
+};

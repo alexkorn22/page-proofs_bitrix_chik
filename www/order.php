@@ -418,7 +418,7 @@
                             <div class="block_checkboxes">
                                 <div class="div_checkbox">
                                     <input type="radio" class="checkbox" id="value_1_1" name="delivery">
-                                    <label for="value_1_1">Новая почта</label>
+                                      <label for="value_1_1">Новая почта</label>
                                 </div>
                                 <div class="div_checkbox">
                                     <input type="radio" class="checkbox" id="value_1_2" name="delivery">
@@ -441,7 +441,10 @@
                                         </span>
                                 </div>
                                 <div class="col-md-8">
-                                    <input type="text" class="form-control img_arrow_right" name=""> <!-- .img_arrow_bottom -->
+                                    <select class="turnintodropdown" id = 'type_delivery_ord'>
+                                        <option selected="selected">До склада</option>
+                                        <option>До двери</option>
+                                    </select> <!-- .img_arrow_bottom -->
                                 </div>
                             </div>
                             <!-- Город -->

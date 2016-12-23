@@ -1,4 +1,4 @@
-function tamingselect()
+function tamingselect(idSelect)
 {
 	if(!document.getElementById && !document.createTextNode){return;}
 	
@@ -18,6 +18,9 @@ function tamingselect()
 	var sels=document.getElementsByTagName('select');
 	for(var i=0;i<sels.length;i++){
 		var itemOption = 0;
+		if (idSelect != sels[i].id) {
+			continue;
+		}
 		/*Find Selected*/
 		for(var j=0;j<sels[i].getElementsByTagName('option').length;j++){
 			if (sels[i].options[j].selected) {
@@ -113,23 +116,18 @@ function tamingselect()
 	for(i=0;i<count;i++){
 		toreplace[i].parentNode.removeChild(toreplace[i]);
 	}
-	function ts_check(o,c)
-	{
-	 	return new RegExp('\\b'+c+'\\b').test(o.className);
-	}
-	function ts_swapclass(o,c1,c2)
-	{
-		var cn=o.className
-		o.className=!ts_check(o,c1)?cn.replace(c2,c1):cn.replace(c1,c2);
-	}
-	function ts_addclass(o,c)
-	{
-		if(!ts_check(o,c)){o.className+=o.className==''?c:' '+c;}
-	}
 }
 
-window.onload=function()
+function ts_check(o,c)
 {
-	tamingselect();
-	// add more functions if necessary
+	return new RegExp('\\b'+c+'\\b').test(o.className);
+}
+function ts_swapclass(o,c1,c2)
+{
+	var cn=o.className
+	o.className=!ts_check(o,c1)?cn.replace(c2,c1):cn.replace(c1,c2);
+}
+function ts_addclass(o,c)
+{
+	if(!ts_check(o,c)){o.className+=o.className==''?c:' '+c;}
 }

@@ -238,7 +238,7 @@
                                             Размер:
                                         </div>
                                         <div class="value_size">
-                                            <select class="turnintodropdown">
+                                            <select class="turnintodropdown" id = 'product_size'>
                                                 <option>A</option>
                                                 <option disabled="disabled">37-38</option>
                                                 <option>CCC</option>
