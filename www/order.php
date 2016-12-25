@@ -918,7 +918,7 @@
                     <div class="title_modal">
                         <div class="row">
                             <div class="col-md-10">
-                                Регистрация пользователя
+                                Авторизация пользователя
                             </div>
                             <div class="col-md-2 text-right">
                                 <a class="close" data-dismiss="modal" aria-hidden="true">
@@ -930,17 +930,20 @@
                     </div>
                     <div class="modal_content">
                         <div class="row">
-                            <!-- BEGIN registration  -->
-                            <div class="col-md-12">
+                            <!-- Начало Блок авторизации  -->
+                            <div class="col-md-5">
+                                <div class="title_block">
+                                    Авторизация
+                                </div>
                                 <div class="form_auth">
                                     <form  action="">
                                         <div class="form-group">
-                                            <label for="exampleInput1">Имя</label>
-                                            <input type="text" class="form-control" id="exampleInput2" placeholder="">
+                                            <label for="exampleInputEmail1">Email</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
                                         </div>
                                         <div class="form-group">
-                                            <label for="exampleInput3">Фамилия</label>
-                                            <input type="text" class="form-control" id="exampleInput3" placeholder="">
+                                            <label for="exampleInputPassword1">Пароль</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
                                         </div>
                                         <div class="buttons">
                                             <button type="submit" class="btn btn_main">Вход</button>
@@ -948,7 +951,22 @@
                                     </form>
                                 </div>
                             </div>
-                            <!-- end registration -->
+                            <!-- Конец Блок авторизации  -->
+                            <!-- Begin Registration -->
+                            <div class="col-md-offset-1 col-md-6">
+                                <div class="title_block">
+                                    Регистрация
+                                </div>
+                                <div class="descr_registration">
+                                    <p>Регистрация позволит Вам:</p>
+                                    <p>- Воспользоваться преимуществами более быстрого процесса оплаты</p>
+                                    <p>- Повторно использовать данные при оформлении заказа</p>
+                                    <p>- Проверять статус заказов и историю</p>
+                                    <p>- Первым получать информацию об акциях и скидках</p>
+                                </div>
+                                <button type="submit" class="btn btn_main">Регистрация</button>
+                            </div>
+                            <!-- End registratiom -->
                         </div>
                     </div>
                 </div>
