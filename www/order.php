@@ -910,4 +910,50 @@
         </div>
     </div>
 
+    <!-- Модальное окно окно авторизации -->
+    <div id="auth_modal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal_container">
+                    <div class="title_modal">
+                        <div class="row">
+                            <div class="col-md-10">
+                                Регистрация пользователя
+                            </div>
+                            <div class="col-md-2 text-right">
+                                <a class="close" data-dismiss="modal" aria-hidden="true">
+                                    <span class="icon-cancel"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="modal_content">
+                        <div class="row">
+                            <!-- BEGIN registration  -->
+                            <div class="col-md-12">
+                                <div class="form_auth">
+                                    <form  action="">
+                                        <div class="form-group">
+                                            <label for="exampleInput1">Имя</label>
+                                            <input type="text" class="form-control" id="exampleInput2" placeholder="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInput3">Фамилия</label>
+                                            <input type="text" class="form-control" id="exampleInput3" placeholder="">
+                                        </div>
+                                        <div class="buttons">
+                                            <button type="submit" class="btn btn_main">Вход</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- end registration -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 <? include($_SERVER['DOCUMENT_ROOT'] . '/footer.php'); ?>

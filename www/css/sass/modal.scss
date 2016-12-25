@@ -1,0 +1,43 @@
+.modal_container {
+  padding: 30px 30px;
+}
+.title_modal {
+  font-size: 18px;
+  font-family: $SegoeUISemiBold;
+  text-transform: uppercase;
+  .close {
+    color: $color_3;
+    &:hover {
+      color: $color_2;
+    }
+  }
+  hr {
+    margin: 26px 0px;
+  }
+}
+#auth_modal {
+  .modal-dialog {
+    width: 830px;
+  }
+  .title_block {
+    font-family: $SegoeUIBold;
+    font-size: 16px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+  }
+  .form_auth {
+    label {
+      font-family: $SegoeUIBold;
+      font-size: 16px;
+    }
+    .buttons {
+      padding-top: 20px;
+    }
+  }
+  .descr_registration {
+    p {
+      margin-bottom: 5px;
+    }
+    padding-bottom: 30px;
+  }
+}
