@@ -974,4 +974,66 @@
         </div>
     </div>
 
+    <div id="registration_modal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal_container">
+                    <div class="title_modal">
+                        <div class="row">
+                            <div class="col-md-10">
+                                Регистрация пользователя
+                            </div>
+                            <div class="col-md-2 text-right">
+                                <a class="close" data-dismiss="modal" aria-hidden="true">
+                                    <span class="icon-cancel"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="modal_content">
+                        <div class="row">
+                            <!-- Начало Блок  -->
+                            <div class="col-md-12">
+                                <div class="form_auth">
+                                    <form  action="">
+                                        <div class="form-group">
+                                            <label for="registration_modal_input_1">Имя <span>*</span></label>
+                                            <input type="text" class="form-control" id="registration_modal_input_1" placeholder="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="registration_modal_input_2">Фамилия <span>*</span></label>
+                                            <input type="text" class="form-control" id="registration_modal_input_2" placeholder="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="registration_modal_input_3">Логин <span>*</span></label>
+                                            <input type="text" class="form-control" id="registration_modal_input_3" placeholder="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Пароль</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Подтверждение пароля</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="registration_modal_input">E-mail</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+                                        </div>
+
+                                        <div class="buttons text-center">
+                                            <button type="submit" class="btn btn_main">Зарегистрироваться</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- Конец Блок  -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 <? include($_SERVER['DOCUMENT_ROOT'] . '/footer.php'); ?>
