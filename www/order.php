@@ -945,6 +945,9 @@
                                             <label for="exampleInputPassword1">Пароль</label>
                                             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
                                         </div>
+                                        <div class="errors">
+                                            Неверный ввод.
+                                        </div>
                                         <div class="buttons">
                                             <button type="submit" class="btn btn_main">Вход</button>
                                         </div>
@@ -1021,7 +1024,6 @@
                                             <label for="registration_modal_input">E-mail</label>
                                             <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
                                         </div>
-
                                         <div class="buttons text-center">
                                             <button type="submit" class="btn btn_main">Зарегистрироваться</button>
                                         </div>

@@ -40,7 +40,11 @@
     }
     padding-bottom: 30px;
   }
+  .errors {
+    color:$color_5;
+  }
 }
+
 #registration_modal {
   .modal-dialog {
     width: 430px;
