@@ -16,7 +16,7 @@ OnClickBaseTopMenu = function (val) {
     }
 
 $(document).ready(function(){
-    $('#modal_success_order').modal('show');
+    $('#modal_order_oneclick').modal('show');
     $("#slider").slider({
             range: true,
             values : [ 50, 1124 ],//Значение, которое будет выставлено слайдеру при загрузке
@@ -196,6 +196,7 @@ jQuery(function($) {
     $.mask.definitions['~']='[+-]';
     $('#form_tel_1').mask('+38 (099) 999-99-99');
     $('#form_tel_2').mask('+38 (099) 999-99-99');
+    $('#order_click_userphone').mask('+38 (099) 999-99-99');
 
 });
 

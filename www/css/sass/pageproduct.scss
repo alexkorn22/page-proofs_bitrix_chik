@@ -22,10 +22,10 @@
 }
 #ModalFastViewProduct, #ItemProduct {
   color: $color_3;
-  .modal-dialog {
+  .modal_dialog {
     width: 1010px;
   }
-  .modal-content {
+  .modalcontent {
     min-height: 850px;
     padding: 20px 22px;
   }
@@ -253,7 +253,7 @@
     .col-md-5 {
       padding-right: 0px;
     }
-    .btn {
+    .buy,.one_click {
       width: 100%;
     }
     .liked {

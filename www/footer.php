@@ -35,6 +35,52 @@
     </div>
 </div>
 
+<div id="modal_order_oneclick" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal_container">
+                <div class="title_modal">
+                    <div class="row">
+                        <div class="col-md-10">
+                            Заказ в 1 клик
+                        </div>
+                        <div class="col-md-2 text-right">
+                            <a class="close" data-dismiss="modal" aria-hidden="true">
+                                <span class="icon-cancel"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="modal_content">
+                    <div class="form_order">
+                        <form  action="">
+                            <div class="form-group">
+                                <label for="order_click_username">Ваше имя</label>
+                                <input type="text" class="form-control" id="order_click_username" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="order_click_userphone">Телефон</label>
+                                <input type="text" class="form-control" id="order_click_userphone" placeholder="+38 (0__) ___-__-__" value="">
+                            </div>
+                            <div class="form-group">
+                                <label for="order_click_username">Комментарий</label>
+                                <textarea class="form-control" id="order_click_comment" placeholder="" value = ''></textarea>
+                            </div>
+                            <div class="errors hidden">
+                                Неверный ввод.
+                            </div>
+                            <div class="block_buttons text-center">
+                                <button type="button" class="btn btn_main">Заказать</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 </section>
 
 <section id="footer">

@@ -1,6 +1,9 @@
 .modal_container {
   padding: 30px 30px;
 }
+.important_title {
+  color: $color_5;
+}
 .title_modal {
   font-size: 18px;
   font-family: $SegoeUISemiBold;
@@ -14,6 +17,15 @@
   hr {
     margin: 26px 0px 19px;
   }
+}
+.errors {
+  color:$color_5;
+}
+textarea {
+  resize: none;
+}
+.block_buttons {
+  padding-top: 10px;
 }
 #auth_modal {
   .modal-dialog {
@@ -40,9 +52,6 @@
     }
     padding-bottom: 30px;
   }
-  .errors {
-    color:$color_5;
-  }
 }
 
 #registration_modal {
@@ -57,7 +66,9 @@
   .btn {
     padding: 10px 50px;
   }
-  .block_buttons {
-    padding-top: 10px;
+}
+#modal_order_oneclick {
+  .modal-dialog {
+    width: 430px;
   }
 }
