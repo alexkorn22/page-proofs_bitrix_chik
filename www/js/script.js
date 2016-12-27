@@ -16,7 +16,7 @@ OnClickBaseTopMenu = function (val) {
     }
 
 $(document).ready(function(){
-    $('#auth_modal').modal('show');
+    $('#modal_success_order').modal('show');
     $("#slider").slider({
             range: true,
             values : [ 50, 1124 ],//Значение, которое будет выставлено слайдеру при загрузке

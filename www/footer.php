@@ -1,3 +1,39 @@
+<!-- Модальные окна -->
+<div id="modal_success_order" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal_container">
+                <div class="title_modal">
+                    <div class="row">
+                        <div class="col-md-10">
+                            Ваш заказ принят!
+                        </div>
+                        <div class="col-md-2 text-right">
+                            <a class="close" data-dismiss="modal" aria-hidden="true">
+                                <span class="icon-cancel"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="modal_content">
+                    <div class="row">
+                        <div class="col-md-12">
+                            Петр, Ваш заказ принят и ожидает подтверждения
+                            С вами свяжется менеджер и уточнит детали
+                            заказа
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center block_buttons">
+                            <button type="button" class="btn btn_main" data-dismiss="modal">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 </section>
 
