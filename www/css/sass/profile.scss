@@ -1,3 +1,47 @@
-#profile_user {
 
+#profile_user {
+  margin-bottom: 60px;
+
+  .block_left {
+    a {
+      color: $color_2;
+    }
+    hr {
+      margin: 15px 40px 20px 15px;
+    }
+  }
+  //Вкладки
+  .nav-pills {
+    li {
+      a {
+        text-transform: uppercase;
+        font-family: $SegoeUIBold;
+      }
+      &.active {
+        a {
+          background-color: inherit;
+          color: $color_3;
+        }
+        a:hover {
+          background-color: inherit;
+          cursor: default;
+        }
+      }
+      &:hover {
+        a {
+          background-color: $color_6;
+          color: $color_3;
+        }
+      }
+    }
+  }
+  .block_link {
+    margin-bottom: 25px;
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+  .block_banner,.block_link {
+    padding-left: 15px;
+  }
 }

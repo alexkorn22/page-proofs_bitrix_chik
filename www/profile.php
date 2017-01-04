@@ -4,7 +4,7 @@
         <div id="profile_user">
 
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 block_left">
                     <!-- Навигация -->
                     <ul class="nav nav-pills nav-stacked" role="tablist">
                         <li class="active"><a href="#data_user" aria-controls="data_user" role="tab" data-toggle="tab">Мои данные</a></li>
@@ -17,13 +17,13 @@
                     <div class="block_link">
                         <a href="#">Перейти в избранное (27)</a>
                     </div>
-                    <div class="block_banner text-center">
+                    <div class="block_banner">
                         <a href="#">
                             <img src="img/banner_profile.jpg" alt="" class="">
                         </a>
                     </div>
                 </div>
-                <div class="col-md-offset-1 col-md-8">
+                <div class="col-md-offset-1 col-md-8 block_right">
                     <!--ПУТЬ -->
                     <div class="row">
                         <div class="col-md-12">
