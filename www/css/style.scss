@@ -139,6 +139,10 @@ html {
       color: $color_2;
     }
   }
+
+  /* SELECT */
+  @import "sass/select";
+
   /*Главная страница*/
   @import "sass/mainpage";
   /*список товаров*/
@@ -146,7 +150,9 @@ html {
   /*Страница товара*/
   @import "sass/pageproduct";
   /*PAGE ORDER*/
-  @import "sass/order";
+  @import "sass/order ";
+  /*PROFILE*/
+  @import "sass/profile";
 
   /*MODAL*/
   @import "sass/modal";
