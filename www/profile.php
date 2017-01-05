@@ -204,7 +204,7 @@
                                         </span>
                                         </div>
                                         <div class="col-md-8">
-                                            <select class="turnintodropdown" id = 'type_delivery_ord'>
+                                            <select class="turnintodropdown" id = 'type_delivery_prof'>
                                                 <option selected="selected">До склада</option>
                                                 <option>До двери</option>
                                             </select> <!-- .img_arrow_bottom -->
