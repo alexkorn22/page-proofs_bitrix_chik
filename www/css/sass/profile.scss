@@ -147,4 +147,17 @@
       }
     }
   }
+  .table {
+    tbody>tr>td {
+      border: none;
+    }
+    thead>tr>th {
+      border: 1px solid $color_1;
+      border-left: none;
+      border-right: none;
+    }
+  }
+  .list_orders {
+    padding-top: 10px;
+  }
 }
