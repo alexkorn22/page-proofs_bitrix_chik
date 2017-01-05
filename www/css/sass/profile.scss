@@ -1,8 +1,19 @@
 
 #profile_user {
   margin-bottom: 60px;
-
+  .welcome {
+    font-size: 24px;
+    color: $color_3;
+  }
+  .title {
+    font-size: 18px;
+    font-family: $SegoeUIBold;
+    hr {
+      margin: 15px 0px;
+    }
+  }
   .block_left {
+    border-right: 1px solid $color_1;
     a {
       color: $color_2;
     }
@@ -43,5 +54,97 @@
   }
   .block_banner,.block_link {
     padding-left: 15px;
+  }
+
+  .data_section {
+    padding: 20px 0px 10px 0px;
+    .input_item {
+      margin-bottom: 10px;
+    }
+    .block_title {
+      padding-right: 0px;
+      padding-top: 5px;
+    }
+    .form-control {
+      height: 40px;
+      border-radius: 0px;
+    }
+    .block_next_step {
+      padding-top: 10px;
+      a:hover {
+        color: $color_2;
+      }
+    }
+    .important_title {
+      color: $color_5;
+    }
+    .small_letter_spacing {
+      letter-spacing: -0.4px;
+    }
+    .block_checkboxes {
+      margin-bottom: 20px;
+    }
+    .block_input {
+      .form-control-feedback {
+        top: 10px;
+        right: 15px;
+      }
+      .fa {
+        font-size: 18px;
+      }
+      .fa-close {
+        color: $clrIconError;
+      }
+      .fa-check {
+        color: $clrIconSucces;
+      }
+      &.email {
+        padding: 9px 15px;
+      }
+      & .btn_addit {
+        padding: 8px 12px;
+      }
+    }
+    .has_error>.block_input {
+      input {
+        background-color: $clrHasError;
+      }
+    }
+  }
+  .line_in_section {
+    hr {
+      margin-top: 10px;
+    }
+  }
+  .day_birthday {
+    padding-right: 3px;
+    .dropcontainer {
+      width:86%;
+    }
+  }
+  .month_birthday {
+    padding-left: 12px;
+    .dropcontainer {
+      width:84%;
+    }
+  }
+  .year_birthday {
+    padding-left: 0px;
+    .dropcontainer {
+      width:88%;
+    }
+  }
+  .group_btn_switch {
+    .btn {
+      border-radius: 0px;
+      border-color: $color_1;
+      padding: 8px 12px;
+      &:focus, &.active.focus {
+        outline: none;
+      }
+      &.active {
+        background-color: #d4d4d4;
+      }
+    }
   }
 }

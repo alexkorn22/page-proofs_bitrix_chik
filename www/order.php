@@ -271,8 +271,8 @@
                             <div class="row input_item">
                                 <div class="col-md-2 block_title">
                                      <span class="title_data">
-                                            Фамилия
-                                        </span>
+                                         Фамилия
+                                     </span>
                                     <span class="important_title">*</span>
                                 </div>
                                 <div class="col-md-8">

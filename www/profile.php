@@ -23,7 +23,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-offset-1 col-md-8 block_right">
+                <div class="col-md-8 block_right">
                     <!--ПУТЬ -->
                     <div class="row">
                         <div class="col-md-12">
@@ -51,111 +51,122 @@
                                 <span>Личные данные</span>
                                 <hr>
                             </div>
-                            <!-- Фамилия -->
-                            <div class="row input_item">
-                                <div class="col-md-2 block_title">
+                            <div class="data_section">
+                                <!-- Фамилия -->
+                                <div class="row input_item">
+                                    <div class="col-md-2 block_title">
                                      <span class="title_data">
                                          Фамилия
                                      </span>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" name="">
+                                    </div>
                                 </div>
-                                <div class="col-md-8">
-                                    <input type="text" class="form-control" name="">
-                                </div>
-                            </div>
-                            <!-- Имя -->
-                            <div class="row input_item">
-                                <div class="col-md-2 block_title">
+                                <!-- Имя -->
+                                <div class="row input_item">
+                                    <div class="col-md-2 block_title">
                                      <span class="title_data">
                                             Имя
                                         </span>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" name="">
+                                    </div>
                                 </div>
-                                <div class="col-md-8">
-                                    <input type="text" class="form-control" name="">
-                                </div>
-                            </div>
-                            <!-- Отчество -->
-                            <div class="row input_item">
-                                <div class="col-md-2 block_title">
+                                <!-- Отчество -->
+                                <div class="row input_item">
+                                    <div class="col-md-2 block_title">
                                      <span class="title_data">
                                          Отчество
                                      </span>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" name="">
+                                    </div>
                                 </div>
-                                <div class="col-md-8">
-                                    <input type="text" class="form-control" name="">
-                                </div>
-                            </div>
-                            <!-- E-mail -->
-                            <div class="row input_item">
-                                <div class="col-md-2 block_title">
+                                <!-- E-mail -->
+                                <div class="row input_item">
+                                    <div class="col-md-2 block_title">
                                     <span class="title_data">
                                         E-mail
                                     </span>
+                                    </div>
+                                    <div class="col-md-8 block_input email">
+                                        <span class="">petrpetrov@gmail.com</span>
+                                    </div>
                                 </div>
-                                <div class="col-md-8 block_input">
-                                    <span class="email">petrpetrov@gmail.com</span>
-                                </div>
-                            </div>
-                            <!-- Password -->
-                            <div class="row input_item">
-                                <div class="col-md-2 block_title">
+                                <!-- Password -->
+                                <div class="row input_item">
+                                    <div class="col-md-2 block_title">
                                     <span class="title_data">
                                         Пароль
                                     </span>
+                                    </div>
+                                    <div class="col-md-8 block_input">
+                                        <button class="btn btn_addit" data-toggle="modal" data-target="#modal_change_password">Изменить</button>
+                                    </div>
+
                                 </div>
-                                <div class="col-md-8 block_input">
-                                    <button class="btn btn_addit" data-toggle="modal" data-target="#modal_change_password">Изменить</button>
+                                <div class="row line_in_section">
+                                    <div class="col-md-10">
+                                        <hr>
+                                    </div>
                                 </div>
-                            </div>
-                            <hr>
-                            <!-- Телефон -->
-                            <div class="row input_item">
-                                <div class="col-md-2 block_title">
+                                <!-- Телефон -->
+                                <div class="row input_item">
+                                    <div class="col-md-2 block_title">
                                      <span class="title_data">
                                             Телефон
                                         </span>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="tel" class="form-control" name="" id="form_tel_profile" placeholder="+38 (0__) ___-__-__">
+                                    </div>
                                 </div>
-                                <div class="col-md-8">
-                                    <input type="tel" class="form-control" name="" id="form_tel_profile" placeholder="+38 (0__) ___-__-__">
-                                </div>
-                            </div>
-                            <!-- День рождения -->
-                            <div class="row input_item">
-                                <div class="col-md-2 block_title">
+                                <!-- День рождения -->
+                                <div class="row input_item">
+                                    <div class="col-md-2 block_title">
                                      <span class="title_data">
-                                         День рождения
+                                         Дата рождения
                                      </span>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="row block_birthday">
+                                            <div class="col-md-3 day_birthday">
+                                                <select class="turnintodropdown" id = 'day_birthday'>
+                                                    <option selected="selected">День</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4 month_birthday">
+                                                <select class="turnintodropdown" id = 'month_birthday'>
+                                                    <option selected="selected">Месяц</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-3 year_birthday">
+                                                <select class="turnintodropdown" id = 'year_birthday'>
+                                                    <option selected="selected">Год</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-md-2 day_birthday">
-                                    <select class="turnintodropdown" id = 'day_birthday'>
-                                        <option selected="selected">День</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-3 month_birthday">
-                                    <select class="turnintodropdown" id = 'month_birthday'>
-                                        <option selected="selected">Месяц</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-2 year_birthday">
-                                    <select class="turnintodropdown" id = 'year_birthday'>
-                                        <option selected="selected">Год</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <!-- Пол -->
-                            <div class="row input_item">
-                                <div class="col-md-2 block_title">
+                                <!-- Пол -->
+                                <div class="row input_item">
+                                    <div class="col-md-2 block_title">
                                      <span class="title_data">
                                          Пол
                                      </span>
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="btn-group group_btn_switch" data-toggle="buttons">
-                                        <label class="btn btn-default active">
-                                            <input type="radio" name="gender" id="male">Мужской
-                                        </label>
-                                        <label class="btn btn-default">
-                                            <input type="radio" name="gender" id="female">Женский
-                                        </label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="btn-group group_btn_switch" data-toggle="buttons">
+                                            <label class="btn btn-default active">
+                                                <input type="radio" name="gender" id="male">Мужской
+                                            </label>
+                                            <label class="btn btn-default">
+                                                <input type="radio" name="gender" id="female">Женский
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -297,7 +308,7 @@
                     <div class="title_modal">
                         <div class="row">
                             <div class="col-md-10">
-                                Ваш заказ принят!
+                                Смена пароля
                             </div>
                             <div class="col-md-2 text-right">
                                 <a class="close" data-dismiss="modal" aria-hidden="true">
@@ -309,15 +320,24 @@
                     </div>
                     <div class="modal_content">
                         <div class="row">
-                            <div class="col-md-12">
-                                Петр, Ваш заказ принят и ожидает подтверждения
-                                С вами свяжется менеджер и уточнит детали
-                                заказа
+                            <div class="col-md-10">
+                                <div class="form-group">
+                                    <label for="modal_change_password_input_1">Введите старый пароль</label>
+                                    <input type="password" class="form-control" id="modal_change_password_input_1" placeholder="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="modal_change_password_input_2">Введите новый пароль</label>
+                                    <input type="password" class="form-control" id="modal_change_password_input_2" placeholder="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="modal_change_password_input_3">Повторите новый пароль</label>
+                                    <input type="password" class="form-control" id="modal_change_password_input_3" placeholder="">
+                                </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-12 text-center block_buttons">
-                                <button type="button" class="btn btn_main" data-dismiss="modal">OK</button>
+                            <div class="col-md-12 text-left block_buttons">
+                                <button type="button" class="btn btn_main" data-dismiss="modal">Сохранить</button>
                             </div>
                         </div>
                     </div>
