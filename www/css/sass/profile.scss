@@ -169,4 +169,12 @@
   .list_orders {
     padding-top: 10px;
   }
+  .dropcontainer {
+    overflow-y: auto;
+    max-height: 250px;
+    border-bottom: 1px solid #ccc;
+  }
+  .trigger {
+    border-bottom: 1px solid transparent;
+  }
 }

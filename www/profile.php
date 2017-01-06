@@ -141,6 +141,29 @@
                                             <div class="col-md-4 month_birthday">
                                                 <select class="turnintodropdown" id = 'month_birthday'>
                                                     <option selected="selected">Месяц</option>
+                                                    <option selected="selected">Месяц</option>
+                                                    <option selected="selected">Месяц</option>
+                                                    <option selected="selected">Месяц</option>
+                                                    <option selected="selected">Месяц</option>
+                                                    <option selected="selected">Месяц</option>
+                                                    <option selected="selected">Месяц</option>
+                                                    <option selected="selected">Месяц</option>
+                                                    <option selected="selected">Месяц</option>
+                                                    <option selected="selected">Месяц</option>
+                                                    <option selected="selected">Месяц</option>
+                                                    <option selected="selected">Месяц</option>
+                                                    <option selected="selected">Месяц</option>
+                                                    <option selected="selected">Месяц</option>
+                                                    <option selected="selected">Месяц</option>
+                                                    <option selected="selected">Месяц</option>
+                                                    <option selected="selected">Месяц</option>
+                                                    <option selected="selected">Месяц</option>
+                                                    <option selected="selected">Месяц</option>
+                                                    <option selected="selected">Месяц</option>
+                                                    <option selected="selected">Месяц</option>
+                                                    <option selected="selected">Месяц</option>
+                                                    <option selected="selected">Месяц</option>
+                                                    <option selected="selected">Месяц</option>
                                                 </select>
                                             </div>
                                             <div class="col-md-3 year_birthday">
