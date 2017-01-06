@@ -215,5 +215,6 @@ window.onload=function()
     tamingselect('day_birthday');
     tamingselect('month_birthday');
     tamingselect('year_birthday');
+    tamingselect('type_delivery_prof');
     // add more functions if necessary
 };

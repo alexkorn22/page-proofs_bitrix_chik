@@ -34,15 +34,17 @@
           color: $color_3;
         }
         a:hover {
-          background-color: inherit;
+          background-color: transparent;
           cursor: default;
         }
       }
       &:hover {
         a {
-          background-color: $color_6;
           color: $color_3;
         }
+      }
+      a:hover {
+        background-color: transparent;
       }
     }
   }
@@ -68,6 +70,7 @@
     .form-control {
       height: 40px;
       border-radius: 0px;
+      font-size: 16px;
     }
     .block_next_step {
       padding-top: 10px;
@@ -134,6 +137,11 @@
       width:88%;
     }
   }
+  .select_delivery {
+    .dropcontainer {
+      width: 94%;
+    }
+  }
   .group_btn_switch {
     .btn {
       border-radius: 0px;
@@ -144,6 +152,7 @@
       }
       &.active {
         background-color: #d4d4d4;
+        box-shadow: none;
       }
     }
   }

@@ -59,7 +59,7 @@
                                          Фамилия
                                      </span>
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-md-8 block_input">
                                         <input type="text" class="form-control" name="">
                                     </div>
                                 </div>
@@ -70,7 +70,7 @@
                                             Имя
                                         </span>
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-md-8 block_input">
                                         <input type="text" class="form-control" name="">
                                     </div>
                                 </div>
@@ -81,7 +81,7 @@
                                          Отчество
                                      </span>
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-md-8 block_input">
                                         <input type="text" class="form-control" name="">
                                     </div>
                                 </div>
@@ -103,7 +103,7 @@
                                         Пароль
                                     </span>
                                     </div>
-                                    <div class="col-md-8 block_input">
+                                    <div class="col-md-8">
                                         <button class="btn btn_addit" data-toggle="modal" data-target="#modal_change_password">Изменить</button>
                                     </div>
 
@@ -120,7 +120,7 @@
                                             Телефон
                                         </span>
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-md-8 block_input">
                                         <input type="tel" class="form-control" name="" id="form_tel_profile" placeholder="+38 (0__) ___-__-__">
                                     </div>
                                 </div>
@@ -131,7 +131,7 @@
                                          Дата рождения
                                      </span>
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-md-8 block_input">
                                         <div class="row block_birthday">
                                             <div class="col-md-3 day_birthday">
                                                 <select class="turnintodropdown" id = 'day_birthday'>
@@ -158,7 +158,7 @@
                                          Пол
                                      </span>
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-md-8 block_input">
                                         <div class="btn-group group_btn_switch" data-toggle="buttons">
                                             <label class="btn btn-default active">
                                                 <input type="radio" name="gender" id="male">Мужской
@@ -199,11 +199,11 @@
                                     <!-- Вид доставки -->
                                     <div class="row input_item">
                                         <div class="col-md-2 block_title">
-                                     <span class="title_data small_letter_spacing">
-                                            Вид доставки
-                                        </span>
+                                             <span class="title_data small_letter_spacing">
+                                                 Вид доставки
+                                             </span>
                                         </div>
-                                        <div class="col-md-8">
+                                        <div class="col-md-8 select_delivery">
                                             <select class="turnintodropdown" id = 'type_delivery_prof'>
                                                 <option selected="selected">До склада</option>
                                                 <option>До двери</option>
@@ -228,7 +228,7 @@
                                             № Склада
                                         </span>
                                         </div>
-                                        <div class="col-md-8">
+                                        <div class="col-md-8 block_input" >
                                             <input type="text" class="form-control img_arrow_right" name="">
                                         </div>
                                     </div>
@@ -239,7 +239,7 @@
                                             Адрес
                                         </span>
                                         </div>
-                                        <div class="col-md-8">
+                                        <div class="col-md-8 block_input">
                                             <input type="tel" class="form-control" name="">
                                         </div>
                                     </div>
@@ -250,14 +250,16 @@
                                             Комментарий
                                         </span>
                                         </div>
-                                        <div class="col-md-8">
+                                        <div class="col-md-8 block_input">
                                             <input type="text" class="form-control" name="">
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="buttons text-center">
-                                <button type="button" class="btn btn_addit">Сохранить</button>
+                            <div class="row buttons">
+                                <div class="col-md-8 col-md-offset-2">
+                                    <button type="button" class="btn btn_addit">Сохранить</button>
+                                </div>
                             </div>
                         </div>
                         <!-- Вкладка заказов -->
