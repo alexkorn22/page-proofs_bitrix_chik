@@ -368,6 +368,7 @@
                     </div>
                 </div>
             </div>
-        </
+        </div>
+    </div>
 
 <? include($_SERVER['DOCUMENT_ROOT'] . '/footer.php'); ?>
