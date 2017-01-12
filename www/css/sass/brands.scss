@@ -1,0 +1,31 @@
+.block_list_brands {
+  margin-bottom: 120px;
+  min-height: 400px;
+  ul {
+    margin-bottom: 35px;
+  }
+  a:hover {
+    //text-decoration: underline;
+    border-bottom: 1px solid $color_2;
+    color : $color_2;
+  }
+}
+.page_title {
+  font-family: $SegoeUIBold;
+  font-size: 18px;
+  hr {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+.list_brand {
+  span {
+    font-family: $SegoeUIBold;
+    font-size: 16px;
+  }
+  li {
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 5px 0px;
+  }
+}
