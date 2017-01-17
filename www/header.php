@@ -31,84 +31,113 @@
     <header>
         <nav class="navbar navbar-default navbar-fixed-top top_menu" role="navigation">
             <div class="container">
-                <ul class="nav navbar-nav topmenu_ul">
-                    <li class="item"><a href="#" class="item_main">Бренды</a></li> <!-- class="active_top_menu" -->
-                    <li class="item dropdown">
-                        <a href="<?='/catalog.php'?>" class="item_main">Женщины</a>
-                        <!-- Выпадающее меню -->
-                        <div class="nav_lvl_1">
-                            <div class="container nav_lvl_1_container">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <ul class="list-unstyled">
-                                            <li><a href="#">Бюстгальтеры</a></li>
-                                            <li><a href="#">Майки, футболки, блузки</a></li>
-                                            <li><a href="#">Пижамы и домашняя одежда</a></li>
-                                            <li><a href="#">Корректирующее белье</a></li>
-                                            <li><a href="#">Купальники и пляжная одежда</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <ul class="list-unstyled">
-                                            <li><a href="#">Для беременных и кормящих</a></li>
-                                            <li><a href="#">Термобелье</a></li>
-                                            <li><a href="#">Носки, колготы, чулки</a></li>
-                                            <li><a href="#">Аксессуары</a></li>
-                                            <li><a href="#">Трусы</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <ul class="list-unstyled">
-                                            <li><a href="#">Тапки домашние</a></li>
-                                            <li><a href="#">Новинки</a></li>
-                                            <li><a href="#">Распродажа</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3  base_top_menu dropdown">
-                                        <a href="javascript:void(0)" class="title dropdown-toggle" data-toggle="dropdown"
-                                           onclick="OnClickBaseTopMenu(this)">
-                                            База
-                                            <span class="title_icon fa fa-angle-right">
+                <!-- For mobile -->
+                <div class="navbar-header mobile_top_header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span><!--Полоски на кноке-->
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-7 block_icons">
+                                <a href="#" class="liked">
+                                    <span class="icon-heart_1"></span>
+                                    <span class="counter one_digit">7</span>
+                                </a>
+                                <a href="#" class="cart" >
+                                    <span class="icon-cart_1"></span>
+                                    <span class="counter two_digit">25</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- END For mobile -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav topmenu_ul">
+                        <li class="item"><a href="#" class="item_main">Бренды</a></li> <!-- class="active_top_menu" -->
+                        <li class="item dropdown">
+                            <a href="<?='/catalog.php'?>" class="item_main">Женщины</a>
+                            <!-- Выпадающее меню -->
+                            <div class="nav_lvl_1">
+                                <div class="container nav_lvl_1_container">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Бюстгальтеры</a></li>
+                                                <li><a href="#">Майки, футболки, блузки</a></li>
+                                                <li><a href="#">Пижамы и домашняя одежда</a></li>
+                                                <li><a href="#">Корректирующее белье</a></li>
+                                                <li><a href="#">Купальники и пляжная одежда</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Для беременных и кормящих</a></li>
+                                                <li><a href="#">Термобелье</a></li>
+                                                <li><a href="#">Носки, колготы, чулки</a></li>
+                                                <li><a href="#">Аксессуары</a></li>
+                                                <li><a href="#">Трусы</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Тапки домашние</a></li>
+                                                <li><a href="#">Новинки</a></li>
+                                                <li><a href="#">Распродажа</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3  base_top_menu dropdown">
+                                            <a href="javascript:void(0)" class="title dropdown-toggle" data-toggle="dropdown"
+                                               onclick="OnClickBaseTopMenu(this)">
+                                                База
+                                                <span class="title_icon fa fa-angle-right">
                                             </span>
-                                        </a>
-                                        <ul class="list-unstyled hidden dropmenu_base">
-                                            <li><a href="#">Трусы</a></li>
-                                            <li><a href="#">Бюстгальтеры</a></li>
-                                            <li><a href="#">Майки, футболки</a></li>
-                                            <li><a href="#">Носки, колготы, чулки</a></li>
-                                        </ul>
+                                            </a>
+                                            <ul class="list-unstyled hidden dropmenu_base">
+                                                <li><a href="#">Трусы</a></li>
+                                                <li><a href="#">Бюстгальтеры</a></li>
+                                                <li><a href="#">Майки, футболки</a></li>
+                                                <li><a href="#">Носки, колготы, чулки</a></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="item"><a href="#" class="item_main">Мужчины</a></li>
-                    <li class="item"><a href="#" class="item_main">Дети</a></li>
-                    <li class="item"><a href="#" class="item_main">Новинки</a></li>
-                    <li class="item sale"><a href="#" class="item_main sale">Распродажа%</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right basket_topmenu">
-                    <li class="item_liked">
-                        <a href="#" class="liked">
-                            <span class="icon-heart_1"></span>
-                            <span class="counter one_digit">7</span>
-                        </a>
-                    </li>
-                    <li class="item_cart">
-                        <a href="#" class="cart" onclick="OpenBasketList()">
-                            <span class="icon-cart_1"></span>
-                            <span class="counter two_digit">25</span>
-                        </a>
+                        </li>
+                        <li class="item"><a href="#" class="item_main">Мужчины</a></li>
+                        <li class="item"><a href="#" class="item_main">Дети</a></li>
+                        <li class="item"><a href="#" class="item_main">Новинки</a></li>
+                        <li class="item sale"><a href="#" class="item_main sale">Распродажа%</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right basket_topmenu visible-md">
+                        <li class="item_liked">
+                            <a href="#" class="liked">
+                                <span class="icon-heart_1"></span>
+                                <span class="counter one_digit">7</span>
+                            </a>
+                        </li>
+                        <li class="item_cart">
+                            <a href="#" class="cart" onclick="OpenBasketList()">
+                                <span class="icon-cart_1"></span>
+                                <span class="counter two_digit">25</span>
+                            </a>
 
-                    </li>
-                    <li class="item">
-                        <div class="sum">
-                            <p>
-                                на сумму 24 500 грн
-                            </p>
-                        </div>
-                    </li>
-                </ul>
+                        </li>
+                        <li class="item">
+                            <div class="sum">
+                                <p>
+                                    на сумму 24 500 грн
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
         </nav>
     </header>

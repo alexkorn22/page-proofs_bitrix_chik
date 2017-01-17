@@ -133,6 +133,53 @@
   }
 }
 
+.mobile_top_header {
+  color: $color_1;
+  font-family: $SegoeUIRegular;
+  margin-right: 0px;
+  .block_icons {
+    padding-top: 10px;
+  }
+  .liked {
+    .counter {
+      right: 25.6em;
+    }
+  }
+  .cart {
+    .counter {
+      right: 21.6em;
+    }
+  }
+  .counter {
+    width: 18px;
+    height: 18px;
+    line-height: 1;
+    color: $color_3;
+    background-color: $color_4;
+    border-radius: 0.4em;
+    position: absolute;
+    &.one_digit {
+      padding: 0.13em 0.4em;
+    }
+    &.two_digit {
+      padding: 0.13em 0.1em;
+    }
+  }
+  .icon-heart_1 {
+    font-size: 26px;
+  }
+  .icon-cart_1 {
+    font-size: 26px;
+  }
+  a {
+    color: $color_1;
+    padding: 10px 4px 1px 15px;
+    &:hover {
+      color: $color_4;
+    }
+  }
+}
+
 #main_header {
   .header_logo {
     margin-top: 28px;
