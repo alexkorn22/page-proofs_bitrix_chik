@@ -38,6 +38,11 @@ html {
 
   font-family: $SegoeUIRegular;
   font-size: 16px;
+  .block_image_dim_mesh {
+    img {
+      margin: 15px 0px;
+    }
+  }
   .content_page {
     margin-bottom: 60px;
   }
