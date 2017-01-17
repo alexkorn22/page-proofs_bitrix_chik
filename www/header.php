@@ -39,7 +39,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <div class="container">
+                    <div class="container visible-xs">
                         <div class="row">
                             <div class="col-xs-7 block_icons">
                                 <a href="#" class="liked">
@@ -114,7 +114,7 @@
                         <li class="item"><a href="#" class="item_main">Новинки</a></li>
                         <li class="item sale"><a href="#" class="item_main sale">Распродажа%</a></li>
                     </ul>
-                    <ul class="nav navbar-nav navbar-right basket_topmenu visible-md">
+                    <ul class="nav navbar-nav navbar-right basket_topmenu visible-md visible-lg">
                         <li class="item_liked">
                             <a href="#" class="liked">
                                 <span class="icon-heart_1"></span>
